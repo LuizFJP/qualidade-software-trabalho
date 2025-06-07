@@ -95,7 +95,7 @@ def run_spotbugs(tag):
     print(f'[5/5] Executando SpotBugs (FindSecBugs) para a tag "{tag}"…')
     # Ajuste este path conforme a estrutura do build do Elasticsearch:
     # normalmente, classes compiladas ficam em: build/classes/java/main
-    classes_dir = os.path.join(LOCAL_REPO_PATH, 'server','build', 'distributions', 'java', f'elasticsearch-{tag}-SNAPSHOT.jar')
+    classes_dir = os.path.join(LOCAL_REPO_PATH, 'server','build', 'distributions', f'elasticsearch-{tag[1:]}-SNAPSHOT.jar')
     output_file = '/spotbugs'
     dir_path = os.path.dirname(output_file)
     os.makedirs(dir_path, exist_ok=True)
@@ -106,16 +106,13 @@ def run_spotbugs(tag):
     base_dir.mkdir(parents=True, exist_ok=True)
 
     # Agora monte o arquivo dentro desse diretório
-    output_file = f"{base_dir}/spotbugs_{tag}.xml"
-    spotbugs_jar = './spotbugs-4.9.4-SNAPSHOT.jar'
+    output_file = f"{base_dir}/spotbugs_{tag[1:]}.xml"
 
     cmd = [
-        'java', '-jar', spotbugs_jar,
+        'spotbugs',
         '-textui',
-        '-pluginList', FINDBUGS_PLUGIN_JAR,
         '-effort:max',
-        '-xml:withMessages',
-        '-output', output_file,
+        ' -xml=', output_file,
         classes_dir
     ]
     subprocess.run(cmd, check=True)
