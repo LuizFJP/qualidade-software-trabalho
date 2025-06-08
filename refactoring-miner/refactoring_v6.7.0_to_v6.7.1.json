@@ -1,0 +1,645 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/traccar/traccar.git",
+	"sha1": "b1d1b8506db1996f755abd261516dd993dd32059",
+	"url": "https://github.com/traccar/traccar/commit/b1d1b8506db1996f755abd261516dd993dd32059",
+	"refactorings": []
+},
+{
+	"repository": "https://github.com/traccar/traccar.git",
+	"sha1": "dd7358d2609a9daa615c023cf335e60d27e1e7cd",
+	"url": "https://github.com/traccar/traccar/commit/dd7358d2609a9daa615c023cf335e60d27e1e7cd",
+	"refactorings": []
+},
+{
+	"repository": "https://github.com/traccar/traccar.git",
+	"sha1": "3f7f80faaac534e841b609b6e80a06b0db902ec6",
+	"url": "https://github.com/traccar/traccar/commit/3f7f80faaac534e841b609b6e80a06b0db902ec6",
+	"refactorings": []
+},
+{
+	"repository": "https://github.com/traccar/traccar.git",
+	"sha1": "4327f1c98a19a6bdc1005c1c552bd4dc8fc04d7a",
+	"url": "https://github.com/traccar/traccar/commit/4327f1c98a19a6bdc1005c1c552bd4dc8fc04d7a",
+	"refactorings": [{
+	"type": "Split Conditional",
+	"description": "Split Conditional if((values.length - index >= 2 && !protocol.startsWith(\"ST3\")) || (protocol.startsWith(\"ST3\") && model == 45)) to [if(values.length - index >= 2), if(protocol.startsWith(\"ST3\"))] in method private decode2356(channel Channel, remoteAddress SocketAddress, protocol String, values String[]) : Position from class org.traccar.protocol.SuntechProtocolDecoder",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/traccar/protocol/SuntechProtocolDecoder.java",
+		"startLine": 443,
+		"endLine": 450,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "IF_STATEMENT",
+		"description": "original conditional",
+		"codeElement": "if((values.length - index >= 2 && !protocol.startsWith(\"ST3\")) || (protocol.startsWith(\"ST3\") && model == 45))"
+}, {
+		"filePath": "src/main/java/org/traccar/protocol/SuntechProtocolDecoder.java",
+		"startLine": 334,
+		"endLine": 478,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private decode2356(channel Channel, remoteAddress SocketAddress, protocol String, values String[]) : Position"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/traccar/protocol/SuntechProtocolDecoder.java",
+		"startLine": 449,
+		"endLine": 455,
+		"startColumn": 20,
+		"endColumn": 14,
+		"codeElementType": "IF_STATEMENT",
+		"description": "split conditional",
+		"codeElement": "if(values.length - index >= 2)"
+}, {
+		"filePath": "src/main/java/org/traccar/protocol/SuntechProtocolDecoder.java",
+		"startLine": 441,
+		"endLine": 455,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "IF_STATEMENT",
+		"description": "split conditional",
+		"codeElement": "if(protocol.startsWith(\"ST3\"))"
+}, {
+		"filePath": "src/main/java/org/traccar/protocol/SuntechProtocolDecoder.java",
+		"startLine": 334,
+		"endLine": 482,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with split conditional",
+		"codeElement": "private decode2356(channel Channel, remoteAddress SocketAddress, protocol String, values String[]) : Position"
+}]
+},
+{
+	"type": "Extract Variable",
+	"description": "Extract Variable hbm : int in method private decode2356(channel Channel, remoteAddress SocketAddress, protocol String, values String[]) : Position from class org.traccar.protocol.SuntechProtocolDecoder",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/traccar/protocol/SuntechProtocolDecoder.java",
+		"startLine": 463,
+		"endLine": 473,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement with the initializer of the extracted variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/traccar/protocol/SuntechProtocolDecoder.java",
+		"startLine": 417,
+		"endLine": 475,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement with the initializer of the extracted variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/traccar/protocol/SuntechProtocolDecoder.java",
+		"startLine": 418,
+		"endLine": 418,
+		"startColumn": 13,
+		"endColumn": 54,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted variable declaration",
+		"codeElement": "hbm : int"
+}, {
+		"filePath": "src/main/java/org/traccar/protocol/SuntechProtocolDecoder.java",
+		"startLine": 468,
+		"endLine": 477,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement with the name of the extracted variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/traccar/protocol/SuntechProtocolDecoder.java",
+		"startLine": 419,
+		"endLine": 479,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement with the name of the extracted variable",
+		"codeElement": null
+}]
+}
+]
+},
+{
+	"repository": "https://github.com/traccar/traccar.git",
+	"sha1": "dacd98292ba68ae00b175a7e60d9835193efc3cc",
+	"url": "https://github.com/traccar/traccar/commit/dacd98292ba68ae00b175a7e60d9835193efc3cc",
+	"refactorings": [{
+	"type": "Merge Conditional",
+	"description": "Merge Conditional [if(protocol.startsWith(\"ST3\")), if(values.length - index >= 2)] to if((values.length - index >= 2 && !protocol.startsWith(\"ST3\")) || (protocol.startsWith(\"ST3\") && model == 45)) in method private decode2356(channel Channel, remoteAddress SocketAddress, protocol String, values String[]) : Position from class org.traccar.protocol.SuntechProtocolDecoder",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/traccar/protocol/SuntechProtocolDecoder.java",
+		"startLine": 441,
+		"endLine": 455,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "IF_STATEMENT",
+		"description": "merged conditional",
+		"codeElement": "if(protocol.startsWith(\"ST3\"))"
+}, {
+		"filePath": "src/main/java/org/traccar/protocol/SuntechProtocolDecoder.java",
+		"startLine": 449,
+		"endLine": 455,
+		"startColumn": 20,
+		"endColumn": 14,
+		"codeElementType": "IF_STATEMENT",
+		"description": "merged conditional",
+		"codeElement": "if(values.length - index >= 2)"
+}, {
+		"filePath": "src/main/java/org/traccar/protocol/SuntechProtocolDecoder.java",
+		"startLine": 334,
+		"endLine": 482,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private decode2356(channel Channel, remoteAddress SocketAddress, protocol String, values String[]) : Position"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/traccar/protocol/SuntechProtocolDecoder.java",
+		"startLine": 443,
+		"endLine": 450,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "IF_STATEMENT",
+		"description": "new conditional",
+		"codeElement": "if((values.length - index >= 2 && !protocol.startsWith(\"ST3\")) || (protocol.startsWith(\"ST3\") && model == 45))"
+}, {
+		"filePath": "src/main/java/org/traccar/protocol/SuntechProtocolDecoder.java",
+		"startLine": 334,
+		"endLine": 478,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with merged conditional",
+		"codeElement": "private decode2356(channel Channel, remoteAddress SocketAddress, protocol String, values String[]) : Position"
+}]
+},
+{
+	"type": "Inline Variable",
+	"description": "Inline Variable hbm : int in method private decode2356(channel Channel, remoteAddress SocketAddress, protocol String, values String[]) : Position from class org.traccar.protocol.SuntechProtocolDecoder",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/traccar/protocol/SuntechProtocolDecoder.java",
+		"startLine": 418,
+		"endLine": 418,
+		"startColumn": 13,
+		"endColumn": 54,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "inlined variable declaration",
+		"codeElement": "hbm : int"
+}, {
+		"filePath": "src/main/java/org/traccar/protocol/SuntechProtocolDecoder.java",
+		"startLine": 468,
+		"endLine": 477,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement with the name of the inlined variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/traccar/protocol/SuntechProtocolDecoder.java",
+		"startLine": 463,
+		"endLine": 473,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement with the initializer of the inlined variable",
+		"codeElement": null
+}]
+}
+]
+},
+{
+	"repository": "https://github.com/traccar/traccar.git",
+	"sha1": "54a7c62157f18719d6ea2f274ec72ec04585dabb",
+	"url": "https://github.com/traccar/traccar/commit/54a7c62157f18719d6ea2f274ec72ec04585dabb",
+	"refactorings": [{
+	"type": "Extract Variable",
+	"description": "Extract Variable hbm : int in method private decode2356(channel Channel, remoteAddress SocketAddress, protocol String, values String[]) : Position from class org.traccar.protocol.SuntechProtocolDecoder",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/traccar/protocol/SuntechProtocolDecoder.java",
+		"startLine": 463,
+		"endLine": 473,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement with the initializer of the extracted variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/traccar/protocol/SuntechProtocolDecoder.java",
+		"startLine": 417,
+		"endLine": 475,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement with the initializer of the extracted variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/traccar/protocol/SuntechProtocolDecoder.java",
+		"startLine": 417,
+		"endLine": 417,
+		"startColumn": 13,
+		"endColumn": 54,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted variable declaration",
+		"codeElement": "hbm : int"
+}, {
+		"filePath": "src/main/java/org/traccar/protocol/SuntechProtocolDecoder.java",
+		"startLine": 465,
+		"endLine": 474,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement with the name of the extracted variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/traccar/protocol/SuntechProtocolDecoder.java",
+		"startLine": 418,
+		"endLine": 476,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement with the name of the extracted variable",
+		"codeElement": null
+}]
+}
+]
+},
+{
+	"repository": "https://github.com/traccar/traccar.git",
+	"sha1": "65af7f62130f543daff17640f39730d4c2db754b",
+	"url": "https://github.com/traccar/traccar/commit/65af7f62130f543daff17640f39730d4c2db754b",
+	"refactorings": [{
+	"type": "Remove Parameter",
+	"description": "Remove Parameter objectMapper : ObjectMapper in method public provideOpenIDProvider(config Config, loginService LoginService, actionLogger LogAction, objectMapper ObjectMapper) : OpenIdProvider from class org.traccar.MainModule",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/traccar/MainModule.java",
+		"startLine": 194,
+		"endLine": 194,
+		"startColumn": 13,
+		"endColumn": 38,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "removed parameter",
+		"codeElement": "objectMapper : ObjectMapper"
+}, {
+		"filePath": "src/main/java/org/traccar/MainModule.java",
+		"startLine": 190,
+		"endLine": 199,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public provideOpenIDProvider(config Config, loginService LoginService, actionLogger LogAction, objectMapper ObjectMapper) : OpenIdProvider"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/traccar/MainModule.java",
+		"startLine": 191,
+		"endLine": 200,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed parameter",
+		"codeElement": "public provideOpenIDProvider(config Config, loginService LoginService, actionLogger LogAction) : OpenIdProvider"
+}]
+},
+{
+	"type": "Change Thrown Exception Type",
+	"description": "Change Thrown Exception Type InterruptedException to GeneralException in method public provideOpenIDProvider(config Config, loginService LoginService, actionLogger LogAction) : OpenIdProvider from class org.traccar.MainModule",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/traccar/MainModule.java",
+		"startLine": 194,
+		"endLine": 194,
+		"startColumn": 47,
+		"endColumn": 67,
+		"codeElementType": "TYPE",
+		"description": "original exception type",
+		"codeElement": "InterruptedException"
+}, {
+		"filePath": "src/main/java/org/traccar/MainModule.java",
+		"startLine": 190,
+		"endLine": 199,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public provideOpenIDProvider(config Config, loginService LoginService, actionLogger LogAction, objectMapper ObjectMapper) : OpenIdProvider"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/traccar/MainModule.java",
+		"startLine": 195,
+		"endLine": 195,
+		"startColumn": 53,
+		"endColumn": 69,
+		"codeElementType": "TYPE",
+		"description": "changed exception type",
+		"codeElement": "GeneralException"
+}, {
+		"filePath": "src/main/java/org/traccar/MainModule.java",
+		"startLine": 191,
+		"endLine": 200,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed thrown exception type",
+		"codeElement": "public provideOpenIDProvider(config Config, loginService LoginService, actionLogger LogAction) : OpenIdProvider"
+}]
+},
+{
+	"type": "Inline Variable",
+	"description": "Inline Variable request : AuthenticationRequest.Builder in method public createAuthUri() : URI from class org.traccar.database.OpenIdProvider",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/traccar/database/OpenIdProvider.java",
+		"startLine": 129,
+		"endLine": 133,
+		"startColumn": 39,
+		"endColumn": 29,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "inlined variable declaration",
+		"codeElement": "request : AuthenticationRequest.Builder"
+}, {
+		"filePath": "src/main/java/org/traccar/database/OpenIdProvider.java",
+		"startLine": 135,
+		"endLine": 138,
+		"startColumn": 9,
+		"endColumn": 26,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement with the name of the inlined variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/traccar/database/OpenIdProvider.java",
+		"startLine": 116,
+		"endLine": 120,
+		"startColumn": 9,
+		"endColumn": 26,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement with the initializer of the inlined variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Extract Variable",
+	"description": "Extract Variable issuer : String in method public OpenIdProvider(config Config, loginService LoginService, actionLogger LogAction) from class org.traccar.database.OpenIdProvider",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/traccar/database/OpenIdProvider.java",
+		"startLine": 98,
+		"endLine": 101,
+		"startColumn": 13,
+		"endColumn": 26,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement with the initializer of the extracted variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/traccar/database/OpenIdProvider.java",
+		"startLine": 94,
+		"endLine": 94,
+		"startColumn": 20,
+		"endColumn": 69,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted variable declaration",
+		"codeElement": "issuer : String"
+}]
+},
+{
+	"type": "Remove Parameter",
+	"description": "Remove Parameter httpClient : HttpClient in method public OpenIdProvider(config Config, loginService LoginService, actionLogger LogAction, httpClient HttpClient, objectMapper ObjectMapper) from class org.traccar.database.OpenIdProvider",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/traccar/database/OpenIdProvider.java",
+		"startLine": 84,
+		"endLine": 84,
+		"startColumn": 13,
+		"endColumn": 34,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "removed parameter",
+		"codeElement": "httpClient : HttpClient"
+}, {
+		"filePath": "src/main/java/org/traccar/database/OpenIdProvider.java",
+		"startLine": 81,
+		"endLine": 120,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public OpenIdProvider(config Config, loginService LoginService, actionLogger LogAction, httpClient HttpClient, objectMapper ObjectMapper)"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/traccar/database/OpenIdProvider.java",
+		"startLine": 78,
+		"endLine": 109,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed parameter",
+		"codeElement": "public OpenIdProvider(config Config, loginService LoginService, actionLogger LogAction)"
+}]
+},
+{
+	"type": "Remove Parameter",
+	"description": "Remove Parameter objectMapper : ObjectMapper in method public OpenIdProvider(config Config, loginService LoginService, actionLogger LogAction, httpClient HttpClient, objectMapper ObjectMapper) from class org.traccar.database.OpenIdProvider",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/traccar/database/OpenIdProvider.java",
+		"startLine": 84,
+		"endLine": 84,
+		"startColumn": 36,
+		"endColumn": 61,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "removed parameter",
+		"codeElement": "objectMapper : ObjectMapper"
+}, {
+		"filePath": "src/main/java/org/traccar/database/OpenIdProvider.java",
+		"startLine": 81,
+		"endLine": 120,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public OpenIdProvider(config Config, loginService LoginService, actionLogger LogAction, httpClient HttpClient, objectMapper ObjectMapper)"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/traccar/database/OpenIdProvider.java",
+		"startLine": 78,
+		"endLine": 109,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed parameter",
+		"codeElement": "public OpenIdProvider(config Config, loginService LoginService, actionLogger LogAction)"
+}]
+},
+{
+	"type": "Change Thrown Exception Type",
+	"description": "Change Thrown Exception Type InterruptedException to GeneralException in method public OpenIdProvider(config Config, loginService LoginService, actionLogger LogAction) from class org.traccar.database.OpenIdProvider",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/traccar/database/OpenIdProvider.java",
+		"startLine": 85,
+		"endLine": 85,
+		"startColumn": 16,
+		"endColumn": 36,
+		"codeElementType": "TYPE",
+		"description": "original exception type",
+		"codeElement": "InterruptedException"
+}, {
+		"filePath": "src/main/java/org/traccar/database/OpenIdProvider.java",
+		"startLine": 81,
+		"endLine": 120,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public OpenIdProvider(config Config, loginService LoginService, actionLogger LogAction, httpClient HttpClient, objectMapper ObjectMapper)"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/traccar/database/OpenIdProvider.java",
+		"startLine": 81,
+		"endLine": 81,
+		"startColumn": 53,
+		"endColumn": 69,
+		"codeElementType": "TYPE",
+		"description": "changed exception type",
+		"codeElement": "GeneralException"
+}, {
+		"filePath": "src/main/java/org/traccar/database/OpenIdProvider.java",
+		"startLine": 78,
+		"endLine": 109,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed thrown exception type",
+		"codeElement": "public OpenIdProvider(config Config, loginService LoginService, actionLogger LogAction)"
+}]
+},
+{
+	"type": "Localize Parameter",
+	"description": "Localize Parameter redirectUri : URI to redirectUri : URI in method public handleCallback(queryParameters String, request HttpServletRequest) : URI from class org.traccar.database.OpenIdProvider",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/traccar/database/OpenIdProvider.java",
+		"startLine": 173,
+		"endLine": 173,
+		"startColumn": 31,
+		"endColumn": 46,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "redirectUri : URI"
+}, {
+		"filePath": "src/main/java/org/traccar/database/OpenIdProvider.java",
+		"startLine": 176,
+		"endLine": 177,
+		"startColumn": 9,
+		"endColumn": 73,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/traccar/database/OpenIdProvider.java",
+		"startLine": 189,
+		"endLine": 189,
+		"startColumn": 9,
+		"endColumn": 68,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/traccar/database/OpenIdProvider.java",
+		"startLine": 158,
+		"endLine": 158,
+		"startColumn": 13,
+		"endColumn": 102,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "renamed variable declaration",
+		"codeElement": "redirectUri : URI"
+}, {
+		"filePath": "src/main/java/org/traccar/database/OpenIdProvider.java",
+		"startLine": 159,
+		"endLine": 160,
+		"startColumn": 9,
+		"endColumn": 73,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/traccar/database/OpenIdProvider.java",
+		"startLine": 171,
+		"endLine": 171,
+		"startColumn": 9,
+		"endColumn": 68,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+}
+]
+},
+{
+	"repository": "https://github.com/traccar/traccar.git",
+	"sha1": "407937066725dc24da370a6643d604ba79546f90",
+	"url": "https://github.com/traccar/traccar/commit/407937066725dc24da370a6643d604ba79546f90",
+	"refactorings": []
+},
+{
+	"repository": "https://github.com/traccar/traccar.git",
+	"sha1": "8abdf7ad7e475f693ce6cf8384e16d0732265859",
+	"url": "https://github.com/traccar/traccar/commit/8abdf7ad7e475f693ce6cf8384e16d0732265859",
+	"refactorings": []
+},
+{
+	"repository": "https://github.com/traccar/traccar.git",
+	"sha1": "9b625c3d80fe366e5ec3681c0e99d71ce373a206",
+	"url": "https://github.com/traccar/traccar/commit/9b625c3d80fe366e5ec3681c0e99d71ce373a206",
+	"refactorings": [{
+	"type": "Inline Variable",
+	"description": "Inline Variable need : int in method private decode2356(channel Channel, remoteAddress SocketAddress, protocol String, values String[]) : Position from class org.traccar.protocol.SuntechProtocolDecoder",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/traccar/protocol/SuntechProtocolDecoder.java",
+		"startLine": 444,
+		"endLine": 444,
+		"startColumn": 17,
+		"endColumn": 40,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "inlined variable declaration",
+		"codeElement": "need : int"
+}, {
+		"filePath": "src/main/java/org/traccar/protocol/SuntechProtocolDecoder.java",
+		"startLine": 446,
+		"endLine": 452,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement with the name of the inlined variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/traccar/protocol/SuntechProtocolDecoder.java",
+		"startLine": 444,
+		"endLine": 450,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement with the initializer of the inlined variable",
+		"codeElement": null
+}]
+}
+]
+},
+{
+	"repository": "https://github.com/traccar/traccar.git",
+	"sha1": "7a20726cf8453f0fe30697cc8f8ffd0bb0c1c7ea",
+	"url": "https://github.com/traccar/traccar/commit/7a20726cf8453f0fe30697cc8f8ffd0bb0c1c7ea",
+	"refactorings": []
+},
+{
+	"repository": "https://github.com/traccar/traccar.git",
+	"sha1": "028b55bd74ec2472e7381b511a51ae03cc1dd99c",
+	"url": "https://github.com/traccar/traccar/commit/028b55bd74ec2472e7381b511a51ae03cc1dd99c",
+	"refactorings": []
+}]
+}

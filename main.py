@@ -5,9 +5,9 @@ from pydriller.git import Git
 from pathlib import Path
 import shutil
 
-REPO_URL = 'https://github.com/elastic/elasticsearch.git'
+REPO_URL = 'https://github.com/traccar/traccar.git'
 
-LOCAL_REPO_PATH = 'elasticsearch'
+LOCAL_REPO_PATH = 'traccar'
 
 SPOTBUGS_CMD = 'spotbugs'
 
@@ -24,7 +24,7 @@ CK_METRICS_JAR = './ck-0.7.1-SNAPSHOT-jar-with-dependencies.jar'
 CK_OUTPUT_DIR = 'ck_metrics_output'
 
 # Comando de build (Gradle Wrapper) pulando os testes
-BUILD_CMD = ['./gradlew', 'assemble', '-x', 'test']
+BUILD_CMD = ['./gradlew', 'assemble']
 
 
 # ----------------------------
@@ -64,7 +64,7 @@ def get_last_n_tags(n=20):
 
     # Ordena por committer_date desc → [ (tag, date), ... ]
     tags_sorted = sorted(tags_with_dates, key=lambda x: x[1], reverse=True)
-    last_tags = [tag for tag, _ in tags_sorted[:n]]
+    last_tags = [tag for tag, _ in tags_sorted[:n]][::-1]
     print(f'    → Tags selecionadas: {last_tags}')
     return last_tags
 
@@ -92,10 +92,10 @@ def run_spotbugs(tag):
     Executa o SpotBugs no diretório de classes compiladas, apontando para o plugin FindSecBugs.
     Salva o XML de saída em "spotbugs_<tag>.xml" na pasta atual onde o script foi chamado.
     """
-    print(f'[5/5] Executando SpotBugs (FindSecBugs) para a tag "{tag}"…')
-    # Ajuste este path conforme a estrutura do build do Elasticsearch:
+    print(f'[5/7] Executando SpotBugs (FindSecBugs) para a tag "{tag}"…')
+    # Ajuste este path conforme a estrutura do build do traccar:
     # normalmente, classes compiladas ficam em: build/classes/java/main
-    classes_dir = os.path.join(LOCAL_REPO_PATH, 'server','build', 'distributions', f'elasticsearch-{tag[1:]}-SNAPSHOT.jar')
+    classes_dir = os.path.join(LOCAL_REPO_PATH,'target', f'tracker-server.jar')
     output_file = '/spotbugs'
     dir_path = os.path.dirname(output_file)
     os.makedirs(dir_path, exist_ok=True)
@@ -106,13 +106,13 @@ def run_spotbugs(tag):
     base_dir.mkdir(parents=True, exist_ok=True)
 
     # Agora monte o arquivo dentro desse diretório
-    output_file = f"{base_dir}/spotbugs_{tag[1:]}.xml"
+    output_file = f"-xml={base_dir}/spotbugs_{tag[1:]}.xml"
 
     cmd = [
         'spotbugs',
         '-textui',
         '-effort:max',
-        ' -xml=', output_file,
+        output_file,
         classes_dir
     ]
     subprocess.run(cmd, check=True)
@@ -126,13 +126,14 @@ def run_refactoringminer(prev_tag, tag):
     """
     print(f'[6/6] Executando RefactoringMiner de "{prev_tag}" → "{tag}"…')
     output_folder = f'refactoring-miner'
-    dir_path = os.path.dirname(output_folder)
+    dir_path = os.path.join(output_folder)
     os.makedirs(dir_path, exist_ok=True)
 
     cmd = [
         REFACTORING_MINER_JAR,
+        '-bt',
+        LOCAL_REPO_PATH, prev_tag, tag,
         '-json', f'{output_folder}/refactoring_{prev_tag}_to_{tag}.json',
-        LOCAL_REPO_PATH, prev_tag, tag
     ]
     subprocess.run(cmd, check=True)
     print(f'    → RefactoringMiner finalizado, saída em "{output_folder}/refactoring_{prev_tag}_to_{tag}.json"')
@@ -153,8 +154,9 @@ def run_ck_metrics(tag):
     # e "--output" (arquivo CSV de saída). Ajuste se sua versão usar flags diferentes.
     cmd = [
         'java', '-jar', CK_METRICS_JAR,
-        '--project', LOCAL_REPO_PATH,
-        '--output', output_csv
+        f'{LOCAL_REPO_PATH}/src/main/java/org/traccar',
+        'true', '0', 'true',
+         output_csv
     ]
     subprocess.run(cmd, check=True)
     print(f'    → CK metrics gerado em "{output_csv}"')
@@ -165,7 +167,7 @@ def main():
     clone_or_update_repo()
 
     # 2) Obter as últimas 20 tags
-    tags = get_last_n_tags(20)
+    tags = get_last_n_tags(19)
 
     prev_tag = None
     for tag in tags:
@@ -177,14 +179,14 @@ def main():
             build_project()
 
             # 5) Rodar SpotBugs + FindSecBugs
-            run_spotbugs(tag)
+            # run_spotbugs(tag)
 
             # 6) Rodar RefactoringMiner comparando com a tag anterior
             if prev_tag:
                 run_refactoringminer(prev_tag, tag)
-
-            # 7) Rodar CK Metrics
-            run_ck_metrics(tag)
+            #
+            # # 7) Rodar CK Metrics
+            # run_ck_metrics(tag)
 
             # Atualiza prev_tag para a próxima iteração
             prev_tag = tag

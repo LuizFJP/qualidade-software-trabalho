@@ -1,0 +1,183 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/traccar/traccar.git",
+	"sha1": "3d793f502e1d48eb9c1dd60005ccf6c8682d73ca",
+	"url": "https://github.com/traccar/traccar/commit/3d793f502e1d48eb9c1dd60005ccf6c8682d73ca",
+	"refactorings": [{
+	"type": "Rename Class",
+	"description": "Rename Class org.traccar.geocoder.TestGeocoder renamed to org.traccar.geocoder.PlusCodesGeocoder",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/traccar/geocoder/TestGeocoder.java",
+		"startLine": 20,
+		"endLine": 36,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "org.traccar.geocoder.TestGeocoder"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/traccar/geocoder/PlusCodesGeocoder.java",
+		"startLine": 21,
+		"endLine": 37,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "renamed type declaration",
+		"codeElement": "org.traccar.geocoder.PlusCodesGeocoder"
+}]
+}
+]
+},
+{
+	"repository": "https://github.com/traccar/traccar.git",
+	"sha1": "569bb18dcd0d8bbde92b5efdbbb21bc02d6e90ae",
+	"url": "https://github.com/traccar/traccar/commit/569bb18dcd0d8bbde92b5efdbbb21bc02d6e90ae",
+	"refactorings": []
+},
+{
+	"repository": "https://github.com/traccar/traccar.git",
+	"sha1": "b017ab22e2f612aa19d0bd62581b6e889a142dfa",
+	"url": "https://github.com/traccar/traccar/commit/b017ab22e2f612aa19d0bd62581b6e889a142dfa",
+	"refactorings": [{
+	"type": "Add Parameter",
+	"description": "Add Parameter scheduled : boolean in method public logReport(userId long, scheduled boolean, report String, from Date, to Date, deviceIds List<Long>, groupIds List<Long>) : void from class org.traccar.helper.LogAction",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/traccar/helper/LogAction.java",
+		"startLine": 115,
+		"endLine": 122,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public logReport(userId long, report String, from Date, to Date, deviceIds List<Long>, groupIds List<Long>) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/traccar/helper/LogAction.java",
+		"startLine": 116,
+		"endLine": 116,
+		"startColumn": 26,
+		"endColumn": 43,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "added parameter",
+		"codeElement": "scheduled : boolean"
+}, {
+		"filePath": "src/main/java/org/traccar/helper/LogAction.java",
+		"startLine": 115,
+		"endLine": 123,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added parameter",
+		"codeElement": "public logReport(userId long, scheduled boolean, report String, from Date, to Date, deviceIds List<Long>, groupIds List<Long>) : void"
+}]
+}
+]
+},
+{
+	"repository": "https://github.com/traccar/traccar.git",
+	"sha1": "53f1be38dc55032e73e1aae659bb94dda6414d31",
+	"url": "https://github.com/traccar/traccar/commit/53f1be38dc55032e73e1aae659bb94dda6414d31",
+	"refactorings": []
+},
+{
+	"repository": "https://github.com/traccar/traccar.git",
+	"sha1": "f752a0b5990d4687e7dfb870faf7adbedd3a06c3",
+	"url": "https://github.com/traccar/traccar/commit/f752a0b5990d4687e7dfb870faf7adbedd3a06c3",
+	"refactorings": [{
+	"type": "Merge Conditional",
+	"description": "Merge Conditional [if(!ignorePositions), if(processInvalidPositions || position.getValid())] to if(!ignorePositions && (processInvalidPositions || position.getValid())) in method public handlePosition(position Position, callback Callback) : void from class org.traccar.handler.GeocoderHandler",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/traccar/handler/GeocoderHandler.java",
+		"startLine": 46,
+		"endLine": 48,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "IF_STATEMENT",
+		"description": "merged conditional",
+		"codeElement": "if(!ignorePositions)"
+}, {
+		"filePath": "src/main/java/org/traccar/handler/GeocoderHandler.java",
+		"startLine": 50,
+		"endLine": 77,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "IF_STATEMENT",
+		"description": "merged conditional",
+		"codeElement": "if(processInvalidPositions || position.getValid())"
+}, {
+		"filePath": "src/main/java/org/traccar/handler/GeocoderHandler.java",
+		"startLine": 44,
+		"endLine": 78,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public handlePosition(position Position, callback Callback) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/traccar/handler/GeocoderHandler.java",
+		"startLine": 46,
+		"endLine": 73,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "IF_STATEMENT",
+		"description": "new conditional",
+		"codeElement": "if(!ignorePositions && (processInvalidPositions || position.getValid()))"
+}, {
+		"filePath": "src/main/java/org/traccar/handler/GeocoderHandler.java",
+		"startLine": 44,
+		"endLine": 74,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with merged conditional",
+		"codeElement": "public handlePosition(position Position, callback Callback) : void"
+}]
+}
+]
+},
+{
+	"repository": "https://github.com/traccar/traccar.git",
+	"sha1": "341eaa2886a89c247f70973f22e4416325f9f34b",
+	"url": "https://github.com/traccar/traccar/commit/341eaa2886a89c247f70973f22e4416325f9f34b",
+	"refactorings": [{
+	"type": "Rename Class",
+	"description": "Rename Class org.traccar.web.ModernDefaultServlet renamed to org.traccar.web.DefaultOverrideServlet",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/traccar/web/ModernDefaultServlet.java",
+		"startLine": 27,
+		"endLine": 59,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "org.traccar.web.ModernDefaultServlet"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/traccar/web/DefaultOverrideServlet.java",
+		"startLine": 27,
+		"endLine": 59,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "renamed type declaration",
+		"codeElement": "org.traccar.web.DefaultOverrideServlet"
+}]
+}
+]
+},
+{
+	"repository": "https://github.com/traccar/traccar.git",
+	"sha1": "dda156e5d0795ad61197931a0d55b190ed140dcd",
+	"url": "https://github.com/traccar/traccar/commit/dda156e5d0795ad61197931a0d55b190ed140dcd",
+	"refactorings": []
+},
+{
+	"repository": "https://github.com/traccar/traccar.git",
+	"sha1": "bc2faa140a2a5ba63968b95cd8ddba7578e1b07f",
+	"url": "https://github.com/traccar/traccar/commit/bc2faa140a2a5ba63968b95cd8ddba7578e1b07f",
+	"refactorings": []
+}]
+}

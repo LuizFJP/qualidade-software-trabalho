@@ -1,0 +1,549 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/traccar/traccar.git",
+	"sha1": "44752e41007aff70d16af5fad6fb49b7ed0ef2b2",
+	"url": "https://github.com/traccar/traccar/commit/44752e41007aff70d16af5fad6fb49b7ed0ef2b2",
+	"refactorings": []
+},
+{
+	"repository": "https://github.com/traccar/traccar.git",
+	"sha1": "b68324196ed548ca2eeb2a0ca878fcbf1702997e",
+	"url": "https://github.com/traccar/traccar/commit/b68324196ed548ca2eeb2a0ca878fcbf1702997e",
+	"refactorings": []
+},
+{
+	"repository": "https://github.com/traccar/traccar.git",
+	"sha1": "b61e01af5599b9954b0ed4424f417ab659f9aed8",
+	"url": "https://github.com/traccar/traccar/commit/b61e01af5599b9954b0ed4424f417ab659f9aed8",
+	"refactorings": []
+},
+{
+	"repository": "https://github.com/traccar/traccar.git",
+	"sha1": "dedf5f179205c03cae27072c9ab3c30c2a91de4c",
+	"url": "https://github.com/traccar/traccar/commit/dedf5f179205c03cae27072c9ab3c30c2a91de4c",
+	"refactorings": []
+},
+{
+	"repository": "https://github.com/traccar/traccar.git",
+	"sha1": "c289b5f90b93c2b55f1e0cedba0e0c04e0ecc7e1",
+	"url": "https://github.com/traccar/traccar/commit/c289b5f90b93c2b55f1e0cedba0e0c04e0ecc7e1",
+	"refactorings": []
+},
+{
+	"repository": "https://github.com/traccar/traccar.git",
+	"sha1": "5606aed5bd84ee5a7748c9e43935b8f39c30008d",
+	"url": "https://github.com/traccar/traccar/commit/5606aed5bd84ee5a7748c9e43935b8f39c30008d",
+	"refactorings": [{
+	"type": "Extract Variable",
+	"description": "Extract Variable engineHours : long in method private calculateDeviceResult(device Device, from Date, to Date, fast boolean) : Collection<SummaryReportItem> from class org.traccar.reports.SummaryReportProvider",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/traccar/reports/SummaryReportProvider.java",
+		"startLine": 111,
+		"endLine": 112,
+		"startColumn": 17,
+		"endColumn": 81,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement with the initializer of the extracted variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/traccar/reports/SummaryReportProvider.java",
+		"startLine": 111,
+		"endLine": 111,
+		"startColumn": 22,
+		"endColumn": 59,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted variable declaration",
+		"codeElement": "engineHours : long"
+}, {
+		"filePath": "src/main/java/org/traccar/reports/SummaryReportProvider.java",
+		"startLine": 113,
+		"endLine": 113,
+		"startColumn": 21,
+		"endColumn": 116,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement with the name of the extracted variable",
+		"codeElement": null
+}]
+}
+]
+},
+{
+	"repository": "https://github.com/traccar/traccar.git",
+	"sha1": "0e9ed16b31c3bb17bc76a1f793c013ed5c9c1e21",
+	"url": "https://github.com/traccar/traccar/commit/0e9ed16b31c3bb17bc76a1f793c013ed5c9c1e21",
+	"refactorings": []
+},
+{
+	"repository": "https://github.com/traccar/traccar.git",
+	"sha1": "d571995d10f4e23c86b420491dbbe34ee2275677",
+	"url": "https://github.com/traccar/traccar/commit/d571995d10f4e23c86b420491dbbe34ee2275677",
+	"refactorings": []
+},
+{
+	"repository": "https://github.com/traccar/traccar.git",
+	"sha1": "43b876dec70353f96cb82f7b3b95b322741a18ef",
+	"url": "https://github.com/traccar/traccar/commit/43b876dec70353f96cb82f7b3b95b322741a18ef",
+	"refactorings": [{
+	"type": "Add Parameter",
+	"description": "Add Parameter deviceSession : DeviceSession in method private decodeCoordinates(position Position, deviceSession DeviceSession, buf ByteBuf) : void from class org.traccar.protocol.HuabaoProtocolDecoder",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/traccar/protocol/HuabaoProtocolDecoder.java",
+		"startLine": 363,
+		"endLine": 388,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private decodeCoordinates(position Position, buf ByteBuf) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/traccar/protocol/HuabaoProtocolDecoder.java",
+		"startLine": 363,
+		"endLine": 363,
+		"startColumn": 55,
+		"endColumn": 82,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "added parameter",
+		"codeElement": "deviceSession : DeviceSession"
+}, {
+		"filePath": "src/main/java/org/traccar/protocol/HuabaoProtocolDecoder.java",
+		"startLine": 363,
+		"endLine": 392,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added parameter",
+		"codeElement": "private decodeCoordinates(position Position, deviceSession DeviceSession, buf ByteBuf) : void"
+}]
+}
+]
+},
+{
+	"repository": "https://github.com/traccar/traccar.git",
+	"sha1": "97db266cb999f2d5c2f66e27440c8ff35f30dc19",
+	"url": "https://github.com/traccar/traccar/commit/97db266cb999f2d5c2f66e27440c8ff35f30dc19",
+	"refactorings": []
+},
+{
+	"repository": "https://github.com/traccar/traccar.git",
+	"sha1": "654f1b268f06203c12c2b17fa4dd734f0a5f4448",
+	"url": "https://github.com/traccar/traccar/commit/654f1b268f06203c12c2b17fa4dd734f0a5f4448",
+	"refactorings": []
+},
+{
+	"repository": "https://github.com/traccar/traccar.git",
+	"sha1": "66ff2064b26a9a7b3a3323528943b955766462b9",
+	"url": "https://github.com/traccar/traccar/commit/66ff2064b26a9a7b3a3323528943b955766462b9",
+	"refactorings": [{
+	"type": "Extract Variable",
+	"description": "Extract Variable references : int in method public addDevice(deviceId long) : void from class org.traccar.session.cache.CacheManager",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/traccar/session/cache/CacheManager.java",
+		"startLine": 155,
+		"endLine": 164,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement with the initializer of the extracted variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/traccar/session/cache/CacheManager.java",
+		"startLine": 159,
+		"endLine": 159,
+		"startColumn": 17,
+		"endColumn": 116,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted variable declaration",
+		"codeElement": "references : int"
+}, {
+		"filePath": "src/main/java/org/traccar/session/cache/CacheManager.java",
+		"startLine": 161,
+		"endLine": 170,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement with the name of the extracted variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Extract Variable",
+	"description": "Extract Variable references : int in method public removeDevice(deviceId long) : void from class org.traccar.session.cache.CacheManager",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/traccar/session/cache/CacheManager.java",
+		"startLine": 173,
+		"endLine": 177,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement with the initializer of the extracted variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/traccar/session/cache/CacheManager.java",
+		"startLine": 179,
+		"endLine": 179,
+		"startColumn": 17,
+		"endColumn": 116,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted variable declaration",
+		"codeElement": "references : int"
+}, {
+		"filePath": "src/main/java/org/traccar/session/cache/CacheManager.java",
+		"startLine": 181,
+		"endLine": 185,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement with the name of the extracted variable",
+		"codeElement": null
+}]
+}
+]
+},
+{
+	"repository": "https://github.com/traccar/traccar.git",
+	"sha1": "4bd6724158fadad1c3eea352e6b5a0a52028c527",
+	"url": "https://github.com/traccar/traccar/commit/4bd6724158fadad1c3eea352e6b5a0a52028c527",
+	"refactorings": []
+},
+{
+	"repository": "https://github.com/traccar/traccar.git",
+	"sha1": "38cba6d8a21901ff40a3aa1589557ffa9c38d1e8",
+	"url": "https://github.com/traccar/traccar/commit/38cba6d8a21901ff40a3aa1589557ffa9c38d1e8",
+	"refactorings": [{
+	"type": "Extract Variable",
+	"description": "Extract Variable connectionKey : ConnectionKey in method private removeDeviceSession(deviceId long) : void from class org.traccar.session.ConnectionManager",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/traccar/session/ConnectionManager.java",
+		"startLine": 217,
+		"endLine": 220,
+		"startColumn": 13,
+		"endColumn": 16,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement with the initializer of the extracted variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/traccar/session/ConnectionManager.java",
+		"startLine": 216,
+		"endLine": 216,
+		"startColumn": 27,
+		"endColumn": 75,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted variable declaration",
+		"codeElement": "connectionKey : ConnectionKey"
+}, {
+		"filePath": "src/main/java/org/traccar/session/ConnectionManager.java",
+		"startLine": 218,
+		"endLine": 221,
+		"startColumn": 13,
+		"endColumn": 16,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement with the name of the extracted variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Attribute Type",
+	"description": "Change Attribute Type deviceReferences : Map<Long,AtomicInteger> to deviceReferences : Map<Long,HashSet<Object>> in class org.traccar.session.cache.CacheManager",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/traccar/session/cache/CacheManager.java",
+		"startLine": 73,
+		"endLine": 73,
+		"startColumn": 44,
+		"endColumn": 78,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "deviceReferences : Map<Long,AtomicInteger>"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/traccar/session/cache/CacheManager.java",
+		"startLine": 73,
+		"endLine": 73,
+		"startColumn": 46,
+		"endColumn": 80,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "changed-type attribute declaration",
+		"codeElement": "deviceReferences : Map<Long,HashSet<Object>>"
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type references : int to references : var in method public addDevice(deviceId long, key Object) : void from class org.traccar.session.cache.CacheManager",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/traccar/session/cache/CacheManager.java",
+		"startLine": 159,
+		"endLine": 159,
+		"startColumn": 17,
+		"endColumn": 116,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "references : int"
+}, {
+		"filePath": "src/main/java/org/traccar/session/cache/CacheManager.java",
+		"startLine": 160,
+		"endLine": 160,
+		"startColumn": 13,
+		"endColumn": 101,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/traccar/session/cache/CacheManager.java",
+		"startLine": 161,
+		"endLine": 170,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/traccar/session/cache/CacheManager.java",
+		"startLine": 159,
+		"endLine": 159,
+		"startColumn": 17,
+		"endColumn": 94,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "references : var"
+}, {
+		"filePath": "src/main/java/org/traccar/session/cache/CacheManager.java",
+		"startLine": 171,
+		"endLine": 171,
+		"startColumn": 13,
+		"endColumn": 103,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/traccar/session/cache/CacheManager.java",
+		"startLine": 160,
+		"endLine": 169,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Add Parameter",
+	"description": "Add Parameter key : Object in method public addDevice(deviceId long, key Object) : void from class org.traccar.session.cache.CacheManager",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/traccar/session/cache/CacheManager.java",
+		"startLine": 156,
+		"endLine": 174,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public addDevice(deviceId long) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/traccar/session/cache/CacheManager.java",
+		"startLine": 156,
+		"endLine": 156,
+		"startColumn": 42,
+		"endColumn": 52,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "added parameter",
+		"codeElement": "key : Object"
+}, {
+		"filePath": "src/main/java/org/traccar/session/cache/CacheManager.java",
+		"startLine": 156,
+		"endLine": 175,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added parameter",
+		"codeElement": "public addDevice(deviceId long, key Object) : void"
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type references : int to references : var in method public removeDevice(deviceId long, key Object) : void from class org.traccar.session.cache.CacheManager",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/traccar/session/cache/CacheManager.java",
+		"startLine": 179,
+		"endLine": 179,
+		"startColumn": 17,
+		"endColumn": 116,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "references : int"
+}, {
+		"filePath": "src/main/java/org/traccar/session/cache/CacheManager.java",
+		"startLine": 180,
+		"endLine": 180,
+		"startColumn": 13,
+		"endColumn": 104,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/traccar/session/cache/CacheManager.java",
+		"startLine": 181,
+		"endLine": 185,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/traccar/session/cache/CacheManager.java",
+		"startLine": 180,
+		"endLine": 180,
+		"startColumn": 17,
+		"endColumn": 94,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "references : var"
+}, {
+		"filePath": "src/main/java/org/traccar/session/cache/CacheManager.java",
+		"startLine": 187,
+		"endLine": 187,
+		"startColumn": 13,
+		"endColumn": 106,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/traccar/session/cache/CacheManager.java",
+		"startLine": 182,
+		"endLine": 186,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Add Parameter",
+	"description": "Add Parameter key : Object in method public removeDevice(deviceId long, key Object) : void from class org.traccar.session.cache.CacheManager",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/traccar/session/cache/CacheManager.java",
+		"startLine": 176,
+		"endLine": 189,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public removeDevice(deviceId long) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/traccar/session/cache/CacheManager.java",
+		"startLine": 177,
+		"endLine": 177,
+		"startColumn": 45,
+		"endColumn": 55,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "added parameter",
+		"codeElement": "key : Object"
+}, {
+		"filePath": "src/main/java/org/traccar/session/cache/CacheManager.java",
+		"startLine": 177,
+		"endLine": 191,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added parameter",
+		"codeElement": "public removeDevice(deviceId long, key Object) : void"
+}]
+}
+]
+},
+{
+	"repository": "https://github.com/traccar/traccar.git",
+	"sha1": "c0cb5bcb96328e82ae9e234593b5a2d1f1f6d4f0",
+	"url": "https://github.com/traccar/traccar/commit/c0cb5bcb96328e82ae9e234593b5a2d1f1f6d4f0",
+	"refactorings": [{
+	"type": "Add Parameter",
+	"description": "Add Parameter cacheManager : CacheManager in method public ProcessingHandler(injector Injector, config Config, cacheManager CacheManager, notificationManager NotificationManager, positionLogger PositionLogger) from class org.traccar.ProcessingHandler",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/traccar/ProcessingHandler.java",
+		"startLine": 86,
+		"endLine": 130,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public ProcessingHandler(injector Injector, config Config, notificationManager NotificationManager, positionLogger PositionLogger)"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/traccar/ProcessingHandler.java",
+		"startLine": 95,
+		"endLine": 95,
+		"startColumn": 13,
+		"endColumn": 38,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "added parameter",
+		"codeElement": "cacheManager : CacheManager"
+}, {
+		"filePath": "src/main/java/org/traccar/ProcessingHandler.java",
+		"startLine": 92,
+		"endLine": 138,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added parameter",
+		"codeElement": "public ProcessingHandler(injector Injector, config Config, cacheManager CacheManager, notificationManager NotificationManager, positionLogger PositionLogger)"
+}]
+}
+]
+},
+{
+	"repository": "https://github.com/traccar/traccar.git",
+	"sha1": "2516088aa5a4bddf343a5e73f1a5652f4cf471b4",
+	"url": "https://github.com/traccar/traccar/commit/2516088aa5a4bddf343a5e73f1a5652f4cf471b4",
+	"refactorings": []
+},
+{
+	"repository": "https://github.com/traccar/traccar.git",
+	"sha1": "a48eaeb384c0b752007b36a6d213996bd13b5aa1",
+	"url": "https://github.com/traccar/traccar/commit/a48eaeb384c0b752007b36a6d213996bd13b5aa1",
+	"refactorings": []
+},
+{
+	"repository": "https://github.com/traccar/traccar.git",
+	"sha1": "e1c750fe7197b4af9739f5bb68589644b548cec0",
+	"url": "https://github.com/traccar/traccar/commit/e1c750fe7197b4af9739f5bb68589644b548cec0",
+	"refactorings": []
+},
+{
+	"repository": "https://github.com/traccar/traccar.git",
+	"sha1": "a5ace5744e07f901b5ef9203050124dbfa887bc6",
+	"url": "https://github.com/traccar/traccar/commit/a5ace5744e07f901b5ef9203050124dbfa887bc6",
+	"refactorings": []
+},
+{
+	"repository": "https://github.com/traccar/traccar.git",
+	"sha1": "8d5727c5fea6edaf255aca13d2d467a5e7ebc499",
+	"url": "https://github.com/traccar/traccar/commit/8d5727c5fea6edaf255aca13d2d467a5e7ebc499",
+	"refactorings": []
+},
+{
+	"repository": "https://github.com/traccar/traccar.git",
+	"sha1": "5c8ab576e1089c8a3aa8840b61b6d21d3e39d333",
+	"url": "https://github.com/traccar/traccar/commit/5c8ab576e1089c8a3aa8840b61b6d21d3e39d333",
+	"refactorings": []
+},
+{
+	"repository": "https://github.com/traccar/traccar.git",
+	"sha1": "5b793d7cc248935b6d81fbd358e2a622f9ef0d10",
+	"url": "https://github.com/traccar/traccar/commit/5b793d7cc248935b6d81fbd358e2a622f9ef0d10",
+	"refactorings": []
+},
+{
+	"repository": "https://github.com/traccar/traccar.git",
+	"sha1": "b1791569e71a39936c5d5d6e96996f55cb671ae4",
+	"url": "https://github.com/traccar/traccar/commit/b1791569e71a39936c5d5d6e96996f55cb671ae4",
+	"refactorings": []
+}]
+}

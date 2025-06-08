@@ -1,0 +1,603 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/traccar/traccar.git",
+	"sha1": "079eaa6ed49813f4050076ac45849f6e4334e45b",
+	"url": "https://github.com/traccar/traccar/commit/079eaa6ed49813f4050076ac45849f6e4334e45b",
+	"refactorings": [{
+	"type": "Change Return Type",
+	"description": "Change Return Type Stream<Notification> to Set<Notification> in method public getDeviceNotifications(deviceId long) : Set<Notification> from class org.traccar.session.cache.CacheManager",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/traccar/session/cache/CacheManager.java",
+		"startLine": 139,
+		"endLine": 139,
+		"startColumn": 12,
+		"endColumn": 32,
+		"codeElementType": "TYPE",
+		"description": "original return type",
+		"codeElement": "Stream<Notification>"
+}, {
+		"filePath": "src/main/java/org/traccar/session/cache/CacheManager.java",
+		"startLine": 139,
+		"endLine": 150,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public getDeviceNotifications(deviceId long) : Stream<Notification>"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/traccar/session/cache/CacheManager.java",
+		"startLine": 139,
+		"endLine": 139,
+		"startColumn": 12,
+		"endColumn": 29,
+		"codeElementType": "TYPE",
+		"description": "changed return type",
+		"codeElement": "Set<Notification>"
+}, {
+		"filePath": "src/main/java/org/traccar/session/cache/CacheManager.java",
+		"startLine": 139,
+		"endLine": 151,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed return type",
+		"codeElement": "public getDeviceNotifications(deviceId long) : Set<Notification>"
+}]
+}
+]
+},
+{
+	"repository": "https://github.com/traccar/traccar.git",
+	"sha1": "2b893df60f62ee8b363cd6dd528c155bb5124c5c",
+	"url": "https://github.com/traccar/traccar/commit/2b893df60f62ee8b363cd6dd528c155bb5124c5c",
+	"refactorings": []
+},
+{
+	"repository": "https://github.com/traccar/traccar.git",
+	"sha1": "a531585474ca9ee7437d2a5b1698d1cf5f507a09",
+	"url": "https://github.com/traccar/traccar/commit/a531585474ca9ee7437d2a5b1698d1cf5f507a09",
+	"refactorings": [{
+	"type": "Add Parameter",
+	"description": "Add Parameter notification : Notification in method public formatMessage(notification Notification, user User, event Event, position Position, templatePath String) : NotificationMessage from class org.traccar.notification.NotificationFormatter",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/traccar/notification/NotificationFormatter.java",
+		"startLine": 47,
+		"endLine": 75,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public formatMessage(user User, event Event, position Position, templatePath String) : NotificationMessage"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/traccar/notification/NotificationFormatter.java",
+		"startLine": 49,
+		"endLine": 49,
+		"startColumn": 13,
+		"endColumn": 38,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "added parameter",
+		"codeElement": "notification : Notification"
+}, {
+		"filePath": "src/main/java/org/traccar/notification/NotificationFormatter.java",
+		"startLine": 48,
+		"endLine": 78,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added parameter",
+		"codeElement": "public formatMessage(notification Notification, user User, event Event, position Position, templatePath String) : NotificationMessage"
+}]
+}
+]
+},
+{
+	"repository": "https://github.com/traccar/traccar.git",
+	"sha1": "72cfe80fb23bb5e1d2aec2f2d2b4cfcd3662a82d",
+	"url": "https://github.com/traccar/traccar/commit/72cfe80fb23bb5e1d2aec2f2d2b4cfcd3662a82d",
+	"refactorings": []
+},
+{
+	"repository": "https://github.com/traccar/traccar.git",
+	"sha1": "acebabc690f78921a1bc10191df092c207393415",
+	"url": "https://github.com/traccar/traccar/commit/acebabc690f78921a1bc10191df092c207393415",
+	"refactorings": []
+},
+{
+	"repository": "https://github.com/traccar/traccar.git",
+	"sha1": "2eb1c791693421607847962cf365847b7ba3dfe2",
+	"url": "https://github.com/traccar/traccar/commit/2eb1c791693421607847962cf365847b7ba3dfe2",
+	"refactorings": []
+},
+{
+	"repository": "https://github.com/traccar/traccar.git",
+	"sha1": "7855762df494ed113210d5d202a13de279b13dcc",
+	"url": "https://github.com/traccar/traccar/commit/7855762df494ed113210d5d202a13de279b13dcc",
+	"refactorings": []
+},
+{
+	"repository": "https://github.com/traccar/traccar.git",
+	"sha1": "79a4cf9355b08e0b306146a94bd65adb5ed963a5",
+	"url": "https://github.com/traccar/traccar/commit/79a4cf9355b08e0b306146a94bd65adb5ed963a5",
+	"refactorings": [{
+	"type": "Extract Variable",
+	"description": "Extract Variable shareEmail : String in method public shareDevice(deviceId long, expiration Date) : String from class org.traccar.api.resource.DeviceResource",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/traccar/api/resource/DeviceResource.java",
+		"startLine": 219,
+		"endLine": 219,
+		"startColumn": 9,
+		"endColumn": 70,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement with the initializer of the extracted variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/traccar/api/resource/DeviceResource.java",
+		"startLine": 217,
+		"endLine": 217,
+		"startColumn": 16,
+		"endColumn": 73,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted variable declaration",
+		"codeElement": "shareEmail : String"
+}, {
+		"filePath": "src/main/java/org/traccar/api/resource/DeviceResource.java",
+		"startLine": 224,
+		"endLine": 224,
+		"startColumn": 13,
+		"endColumn": 40,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement with the name of the extracted variable",
+		"codeElement": null
+}]
+}
+]
+},
+{
+	"repository": "https://github.com/traccar/traccar.git",
+	"sha1": "2eba0bdf8c02036d6761667f0aa022ead9587c11",
+	"url": "https://github.com/traccar/traccar/commit/2eba0bdf8c02036d6761667f0aa022ead9587c11",
+	"refactorings": [{
+	"type": "Extract Variable",
+	"description": "Extract Variable voltage : int in method protected decode(channel Channel, remoteAddress SocketAddress, msg Object) : Object from class org.traccar.protocol.Tlt2hProtocolDecoder",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/traccar/protocol/Tlt2hProtocolDecoder.java",
+		"startLine": 182,
+		"endLine": 182,
+		"startColumn": 25,
+		"endColumn": 84,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement with the initializer of the extracted variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/traccar/protocol/Tlt2hProtocolDecoder.java",
+		"startLine": 214,
+		"endLine": 214,
+		"startColumn": 25,
+		"endColumn": 84,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement with the initializer of the extracted variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/traccar/protocol/Tlt2hProtocolDecoder.java",
+		"startLine": 182,
+		"endLine": 182,
+		"startColumn": 29,
+		"endColumn": 55,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted variable declaration",
+		"codeElement": "voltage : int"
+}, {
+		"filePath": "src/main/java/org/traccar/protocol/Tlt2hProtocolDecoder.java",
+		"startLine": 183,
+		"endLine": 183,
+		"startColumn": 25,
+		"endColumn": 109,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement with the name of the extracted variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/traccar/protocol/Tlt2hProtocolDecoder.java",
+		"startLine": 216,
+		"endLine": 216,
+		"startColumn": 25,
+		"endColumn": 109,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement with the name of the extracted variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Extract Variable",
+	"description": "Extract Variable voltage : int in method protected decode(channel Channel, remoteAddress SocketAddress, msg Object) : Object from class org.traccar.protocol.Tlt2hProtocolDecoder",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/traccar/protocol/Tlt2hProtocolDecoder.java",
+		"startLine": 214,
+		"endLine": 214,
+		"startColumn": 25,
+		"endColumn": 84,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement with the initializer of the extracted variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/traccar/protocol/Tlt2hProtocolDecoder.java",
+		"startLine": 182,
+		"endLine": 182,
+		"startColumn": 25,
+		"endColumn": 84,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement with the initializer of the extracted variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/traccar/protocol/Tlt2hProtocolDecoder.java",
+		"startLine": 215,
+		"endLine": 215,
+		"startColumn": 29,
+		"endColumn": 55,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted variable declaration",
+		"codeElement": "voltage : int"
+}, {
+		"filePath": "src/main/java/org/traccar/protocol/Tlt2hProtocolDecoder.java",
+		"startLine": 216,
+		"endLine": 216,
+		"startColumn": 25,
+		"endColumn": 109,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement with the name of the extracted variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/traccar/protocol/Tlt2hProtocolDecoder.java",
+		"startLine": 183,
+		"endLine": 183,
+		"startColumn": 25,
+		"endColumn": 109,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement with the name of the extracted variable",
+		"codeElement": null
+}]
+}
+]
+},
+{
+	"repository": "https://github.com/traccar/traccar.git",
+	"sha1": "22f45bd129f275b930ab2166a6b76713ca972abf",
+	"url": "https://github.com/traccar/traccar/commit/22f45bd129f275b930ab2166a6b76713ca972abf",
+	"refactorings": []
+},
+{
+	"repository": "https://github.com/traccar/traccar.git",
+	"sha1": "bb8ff944398cd79f2d576f25758ea9dd6c35d384",
+	"url": "https://github.com/traccar/traccar/commit/bb8ff944398cd79f2d576f25758ea9dd6c35d384",
+	"refactorings": [{
+	"type": "Remove Thrown Exception Type",
+	"description": "Remove Thrown Exception Type Exception in method protected decodePosition(deviceSession DeviceSession, content String) : Object from class org.traccar.protocol.StartekProtocolDecoder",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/traccar/protocol/StartekProtocolDecoder.java",
+		"startLine": 156,
+		"endLine": 156,
+		"startColumn": 89,
+		"endColumn": 98,
+		"codeElementType": "TYPE",
+		"description": "removed thrown exception type",
+		"codeElement": "Exception"
+}, {
+		"filePath": "src/main/java/org/traccar/protocol/StartekProtocolDecoder.java",
+		"startLine": 156,
+		"endLine": 256,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "protected decodePosition(deviceSession DeviceSession, content String) : Object"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/traccar/protocol/StartekProtocolDecoder.java",
+		"startLine": 155,
+		"endLine": 255,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed thrown exception type",
+		"codeElement": "private decodePosition(deviceSession DeviceSession, content String) : Object"
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier protected to private in method private decodePosition(deviceSession DeviceSession, content String) : Object from class org.traccar.protocol.StartekProtocolDecoder",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/traccar/protocol/StartekProtocolDecoder.java",
+		"startLine": 156,
+		"endLine": 256,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "protected decodePosition(deviceSession DeviceSession, content String) : Object"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/traccar/protocol/StartekProtocolDecoder.java",
+		"startLine": 155,
+		"endLine": 255,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "private decodePosition(deviceSession DeviceSession, content String) : Object"
+}]
+}
+]
+},
+{
+	"repository": "https://github.com/traccar/traccar.git",
+	"sha1": "77a2b4f5e587f648502f3a72e525b7c960e58c80",
+	"url": "https://github.com/traccar/traccar/commit/77a2b4f5e587f648502f3a72e525b7c960e58c80",
+	"refactorings": []
+},
+{
+	"repository": "https://github.com/traccar/traccar.git",
+	"sha1": "7374a69f188918cbd247047fcb5fe09dabffa400",
+	"url": "https://github.com/traccar/traccar/commit/7374a69f188918cbd247047fcb5fe09dabffa400",
+	"refactorings": []
+},
+{
+	"repository": "https://github.com/traccar/traccar.git",
+	"sha1": "8d2accad7071321c65055d8fb9e11d2a6a586b02",
+	"url": "https://github.com/traccar/traccar/commit/8d2accad7071321c65055d8fb9e11d2a6a586b02",
+	"refactorings": []
+},
+{
+	"repository": "https://github.com/traccar/traccar.git",
+	"sha1": "d4d66200bf1de4a1932765690ffb9eedd58f0900",
+	"url": "https://github.com/traccar/traccar/commit/d4d66200bf1de4a1932765690ffb9eedd58f0900",
+	"refactorings": []
+},
+{
+	"repository": "https://github.com/traccar/traccar.git",
+	"sha1": "4d9d78496a0260c6cb43211065a8aafe8cc7e7a9",
+	"url": "https://github.com/traccar/traccar/commit/4d9d78496a0260c6cb43211065a8aafe8cc7e7a9",
+	"refactorings": []
+},
+{
+	"repository": "https://github.com/traccar/traccar.git",
+	"sha1": "29b8caa047b3b1468eb8b21e76f5df8b5c2f6ddb",
+	"url": "https://github.com/traccar/traccar/commit/29b8caa047b3b1468eb8b21e76f5df8b5c2f6ddb",
+	"refactorings": [{
+	"type": "Replace Pipeline With Loop",
+	"description": "Replace Pipeline With Loop var services=Stream.of(ServerManager.class,WebServer.class,ScheduleManager.class,BroadcastService.class).map(injector::getInstance).filter(Objects::nonNull).collect(Collectors.toList()); with for(clazz: List.of(ScheduleManager.class,ServerManager.class,WebServer.class,BroadcastService.class)) in method public run(configFile String) : void from class org.traccar.Main",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/traccar/Main.java",
+		"startLine": 129,
+		"endLine": 133,
+		"startColumn": 13,
+		"endColumn": 51,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original code",
+		"codeElement": "var services=Stream.of(ServerManager.class,WebServer.class,ScheduleManager.class,BroadcastService.class).map(injector::getInstance).filter(Objects::nonNull).collect(Collectors.toList());\n"
+}, {
+		"filePath": "src/main/java/org/traccar/Main.java",
+		"startLine": 118,
+		"endLine": 156,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public run(configFile String) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/traccar/Main.java",
+		"startLine": 124,
+		"endLine": 124,
+		"startColumn": 17,
+		"endColumn": 59,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "loop code",
+		"codeElement": "var service=injector.getInstance(clazz);\n"
+}, {
+		"filePath": "src/main/java/org/traccar/Main.java",
+		"startLine": 122,
+		"endLine": 129,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "ENHANCED_FOR_STATEMENT",
+		"description": "loop code",
+		"codeElement": "for(clazz: List.of(ScheduleManager.class,ServerManager.class,WebServer.class,BroadcastService.class))"
+}, {
+		"filePath": "src/main/java/org/traccar/Main.java",
+		"startLine": 114,
+		"endLine": 148,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with introduced loop",
+		"codeElement": "public run(configFile String) : void"
+}]
+},
+{
+	"type": "Inline Variable",
+	"description": "Inline Variable tasks : var in method public start() : void from class org.traccar.schedule.ScheduleManager",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/traccar/schedule/ScheduleManager.java",
+		"startLine": 41,
+		"endLine": 47,
+		"startColumn": 13,
+		"endColumn": 39,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "inlined variable declaration",
+		"codeElement": "tasks : var"
+}, {
+		"filePath": "src/main/java/org/traccar/schedule/ScheduleManager.java",
+		"startLine": 48,
+		"endLine": 48,
+		"startColumn": 9,
+		"endColumn": 78,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement with the name of the inlined variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/traccar/schedule/ScheduleManager.java",
+		"startLine": 41,
+		"endLine": 49,
+		"startColumn": 9,
+		"endColumn": 88,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement with the initializer of the inlined variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Extract Method",
+	"description": "Extract Method private notifyWatchdog() : void extracted from public run() : void in class org.traccar.schedule.TaskHealthCheck",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/traccar/schedule/TaskHealthCheck.java",
+		"startLine": 77,
+		"endLine": 89,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "public run() : void"
+}, {
+		"filePath": "src/main/java/org/traccar/schedule/TaskHealthCheck.java",
+		"startLine": 82,
+		"endLine": 82,
+		"startColumn": 13,
+		"endColumn": 61,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/traccar/schedule/TaskHealthCheck.java",
+		"startLine": 84,
+		"endLine": 84,
+		"startColumn": 17,
+		"endColumn": 69,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/traccar/schedule/TaskHealthCheck.java",
+		"startLine": 83,
+		"endLine": 85,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "IF_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/traccar/schedule/TaskHealthCheck.java",
+		"startLine": 83,
+		"endLine": 85,
+		"startColumn": 29,
+		"endColumn": 14,
+		"codeElementType": "BLOCK",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/traccar/schedule/TaskHealthCheck.java",
+		"startLine": 94,
+		"endLine": 99,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "private notifyWatchdog() : void"
+}, {
+		"filePath": "src/main/java/org/traccar/schedule/TaskHealthCheck.java",
+		"startLine": 95,
+		"endLine": 95,
+		"startColumn": 9,
+		"endColumn": 57,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/traccar/schedule/TaskHealthCheck.java",
+		"startLine": 97,
+		"endLine": 97,
+		"startColumn": 13,
+		"endColumn": 65,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/traccar/schedule/TaskHealthCheck.java",
+		"startLine": 96,
+		"endLine": 98,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "IF_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/traccar/schedule/TaskHealthCheck.java",
+		"startLine": 96,
+		"endLine": 98,
+		"startColumn": 25,
+		"endColumn": 10,
+		"codeElementType": "BLOCK",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/traccar/schedule/TaskHealthCheck.java",
+		"startLine": 79,
+		"endLine": 92,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "public run() : void"
+}, {
+		"filePath": "src/main/java/org/traccar/schedule/TaskHealthCheck.java",
+		"startLine": 85,
+		"endLine": 85,
+		"startColumn": 17,
+		"endColumn": 33,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "notifyWatchdog()"
+}, {
+		"filePath": "src/main/java/org/traccar/schedule/TaskHealthCheck.java",
+		"startLine": 90,
+		"endLine": 90,
+		"startColumn": 13,
+		"endColumn": 29,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "notifyWatchdog()"
+}]
+}
+]
+},
+{
+	"repository": "https://github.com/traccar/traccar.git",
+	"sha1": "97f0ed1d19bc638ff5866bcdf5163f89801859b0",
+	"url": "https://github.com/traccar/traccar/commit/97f0ed1d19bc638ff5866bcdf5163f89801859b0",
+	"refactorings": []
+},
+{
+	"repository": "https://github.com/traccar/traccar.git",
+	"sha1": "29d50ef59b59026925b580c72c27aed09ab78500",
+	"url": "https://github.com/traccar/traccar/commit/29d50ef59b59026925b580c72c27aed09ab78500",
+	"refactorings": []
+},
+{
+	"repository": "https://github.com/traccar/traccar.git",
+	"sha1": "d1473309d3338c2f247e4d80f5b1076da4882253",
+	"url": "https://github.com/traccar/traccar/commit/d1473309d3338c2f247e4d80f5b1076da4882253",
+	"refactorings": []
+},
+{
+	"repository": "https://github.com/traccar/traccar.git",
+	"sha1": "b098be7f6245dcd2c00cc8457174e9fe7733d3b2",
+	"url": "https://github.com/traccar/traccar/commit/b098be7f6245dcd2c00cc8457174e9fe7733d3b2",
+	"refactorings": []
+}]
+}

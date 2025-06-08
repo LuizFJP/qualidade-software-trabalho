@@ -1,0 +1,3729 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/traccar/traccar.git",
+	"sha1": "1a8766d8d7a6635d90d11a80935cde256d8a6dbb",
+	"url": "https://github.com/traccar/traccar/commit/1a8766d8d7a6635d90d11a80935cde256d8a6dbb",
+	"refactorings": []
+},
+{
+	"repository": "https://github.com/traccar/traccar.git",
+	"sha1": "503f46939b8d1ac2d7f3955f3f50e314d400f006",
+	"url": "https://github.com/traccar/traccar/commit/503f46939b8d1ac2d7f3955f3f50e314d400f006",
+	"refactorings": []
+},
+{
+	"repository": "https://github.com/traccar/traccar.git",
+	"sha1": "471de2a758b063cc8d6dd5321cbc459c70b88fd8",
+	"url": "https://github.com/traccar/traccar/commit/471de2a758b063cc8d6dd5321cbc459c70b88fd8",
+	"refactorings": [{
+	"type": "Extract Variable",
+	"description": "Extract Variable cacheValue : var in method public getDeviceObjects(deviceId long, clazz Class<T>) : List<T> from class org.traccar.session.cache.CacheManager",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/traccar/session/cache/CacheManager.java",
+		"startLine": 105,
+		"endLine": 105,
+		"startColumn": 32,
+		"endColumn": 86,
+		"codeElementType": "LAMBDA_EXPRESSION_BODY",
+		"description": "statement with the initializer of the extracted variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/traccar/session/cache/CacheManager.java",
+		"startLine": 107,
+		"endLine": 107,
+		"startColumn": 29,
+		"endColumn": 82,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted variable declaration",
+		"codeElement": "cacheValue : var"
+}, {
+		"filePath": "src/main/java/org/traccar/session/cache/CacheManager.java",
+		"startLine": 108,
+		"endLine": 108,
+		"startColumn": 25,
+		"endColumn": 85,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement with the name of the extracted variable",
+		"codeElement": null
+}]
+}
+]
+},
+{
+	"repository": "https://github.com/traccar/traccar.git",
+	"sha1": "bcd0d17008c2c3e3ccede34a618feac53b199d02",
+	"url": "https://github.com/traccar/traccar/commit/bcd0d17008c2c3e3ccede34a618feac53b199d02",
+	"refactorings": [{
+	"type": "Extract Method",
+	"description": "Extract Method private decodeId(id ByteBuf) : String extracted from protected decode(channel Channel, remoteAddress SocketAddress, msg Object) : Object in class org.traccar.protocol.HuabaoProtocolDecoder",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/traccar/protocol/HuabaoProtocolDecoder.java",
+		"startLine": 163,
+		"endLine": 289,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "protected decode(channel Channel, remoteAddress SocketAddress, msg Object) : Object"
+}, {
+		"filePath": "src/main/java/org/traccar/protocol/HuabaoProtocolDecoder.java",
+		"startLine": 211,
+		"endLine": 211,
+		"startColumn": 17,
+		"endColumn": 98,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/traccar/protocol/HuabaoProtocolDecoder.java",
+		"startLine": 163,
+		"endLine": 172,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "private decodeId(id ByteBuf) : String"
+}, {
+		"filePath": "src/main/java/org/traccar/protocol/HuabaoProtocolDecoder.java",
+		"startLine": 164,
+		"endLine": 164,
+		"startColumn": 9,
+		"endColumn": 49,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/traccar/protocol/HuabaoProtocolDecoder.java",
+		"startLine": 174,
+		"endLine": 300,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "protected decode(channel Channel, remoteAddress SocketAddress, msg Object) : Object"
+}, {
+		"filePath": "src/main/java/org/traccar/protocol/HuabaoProtocolDecoder.java",
+		"startLine": 207,
+		"endLine": 207,
+		"startColumn": 80,
+		"endColumn": 92,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "decodeId(id)"
+}, {
+		"filePath": "src/main/java/org/traccar/protocol/HuabaoProtocolDecoder.java",
+		"startLine": 222,
+		"endLine": 222,
+		"startColumn": 37,
+		"endColumn": 49,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "decodeId(id)"
+}, {
+		"filePath": "src/main/java/org/traccar/protocol/HuabaoProtocolDecoder.java",
+		"startLine": 166,
+		"endLine": 166,
+		"startColumn": 13,
+		"endColumn": 27,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/traccar/protocol/HuabaoProtocolDecoder.java",
+		"startLine": 168,
+		"endLine": 168,
+		"startColumn": 13,
+		"endColumn": 48,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/traccar/protocol/HuabaoProtocolDecoder.java",
+		"startLine": 169,
+		"endLine": 169,
+		"startColumn": 13,
+		"endColumn": 56,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/traccar/protocol/HuabaoProtocolDecoder.java",
+		"startLine": 170,
+		"endLine": 170,
+		"startColumn": 13,
+		"endColumn": 41,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/traccar/protocol/HuabaoProtocolDecoder.java",
+		"startLine": 165,
+		"endLine": 167,
+		"startColumn": 39,
+		"endColumn": 10,
+		"codeElementType": "BLOCK",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/traccar/protocol/HuabaoProtocolDecoder.java",
+		"startLine": 167,
+		"endLine": 171,
+		"startColumn": 16,
+		"endColumn": 10,
+		"codeElementType": "BLOCK",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/traccar/protocol/HuabaoProtocolDecoder.java",
+		"startLine": 165,
+		"endLine": 171,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "IF_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}]
+}
+]
+},
+{
+	"repository": "https://github.com/traccar/traccar.git",
+	"sha1": "205ed7965ae97ee6cf14deb8ec4dc94cdae75dfe",
+	"url": "https://github.com/traccar/traccar/commit/205ed7965ae97ee6cf14deb8ec4dc94cdae75dfe",
+	"refactorings": [{
+	"type": "Extract Variable",
+	"description": "Extract Variable response : String in method protected decode(channel Channel, remoteAddress SocketAddress, msg Object) : Object from class org.traccar.protocol.RfTrackProtocolDecoder",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/traccar/protocol/RfTrackProtocolDecoder.java",
+		"startLine": 111,
+		"endLine": 111,
+		"startColumn": 9,
+		"endColumn": 107,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement with the initializer of the extracted variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/traccar/protocol/RfTrackProtocolDecoder.java",
+		"startLine": 112,
+		"endLine": 112,
+		"startColumn": 16,
+		"endColumn": 31,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted variable declaration",
+		"codeElement": "response : String"
+}, {
+		"filePath": "src/main/java/org/traccar/protocol/RfTrackProtocolDecoder.java",
+		"startLine": 116,
+		"endLine": 116,
+		"startColumn": 9,
+		"endColumn": 111,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement with the name of the extracted variable",
+		"codeElement": null
+}]
+}
+]
+},
+{
+	"repository": "https://github.com/traccar/traccar.git",
+	"sha1": "525fb440430343a73a8ed402677fa24c01262372",
+	"url": "https://github.com/traccar/traccar/commit/525fb440430343a73a8ed402677fa24c01262372",
+	"refactorings": [{
+	"type": "Extract Variable",
+	"description": "Extract Variable battery : int in method protected decode(channel Channel, remoteAddress SocketAddress, msg Object) : Object from class org.traccar.protocol.RfTrackProtocolDecoder",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/traccar/protocol/RfTrackProtocolDecoder.java",
+		"startLine": 76,
+		"endLine": 76,
+		"startColumn": 25,
+		"endColumn": 98,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement with the initializer of the extracted variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/traccar/protocol/RfTrackProtocolDecoder.java",
+		"startLine": 76,
+		"endLine": 76,
+		"startColumn": 29,
+		"endColumn": 62,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted variable declaration",
+		"codeElement": "battery : int"
+}, {
+		"filePath": "src/main/java/org/traccar/protocol/RfTrackProtocolDecoder.java",
+		"startLine": 77,
+		"endLine": 77,
+		"startColumn": 25,
+		"endColumn": 82,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement with the name of the extracted variable",
+		"codeElement": null
+}]
+}
+]
+},
+{
+	"repository": "https://github.com/traccar/traccar.git",
+	"sha1": "2e0cdf2cec9be08392be2ae8826e14bc757db186",
+	"url": "https://github.com/traccar/traccar/commit/2e0cdf2cec9be08392be2ae8826e14bc757db186",
+	"refactorings": []
+},
+{
+	"repository": "https://github.com/traccar/traccar.git",
+	"sha1": "bb78e15201e88fba4c71bb08d98d0f0bc5acecbf",
+	"url": "https://github.com/traccar/traccar/commit/bb78e15201e88fba4c71bb08d98d0f0bc5acecbf",
+	"refactorings": []
+},
+{
+	"repository": "https://github.com/traccar/traccar.git",
+	"sha1": "75f1bed91c1669e1442c2ab9ea9af0b5754db4db",
+	"url": "https://github.com/traccar/traccar/commit/75f1bed91c1669e1442c2ab9ea9af0b5754db4db",
+	"refactorings": []
+},
+{
+	"repository": "https://github.com/traccar/traccar.git",
+	"sha1": "ab9ff21bec23723132ed8183979be22b67c1cb3c",
+	"url": "https://github.com/traccar/traccar/commit/ab9ff21bec23723132ed8183979be22b67c1cb3c",
+	"refactorings": []
+},
+{
+	"repository": "https://github.com/traccar/traccar.git",
+	"sha1": "dfaef4eca85a065e35c360fd6f712b2ad62f2e7a",
+	"url": "https://github.com/traccar/traccar/commit/dfaef4eca85a065e35c360fd6f712b2ad62f2e7a",
+	"refactorings": []
+},
+{
+	"repository": "https://github.com/traccar/traccar.git",
+	"sha1": "c801d33f44ae346d01e19e47a3b97c8405f4d5b4",
+	"url": "https://github.com/traccar/traccar/commit/c801d33f44ae346d01e19e47a3b97c8405f4d5b4",
+	"refactorings": []
+},
+{
+	"repository": "https://github.com/traccar/traccar.git",
+	"sha1": "acedd28b8584a18022d9e2343558f9acbad1666f",
+	"url": "https://github.com/traccar/traccar/commit/acedd28b8584a18022d9e2343558f9acbad1666f",
+	"refactorings": [{
+	"type": "Remove Parameter",
+	"description": "Remove Parameter batteryLevel : boolean in method private decodeStatus(position Position, buf ByteBuf, batteryLevel boolean) : void from class org.traccar.protocol.Gt06ProtocolDecoder",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/traccar/protocol/Gt06ProtocolDecoder.java",
+		"startLine": 349,
+		"endLine": 349,
+		"startColumn": 63,
+		"endColumn": 83,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "removed parameter",
+		"codeElement": "batteryLevel : boolean"
+}, {
+		"filePath": "src/main/java/org/traccar/protocol/Gt06ProtocolDecoder.java",
+		"startLine": 349,
+		"endLine": 391,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private decodeStatus(position Position, buf ByteBuf, batteryLevel boolean) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/traccar/protocol/Gt06ProtocolDecoder.java",
+		"startLine": 350,
+		"endLine": 385,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed parameter",
+		"codeElement": "private decodeStatus(position Position, buf ByteBuf) : void"
+}]
+}
+]
+},
+{
+	"repository": "https://github.com/traccar/traccar.git",
+	"sha1": "4c8e98ed409df6e12128591eb1d8d0cf0856deb7",
+	"url": "https://github.com/traccar/traccar/commit/4c8e98ed409df6e12128591eb1d8d0cf0856deb7",
+	"refactorings": [{
+	"type": "Extract Variable",
+	"description": "Extract Variable email : String in method public login(email String, password String) : User from class org.traccar.api.security.LoginService",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/traccar/api/security/LoginService.java",
+		"startLine": 69,
+		"endLine": 73,
+		"startColumn": 9,
+		"endColumn": 67,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement with the initializer of the extracted variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/traccar/api/security/LoginService.java",
+		"startLine": 68,
+		"endLine": 68,
+		"startColumn": 23,
+		"endColumn": 35,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "extracted variable declaration",
+		"codeElement": "email : String"
+}, {
+		"filePath": "src/main/java/org/traccar/api/security/LoginService.java",
+		"startLine": 70,
+		"endLine": 74,
+		"startColumn": 9,
+		"endColumn": 65,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement with the name of the extracted variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Add Method Annotation",
+	"description": "Add Method Annotation @QueryIgnore in method public getStatus() : String from class org.traccar.model.Device",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/traccar/model/Device.java",
+		"startLine": 55,
+		"endLine": 57,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public getStatus() : String"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/traccar/model/Device.java",
+		"startLine": 55,
+		"endLine": 55,
+		"startColumn": 5,
+		"endColumn": 17,
+		"codeElementType": "ANNOTATION",
+		"description": "added annotation",
+		"codeElement": "@QueryIgnore"
+}, {
+		"filePath": "src/main/java/org/traccar/model/Device.java",
+		"startLine": 55,
+		"endLine": 58,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added annotation",
+		"codeElement": "public getStatus() : String"
+}]
+},
+{
+	"type": "Remove Method Annotation",
+	"description": "Remove Method Annotation @QueryIgnore in method public setStatus(status String) : void from class org.traccar.model.Device",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/traccar/model/Device.java",
+		"startLine": 59,
+		"endLine": 59,
+		"startColumn": 5,
+		"endColumn": 17,
+		"codeElementType": "ANNOTATION",
+		"description": "removed annotation",
+		"codeElement": "@QueryIgnore"
+}, {
+		"filePath": "src/main/java/org/traccar/model/Device.java",
+		"startLine": 59,
+		"endLine": 62,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public setStatus(status String) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/traccar/model/Device.java",
+		"startLine": 60,
+		"endLine": 62,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed annotation",
+		"codeElement": "public setStatus(status String) : void"
+}]
+},
+{
+	"type": "Add Method Annotation",
+	"description": "Add Method Annotation @QueryIgnore in method public getLastUpdate() : Date from class org.traccar.model.Device",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/traccar/model/Device.java",
+		"startLine": 66,
+		"endLine": 68,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public getLastUpdate() : Date"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/traccar/model/Device.java",
+		"startLine": 66,
+		"endLine": 66,
+		"startColumn": 5,
+		"endColumn": 17,
+		"codeElementType": "ANNOTATION",
+		"description": "added annotation",
+		"codeElement": "@QueryIgnore"
+}, {
+		"filePath": "src/main/java/org/traccar/model/Device.java",
+		"startLine": 66,
+		"endLine": 69,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added annotation",
+		"codeElement": "public getLastUpdate() : Date"
+}]
+},
+{
+	"type": "Remove Method Annotation",
+	"description": "Remove Method Annotation @QueryIgnore in method public setLastUpdate(lastUpdate Date) : void from class org.traccar.model.Device",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/traccar/model/Device.java",
+		"startLine": 70,
+		"endLine": 70,
+		"startColumn": 5,
+		"endColumn": 17,
+		"codeElementType": "ANNOTATION",
+		"description": "removed annotation",
+		"codeElement": "@QueryIgnore"
+}, {
+		"filePath": "src/main/java/org/traccar/model/Device.java",
+		"startLine": 70,
+		"endLine": 73,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public setLastUpdate(lastUpdate Date) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/traccar/model/Device.java",
+		"startLine": 71,
+		"endLine": 73,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed annotation",
+		"codeElement": "public setLastUpdate(lastUpdate Date) : void"
+}]
+},
+{
+	"type": "Remove Method Annotation",
+	"description": "Remove Method Annotation @QueryIgnore in method public setPositionId(positionId long) : void from class org.traccar.model.Device",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/traccar/model/Device.java",
+		"startLine": 82,
+		"endLine": 82,
+		"startColumn": 5,
+		"endColumn": 17,
+		"codeElementType": "ANNOTATION",
+		"description": "removed annotation",
+		"codeElement": "@QueryIgnore"
+}, {
+		"filePath": "src/main/java/org/traccar/model/Device.java",
+		"startLine": 82,
+		"endLine": 85,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public setPositionId(positionId long) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/traccar/model/Device.java",
+		"startLine": 82,
+		"endLine": 84,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed annotation",
+		"codeElement": "public setPositionId(positionId long) : void"
+}]
+},
+{
+	"type": "Add Method Annotation",
+	"description": "Add Method Annotation @QueryIgnore in method public getGeofenceIds() : List<Long> from class org.traccar.model.Device",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/traccar/model/Device.java",
+		"startLine": 89,
+		"endLine": 91,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public getGeofenceIds() : List<Long>"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/traccar/model/Device.java",
+		"startLine": 88,
+		"endLine": 88,
+		"startColumn": 5,
+		"endColumn": 17,
+		"codeElementType": "ANNOTATION",
+		"description": "added annotation",
+		"codeElement": "@QueryIgnore"
+}, {
+		"filePath": "src/main/java/org/traccar/model/Device.java",
+		"startLine": 88,
+		"endLine": 91,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added annotation",
+		"codeElement": "public getGeofenceIds() : List<Long>"
+}]
+},
+{
+	"type": "Remove Method Annotation",
+	"description": "Remove Method Annotation @QueryIgnore in method public setGeofenceIds(geofenceIds List<? extends Number>) : void from class org.traccar.model.Device",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/traccar/model/Device.java",
+		"startLine": 93,
+		"endLine": 93,
+		"startColumn": 5,
+		"endColumn": 17,
+		"codeElementType": "ANNOTATION",
+		"description": "removed annotation",
+		"codeElement": "@QueryIgnore"
+}, {
+		"filePath": "src/main/java/org/traccar/model/Device.java",
+		"startLine": 93,
+		"endLine": 100,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public setGeofenceIds(geofenceIds List<? extends Number>) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/traccar/model/Device.java",
+		"startLine": 93,
+		"endLine": 99,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed annotation",
+		"codeElement": "public setGeofenceIds(geofenceIds List<? extends Number>) : void"
+}]
+},
+{
+	"type": "Extract Variable",
+	"description": "Extract Variable columns : List<String> in method public addObject(entity T, request Request) : long from class org.traccar.storage.DatabaseStorage",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/traccar/storage/DatabaseStorage.java",
+		"startLine": 82,
+		"endLine": 82,
+		"startColumn": 9,
+		"endColumn": 93,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement with the initializer of the extracted variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/traccar/storage/DatabaseStorage.java",
+		"startLine": 84,
+		"endLine": 84,
+		"startColumn": 9,
+		"endColumn": 99,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement with the initializer of the extracted variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/traccar/storage/DatabaseStorage.java",
+		"startLine": 79,
+		"endLine": 79,
+		"startColumn": 22,
+		"endColumn": 89,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted variable declaration",
+		"codeElement": "columns : List<String>"
+}, {
+		"filePath": "src/main/java/org/traccar/storage/DatabaseStorage.java",
+		"startLine": 83,
+		"endLine": 83,
+		"startColumn": 9,
+		"endColumn": 54,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement with the name of the extracted variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/traccar/storage/DatabaseStorage.java",
+		"startLine": 85,
+		"endLine": 85,
+		"startColumn": 9,
+		"endColumn": 60,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement with the name of the extracted variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Extract Variable",
+	"description": "Extract Variable columns : List<String> in method public updateObject(entity T, request Request) : void from class org.traccar.storage.DatabaseStorage",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/traccar/storage/DatabaseStorage.java",
+		"startLine": 100,
+		"endLine": 100,
+		"startColumn": 9,
+		"endColumn": 106,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement with the initializer of the extracted variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/traccar/storage/DatabaseStorage.java",
+		"startLine": 98,
+		"endLine": 98,
+		"startColumn": 22,
+		"endColumn": 89,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted variable declaration",
+		"codeElement": "columns : List<String>"
+}, {
+		"filePath": "src/main/java/org/traccar/storage/DatabaseStorage.java",
+		"startLine": 102,
+		"endLine": 102,
+		"startColumn": 9,
+		"endColumn": 67,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement with the name of the extracted variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type columns : Columns to columns : List<String> in method private formatColumns(columns List<String>, mapper Function<String,String>) : String from class org.traccar.storage.DatabaseStorage",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/traccar/storage/DatabaseStorage.java",
+		"startLine": 234,
+		"endLine": 234,
+		"startColumn": 13,
+		"endColumn": 28,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "columns : Columns"
+}, {
+		"filePath": "src/main/java/org/traccar/storage/DatabaseStorage.java",
+		"startLine": 235,
+		"endLine": 235,
+		"startColumn": 9,
+		"endColumn": 103,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/traccar/storage/DatabaseStorage.java",
+		"startLine": 233,
+		"endLine": 233,
+		"startColumn": 34,
+		"endColumn": 54,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "columns : List<String>"
+}, {
+		"filePath": "src/main/java/org/traccar/storage/DatabaseStorage.java",
+		"startLine": 234,
+		"endLine": 234,
+		"startColumn": 9,
+		"endColumn": 79,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Remove Parameter",
+	"description": "Remove Parameter clazz : Class<?> in method private formatColumns(columns Columns, clazz Class<?>, type String, mapper Function<String,String>) : String from class org.traccar.storage.DatabaseStorage",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/traccar/storage/DatabaseStorage.java",
+		"startLine": 234,
+		"endLine": 234,
+		"startColumn": 30,
+		"endColumn": 44,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "removed parameter",
+		"codeElement": "clazz : Class<?>"
+}, {
+		"filePath": "src/main/java/org/traccar/storage/DatabaseStorage.java",
+		"startLine": 233,
+		"endLine": 236,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private formatColumns(columns Columns, clazz Class<?>, type String, mapper Function<String,String>) : String"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/traccar/storage/DatabaseStorage.java",
+		"startLine": 233,
+		"endLine": 235,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed parameter",
+		"codeElement": "private formatColumns(columns List<String>, mapper Function<String,String>) : String"
+}]
+},
+{
+	"type": "Remove Parameter",
+	"description": "Remove Parameter type : String in method private formatColumns(columns Columns, clazz Class<?>, type String, mapper Function<String,String>) : String from class org.traccar.storage.DatabaseStorage",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/traccar/storage/DatabaseStorage.java",
+		"startLine": 234,
+		"endLine": 234,
+		"startColumn": 46,
+		"endColumn": 57,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "removed parameter",
+		"codeElement": "type : String"
+}, {
+		"filePath": "src/main/java/org/traccar/storage/DatabaseStorage.java",
+		"startLine": 233,
+		"endLine": 236,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private formatColumns(columns Columns, clazz Class<?>, type String, mapper Function<String,String>) : String"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/traccar/storage/DatabaseStorage.java",
+		"startLine": 233,
+		"endLine": 235,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed parameter",
+		"codeElement": "private formatColumns(columns List<String>, mapper Function<String,String>) : String"
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type error : IllegalAccessException|InvocationTargetException|JsonProcessingException to e : ReflectiveOperationException|JsonProcessingException in method public setObject(object Object, columns List<String>) : QueryBuilder from class org.traccar.storage.QueryBuilder",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/traccar/storage/QueryBuilder.java",
+		"startLine": 312,
+		"endLine": 312,
+		"startColumn": 26,
+		"endColumn": 108,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "error : IllegalAccessException|InvocationTargetException|JsonProcessingException"
+}, {
+		"filePath": "src/main/java/org/traccar/storage/QueryBuilder.java",
+		"startLine": 313,
+		"endLine": 313,
+		"startColumn": 21,
+		"endColumn": 62,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/traccar/storage/QueryBuilder.java",
+		"startLine": 312,
+		"endLine": 314,
+		"startColumn": 19,
+		"endColumn": 18,
+		"codeElementType": "CATCH_CLAUSE",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/traccar/storage/QueryBuilder.java",
+		"startLine": 312,
+		"endLine": 312,
+		"startColumn": 18,
+		"endColumn": 74,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "e : ReflectiveOperationException|JsonProcessingException"
+}, {
+		"filePath": "src/main/java/org/traccar/storage/QueryBuilder.java",
+		"startLine": 313,
+		"endLine": 313,
+		"startColumn": 13,
+		"endColumn": 48,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/traccar/storage/QueryBuilder.java",
+		"startLine": 312,
+		"endLine": 314,
+		"startColumn": 11,
+		"endColumn": 10,
+		"codeElementType": "CATCH_CLAUSE",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Rename Variable",
+	"description": "Rename Variable name : String to column : String in method public setObject(object Object, columns List<String>) : QueryBuilder from class org.traccar.storage.QueryBuilder",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/traccar/storage/QueryBuilder.java",
+		"startLine": 293,
+		"endLine": 293,
+		"startColumn": 24,
+		"endColumn": 60,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "name : String"
+}, {
+		"filePath": "src/main/java/org/traccar/storage/QueryBuilder.java",
+		"startLine": 296,
+		"endLine": 296,
+		"startColumn": 25,
+		"endColumn": 75,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/traccar/storage/QueryBuilder.java",
+		"startLine": 298,
+		"endLine": 298,
+		"startColumn": 25,
+		"endColumn": 75,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/traccar/storage/QueryBuilder.java",
+		"startLine": 300,
+		"endLine": 300,
+		"startColumn": 25,
+		"endColumn": 90,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/traccar/storage/QueryBuilder.java",
+		"startLine": 302,
+		"endLine": 302,
+		"startColumn": 25,
+		"endColumn": 73,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/traccar/storage/QueryBuilder.java",
+		"startLine": 304,
+		"endLine": 304,
+		"startColumn": 25,
+		"endColumn": 73,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/traccar/storage/QueryBuilder.java",
+		"startLine": 306,
+		"endLine": 306,
+		"startColumn": 25,
+		"endColumn": 69,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/traccar/storage/QueryBuilder.java",
+		"startLine": 308,
+		"endLine": 308,
+		"startColumn": 25,
+		"endColumn": 71,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/traccar/storage/QueryBuilder.java",
+		"startLine": 310,
+		"endLine": 310,
+		"startColumn": 25,
+		"endColumn": 97,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/traccar/storage/QueryBuilder.java",
+		"startLine": 291,
+		"endLine": 291,
+		"startColumn": 18,
+		"endColumn": 31,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "column : String"
+}, {
+		"filePath": "src/main/java/org/traccar/storage/QueryBuilder.java",
+		"startLine": 295,
+		"endLine": 295,
+		"startColumn": 21,
+		"endColumn": 73,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/traccar/storage/QueryBuilder.java",
+		"startLine": 297,
+		"endLine": 297,
+		"startColumn": 21,
+		"endColumn": 73,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/traccar/storage/QueryBuilder.java",
+		"startLine": 299,
+		"endLine": 299,
+		"startColumn": 21,
+		"endColumn": 90,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/traccar/storage/QueryBuilder.java",
+		"startLine": 301,
+		"endLine": 301,
+		"startColumn": 21,
+		"endColumn": 71,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/traccar/storage/QueryBuilder.java",
+		"startLine": 303,
+		"endLine": 303,
+		"startColumn": 21,
+		"endColumn": 71,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/traccar/storage/QueryBuilder.java",
+		"startLine": 305,
+		"endLine": 305,
+		"startColumn": 21,
+		"endColumn": 67,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/traccar/storage/QueryBuilder.java",
+		"startLine": 307,
+		"endLine": 307,
+		"startColumn": 21,
+		"endColumn": 69,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/traccar/storage/QueryBuilder.java",
+		"startLine": 309,
+		"endLine": 309,
+		"startColumn": 21,
+		"endColumn": 95,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Rename Variable",
+	"description": "Rename Variable error : IllegalAccessException|InvocationTargetException|JsonProcessingException to e : ReflectiveOperationException|JsonProcessingException in method public setObject(object Object, columns List<String>) : QueryBuilder from class org.traccar.storage.QueryBuilder",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/traccar/storage/QueryBuilder.java",
+		"startLine": 312,
+		"endLine": 312,
+		"startColumn": 26,
+		"endColumn": 108,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "error : IllegalAccessException|InvocationTargetException|JsonProcessingException"
+}, {
+		"filePath": "src/main/java/org/traccar/storage/QueryBuilder.java",
+		"startLine": 313,
+		"endLine": 313,
+		"startColumn": 21,
+		"endColumn": 62,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/traccar/storage/QueryBuilder.java",
+		"startLine": 312,
+		"endLine": 314,
+		"startColumn": 19,
+		"endColumn": 18,
+		"codeElementType": "CATCH_CLAUSE",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/traccar/storage/QueryBuilder.java",
+		"startLine": 312,
+		"endLine": 312,
+		"startColumn": 18,
+		"endColumn": 74,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "e : ReflectiveOperationException|JsonProcessingException"
+}, {
+		"filePath": "src/main/java/org/traccar/storage/QueryBuilder.java",
+		"startLine": 313,
+		"endLine": 313,
+		"startColumn": 13,
+		"endColumn": 48,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/traccar/storage/QueryBuilder.java",
+		"startLine": 312,
+		"endLine": 314,
+		"startColumn": 11,
+		"endColumn": 10,
+		"codeElementType": "CATCH_CLAUSE",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Add Parameter",
+	"description": "Add Parameter columns : List<String> in method public setObject(object Object, columns List<String>) : QueryBuilder from class org.traccar.storage.QueryBuilder",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/traccar/storage/QueryBuilder.java",
+		"startLine": 286,
+		"endLine": 319,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public setObject(object Object) : QueryBuilder"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/traccar/storage/QueryBuilder.java",
+		"startLine": 288,
+		"endLine": 288,
+		"startColumn": 50,
+		"endColumn": 70,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "added parameter",
+		"codeElement": "columns : List<String>"
+}, {
+		"filePath": "src/main/java/org/traccar/storage/QueryBuilder.java",
+		"startLine": 288,
+		"endLine": 317,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added parameter",
+		"codeElement": "public setObject(object Object, columns List<String>) : QueryBuilder"
+}]
+},
+{
+	"type": "Remove Parameter",
+	"description": "Remove Parameter variable : String in method public Equals(column String, variable String, value Object) from class org.traccar.storage.query.Condition.Equals",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/traccar/storage/query/Condition.java",
+		"startLine": 41,
+		"endLine": 41,
+		"startColumn": 38,
+		"endColumn": 53,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "removed parameter",
+		"codeElement": "variable : String"
+}, {
+		"filePath": "src/main/java/org/traccar/storage/query/Condition.java",
+		"startLine": 41,
+		"endLine": 43,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public Equals(column String, variable String, value Object)"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/traccar/storage/query/Condition.java",
+		"startLine": 37,
+		"endLine": 39,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed parameter",
+		"codeElement": "public Equals(column String, value Object)"
+}]
+}
+]
+},
+{
+	"repository": "https://github.com/traccar/traccar.git",
+	"sha1": "47579ba635ad87af13f9626923e0168ff53e5178",
+	"url": "https://github.com/traccar/traccar/commit/47579ba635ad87af13f9626923e0168ff53e5178",
+	"refactorings": []
+},
+{
+	"repository": "https://github.com/traccar/traccar.git",
+	"sha1": "85cef19d557b3aa0e306c3efe0bdcf8020042775",
+	"url": "https://github.com/traccar/traccar/commit/85cef19d557b3aa0e306c3efe0bdcf8020042775",
+	"refactorings": [{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type code : int to code : long in method private decodeAlarm(code long) : String from class org.traccar.protocol.Minifinder2ProtocolDecoder",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/traccar/protocol/Minifinder2ProtocolDecoder.java",
+		"startLine": 53,
+		"endLine": 53,
+		"startColumn": 32,
+		"endColumn": 40,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "code : int"
+}, {
+		"filePath": "src/main/java/org/traccar/protocol/Minifinder2ProtocolDecoder.java",
+		"startLine": 54,
+		"endLine": 56,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/traccar/protocol/Minifinder2ProtocolDecoder.java",
+		"startLine": 57,
+		"endLine": 59,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/traccar/protocol/Minifinder2ProtocolDecoder.java",
+		"startLine": 60,
+		"endLine": 62,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/traccar/protocol/Minifinder2ProtocolDecoder.java",
+		"startLine": 63,
+		"endLine": 65,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/traccar/protocol/Minifinder2ProtocolDecoder.java",
+		"startLine": 66,
+		"endLine": 68,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/traccar/protocol/Minifinder2ProtocolDecoder.java",
+		"startLine": 69,
+		"endLine": 71,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/traccar/protocol/Minifinder2ProtocolDecoder.java",
+		"startLine": 53,
+		"endLine": 53,
+		"startColumn": 32,
+		"endColumn": 41,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "code : long"
+}, {
+		"filePath": "src/main/java/org/traccar/protocol/Minifinder2ProtocolDecoder.java",
+		"startLine": 54,
+		"endLine": 56,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/traccar/protocol/Minifinder2ProtocolDecoder.java",
+		"startLine": 57,
+		"endLine": 59,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/traccar/protocol/Minifinder2ProtocolDecoder.java",
+		"startLine": 60,
+		"endLine": 62,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/traccar/protocol/Minifinder2ProtocolDecoder.java",
+		"startLine": 63,
+		"endLine": 65,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/traccar/protocol/Minifinder2ProtocolDecoder.java",
+		"startLine": 66,
+		"endLine": 68,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/traccar/protocol/Minifinder2ProtocolDecoder.java",
+		"startLine": 69,
+		"endLine": 71,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+}
+]
+},
+{
+	"repository": "https://github.com/traccar/traccar.git",
+	"sha1": "3f01f92125851e325b8e3e4ef679d832fe3dee21",
+	"url": "https://github.com/traccar/traccar/commit/3f01f92125851e325b8e3e4ef679d832fe3dee21",
+	"refactorings": [{
+	"type": "Add Parameter",
+	"description": "Add Parameter limit : int in method public Order(column String, descending boolean, limit int) from class org.traccar.storage.query.Order",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/traccar/storage/query/Order.java",
+		"startLine": 27,
+		"endLine": 30,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public Order(descending boolean, column String)"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/traccar/storage/query/Order.java",
+		"startLine": 28,
+		"endLine": 28,
+		"startColumn": 53,
+		"endColumn": 62,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "added parameter",
+		"codeElement": "limit : int"
+}, {
+		"filePath": "src/main/java/org/traccar/storage/query/Order.java",
+		"startLine": 28,
+		"endLine": 32,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added parameter",
+		"codeElement": "public Order(column String, descending boolean, limit int)"
+}]
+},
+{
+	"type": "Reorder Parameter",
+	"description": "Reorder Parameter [descending : boolean, column : String] to [column : String, descending : boolean, limit : int] in method public Order(column String, descending boolean, limit int) from class org.traccar.storage.query.Order",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/traccar/storage/query/Order.java",
+		"startLine": 27,
+		"endLine": 27,
+		"startColumn": 18,
+		"endColumn": 36,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original parameter declaration",
+		"codeElement": "descending : boolean"
+}, {
+		"filePath": "src/main/java/org/traccar/storage/query/Order.java",
+		"startLine": 27,
+		"endLine": 27,
+		"startColumn": 38,
+		"endColumn": 51,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original parameter declaration",
+		"codeElement": "column : String"
+}, {
+		"filePath": "src/main/java/org/traccar/storage/query/Order.java",
+		"startLine": 27,
+		"endLine": 30,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public Order(descending boolean, column String)"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/traccar/storage/query/Order.java",
+		"startLine": 28,
+		"endLine": 28,
+		"startColumn": 18,
+		"endColumn": 31,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "reordered parameter declaration",
+		"codeElement": "column : String"
+}, {
+		"filePath": "src/main/java/org/traccar/storage/query/Order.java",
+		"startLine": 28,
+		"endLine": 28,
+		"startColumn": 33,
+		"endColumn": 51,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "reordered parameter declaration",
+		"codeElement": "descending : boolean"
+}, {
+		"filePath": "src/main/java/org/traccar/storage/query/Order.java",
+		"startLine": 28,
+		"endLine": 28,
+		"startColumn": 53,
+		"endColumn": 62,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "reordered parameter declaration",
+		"codeElement": "limit : int"
+}, {
+		"filePath": "src/main/java/org/traccar/storage/query/Order.java",
+		"startLine": 28,
+		"endLine": 32,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with reordered parameters",
+		"codeElement": "public Order(column String, descending boolean, limit int)"
+}]
+}
+]
+},
+{
+	"repository": "https://github.com/traccar/traccar.git",
+	"sha1": "db97378f2210818d0600420bc9c69103ddea248b",
+	"url": "https://github.com/traccar/traccar/commit/db97378f2210818d0600420bc9c69103ddea248b",
+	"refactorings": [{
+	"type": "Extract Variable",
+	"description": "Extract Variable alertId : int in method private decodeUniversal(channel Channel, remoteAddress SocketAddress, values String[]) : Position from class org.traccar.protocol.SuntechProtocolDecoder",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/traccar/protocol/SuntechProtocolDecoder.java",
+		"startLine": 584,
+		"endLine": 584,
+		"startColumn": 21,
+		"endColumn": 62,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement with the initializer of the extracted variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/traccar/protocol/SuntechProtocolDecoder.java",
+		"startLine": 597,
+		"endLine": 597,
+		"startColumn": 25,
+		"endColumn": 68,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted variable declaration",
+		"codeElement": "alertId : int"
+}, {
+		"filePath": "src/main/java/org/traccar/protocol/SuntechProtocolDecoder.java",
+		"startLine": 598,
+		"endLine": 598,
+		"startColumn": 21,
+		"endColumn": 76,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement with the name of the extracted variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Remove Parameter",
+	"description": "Remove Parameter channel : Channel in method protected encodeUniversalCommand(channel Channel, command Command) : Object from class org.traccar.protocol.SuntechProtocolEncoder",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/traccar/protocol/SuntechProtocolEncoder.java",
+		"startLine": 54,
+		"endLine": 54,
+		"startColumn": 45,
+		"endColumn": 60,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "removed parameter",
+		"codeElement": "channel : Channel"
+}, {
+		"filePath": "src/main/java/org/traccar/protocol/SuntechProtocolEncoder.java",
+		"startLine": 54,
+		"endLine": 95,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "protected encodeUniversalCommand(channel Channel, command Command) : Object"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/traccar/protocol/SuntechProtocolEncoder.java",
+		"startLine": 54,
+		"endLine": 95,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed parameter",
+		"codeElement": "protected encodeUniversalCommand(command Command) : Object"
+}]
+},
+{
+	"type": "Remove Parameter",
+	"description": "Remove Parameter channel : Channel in method protected encodeLegacyCommand(channel Channel, prefix String, command Command) : Object from class org.traccar.protocol.SuntechProtocolEncoder",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/traccar/protocol/SuntechProtocolEncoder.java",
+		"startLine": 97,
+		"endLine": 97,
+		"startColumn": 42,
+		"endColumn": 57,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "removed parameter",
+		"codeElement": "channel : Channel"
+}, {
+		"filePath": "src/main/java/org/traccar/protocol/SuntechProtocolEncoder.java",
+		"startLine": 97,
+		"endLine": 122,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "protected encodeLegacyCommand(channel Channel, prefix String, command Command) : Object"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/traccar/protocol/SuntechProtocolEncoder.java",
+		"startLine": 97,
+		"endLine": 122,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed parameter",
+		"codeElement": "protected encodeLegacyCommand(prefix String, command Command) : Object"
+}]
+}
+]
+},
+{
+	"repository": "https://github.com/traccar/traccar.git",
+	"sha1": "94bb9f2ace4134b4cfc9d0ca2a16f79ce9ec4bce",
+	"url": "https://github.com/traccar/traccar/commit/94bb9f2ace4134b4cfc9d0ca2a16f79ce9ec4bce",
+	"refactorings": []
+},
+{
+	"repository": "https://github.com/traccar/traccar.git",
+	"sha1": "dcecec13f6392980512e0ded566680c3dd657ab4",
+	"url": "https://github.com/traccar/traccar/commit/dcecec13f6392980512e0ded566680c3dd657ab4",
+	"refactorings": []
+},
+{
+	"repository": "https://github.com/traccar/traccar.git",
+	"sha1": "ab6df268d8b22b1d99c1b6ee1770a50d56b784e3",
+	"url": "https://github.com/traccar/traccar/commit/ab6df268d8b22b1d99c1b6ee1770a50d56b784e3",
+	"refactorings": []
+},
+{
+	"repository": "https://github.com/traccar/traccar.git",
+	"sha1": "ca504df5720f1b26830f9f5f4099d1e9903ea2f1",
+	"url": "https://github.com/traccar/traccar/commit/ca504df5720f1b26830f9f5f4099d1e9903ea2f1",
+	"refactorings": []
+},
+{
+	"repository": "https://github.com/traccar/traccar.git",
+	"sha1": "8f537de3bbf4dc1a742222dfd3123090b79e6419",
+	"url": "https://github.com/traccar/traccar/commit/8f537de3bbf4dc1a742222dfd3123090b79e6419",
+	"refactorings": [{
+	"type": "Add Class Annotation",
+	"description": "Add Class Annotation @JsonIgnoreProperties(ignoreUnknown = true) in class org.traccar.model.QueuedCommand",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/traccar/model/QueuedCommand.java",
+		"startLine": 22,
+		"endLine": 45,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original class declaration",
+		"codeElement": "org.traccar.model.QueuedCommand"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/traccar/model/QueuedCommand.java",
+		"startLine": 24,
+		"endLine": 24,
+		"startColumn": 0,
+		"endColumn": 44,
+		"codeElementType": "ANNOTATION",
+		"description": "added annotation",
+		"codeElement": "@JsonIgnoreProperties(ignoreUnknown = true)"
+}, {
+		"filePath": "src/main/java/org/traccar/model/QueuedCommand.java",
+		"startLine": 23,
+		"endLine": 46,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "class declaration with added annotation",
+		"codeElement": "org.traccar.model.QueuedCommand"
+}]
+},
+{
+	"type": "Push Down Method",
+	"description": "Push Down Method public getDescription() : String from class org.traccar.model.BaseCommand to public getDescription() : String from class org.traccar.model.Command",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/traccar/model/BaseCommand.java",
+		"startLine": 22,
+		"endLine": 24,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public getDescription() : String"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/traccar/model/Command.java",
+		"startLine": 101,
+		"endLine": 103,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "pushed down method declaration",
+		"codeElement": "public getDescription() : String"
+}]
+},
+{
+	"type": "Push Down Method",
+	"description": "Push Down Method public setDescription(description String) : void from class org.traccar.model.BaseCommand to public setDescription(description String) : void from class org.traccar.model.Command",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/traccar/model/BaseCommand.java",
+		"startLine": 26,
+		"endLine": 28,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public setDescription(description String) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/traccar/model/Command.java",
+		"startLine": 105,
+		"endLine": 107,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "pushed down method declaration",
+		"codeElement": "public setDescription(description String) : void"
+}]
+},
+{
+	"type": "Push Down Attribute",
+	"description": "Push Down Attribute private description : String from class org.traccar.model.BaseCommand to private description : String from class org.traccar.model.Command",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/traccar/model/BaseCommand.java",
+		"startLine": 20,
+		"endLine": 20,
+		"startColumn": 20,
+		"endColumn": 31,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private description : String"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/traccar/model/Command.java",
+		"startLine": 99,
+		"endLine": 99,
+		"startColumn": 20,
+		"endColumn": 31,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "pushed down attribute declaration",
+		"codeElement": "private description : String"
+}]
+}
+]
+},
+{
+	"repository": "https://github.com/traccar/traccar.git",
+	"sha1": "73b174094effa2a2c9c3a076b5c244ba832a90c2",
+	"url": "https://github.com/traccar/traccar/commit/73b174094effa2a2c9c3a076b5c244ba832a90c2",
+	"refactorings": [{
+	"type": "Extract Variable",
+	"description": "Extract Variable hdop : int in method protected decode(channel Channel, remoteAddress SocketAddress, msg Object) : Object from class org.traccar.protocol.Minifinder2ProtocolDecoder",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/traccar/protocol/Minifinder2ProtocolDecoder.java",
+		"startLine": 201,
+		"endLine": 201,
+		"startColumn": 25,
+		"endColumn": 74,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement with the initializer of the extracted variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/traccar/protocol/Minifinder2ProtocolDecoder.java",
+		"startLine": 201,
+		"endLine": 201,
+		"startColumn": 29,
+		"endColumn": 61,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted variable declaration",
+		"codeElement": "hdop : int"
+}, {
+		"filePath": "src/main/java/org/traccar/protocol/Minifinder2ProtocolDecoder.java",
+		"startLine": 202,
+		"endLine": 202,
+		"startColumn": 25,
+		"endColumn": 53,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement with the name of the extracted variable",
+		"codeElement": null
+}]
+}
+]
+},
+{
+	"repository": "https://github.com/traccar/traccar.git",
+	"sha1": "eef6c34d403fa5bf2ca0ae757792633c36052769",
+	"url": "https://github.com/traccar/traccar/commit/eef6c34d403fa5bf2ca0ae757792633c36052769",
+	"refactorings": []
+},
+{
+	"repository": "https://github.com/traccar/traccar.git",
+	"sha1": "8fe9e3f6ce857705fa609aa2728f73fdf98f3dbb",
+	"url": "https://github.com/traccar/traccar/commit/8fe9e3f6ce857705fa609aa2728f73fdf98f3dbb",
+	"refactorings": []
+},
+{
+	"repository": "https://github.com/traccar/traccar.git",
+	"sha1": "fcdec06d0a6b9a742709de967b122ad6213637c1",
+	"url": "https://github.com/traccar/traccar/commit/fcdec06d0a6b9a742709de967b122ad6213637c1",
+	"refactorings": []
+},
+{
+	"repository": "https://github.com/traccar/traccar.git",
+	"sha1": "8ceb20c2d9c70f5e0aa107095a23c187019401f1",
+	"url": "https://github.com/traccar/traccar/commit/8ceb20c2d9c70f5e0aa107095a23c187019401f1",
+	"refactorings": [{
+	"type": "Split Conditional",
+	"description": "Split Conditional if(oldValue != 0.0 && newValue != 0.0 && (long)((oldValue - maintenance.getStart()) / maintenance.getPeriod()) < (long)((newValue - maintenance.getStart()) / maintenance.getPeriod())) to [if(oldValue < maintenance.getStart() || (long)((oldValue - maintenance.getStart()) / maintenance.getPeriod()) < (long)((newValue - maintenance.getStart()) / maintenance.getPeriod())), if(oldValue != 0.0 && newValue != 0.0 && newValue >= maintenance.getStart())] in method protected analyzePosition(position Position) : Map<Event,Position> from class org.traccar.handler.events.MaintenanceEventHandler",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/traccar/handler/events/MaintenanceEventHandler.java",
+		"startLine": 54,
+		"endLine": 61,
+		"startColumn": 17,
+		"endColumn": 18,
+		"codeElementType": "IF_STATEMENT",
+		"description": "original conditional",
+		"codeElement": "if(oldValue != 0.0 && newValue != 0.0 && (long)((oldValue - maintenance.getStart()) / maintenance.getPeriod()) < (long)((newValue - maintenance.getStart()) / maintenance.getPeriod()))"
+}, {
+		"filePath": "src/main/java/org/traccar/handler/events/MaintenanceEventHandler.java",
+		"startLine": 42,
+		"endLine": 66,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "protected analyzePosition(position Position) : Map<Event,Position>"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/traccar/handler/events/MaintenanceEventHandler.java",
+		"startLine": 55,
+		"endLine": 62,
+		"startColumn": 21,
+		"endColumn": 22,
+		"codeElementType": "IF_STATEMENT",
+		"description": "split conditional",
+		"codeElement": "if(oldValue < maintenance.getStart() || (long)((oldValue - maintenance.getStart()) / maintenance.getPeriod()) < (long)((newValue - maintenance.getStart()) / maintenance.getPeriod()))"
+}, {
+		"filePath": "src/main/java/org/traccar/handler/events/MaintenanceEventHandler.java",
+		"startLine": 54,
+		"endLine": 63,
+		"startColumn": 17,
+		"endColumn": 18,
+		"codeElementType": "IF_STATEMENT",
+		"description": "split conditional",
+		"codeElement": "if(oldValue != 0.0 && newValue != 0.0 && newValue >= maintenance.getStart())"
+}, {
+		"filePath": "src/main/java/org/traccar/handler/events/MaintenanceEventHandler.java",
+		"startLine": 42,
+		"endLine": 68,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with split conditional",
+		"codeElement": "protected analyzePosition(position Position) : Map<Event,Position>"
+}]
+}
+]
+},
+{
+	"repository": "https://github.com/traccar/traccar.git",
+	"sha1": "3c7afdf75c4f3d045c0d51355d6ce62622eb2c4d",
+	"url": "https://github.com/traccar/traccar/commit/3c7afdf75c4f3d045c0d51355d6ce62622eb2c4d",
+	"refactorings": []
+},
+{
+	"repository": "https://github.com/traccar/traccar.git",
+	"sha1": "907e5d1669c154e266383a275c1212baea1bda2a",
+	"url": "https://github.com/traccar/traccar/commit/907e5d1669c154e266383a275c1212baea1bda2a",
+	"refactorings": []
+},
+{
+	"repository": "https://github.com/traccar/traccar.git",
+	"sha1": "cf59eb2c734f7d8bd5ea8f9ff82d4dc91492693f",
+	"url": "https://github.com/traccar/traccar/commit/cf59eb2c734f7d8bd5ea8f9ff82d4dc91492693f",
+	"refactorings": []
+},
+{
+	"repository": "https://github.com/traccar/traccar.git",
+	"sha1": "ab10e710a9c57ef761ea9955198273db5f473581",
+	"url": "https://github.com/traccar/traccar/commit/ab10e710a9c57ef761ea9955198273db5f473581",
+	"refactorings": [{
+	"type": "Extract Method",
+	"description": "Extract Method private decodeCustomDouble(buf ByteBuf) : double extracted from private decodeLocation(deviceSession DeviceSession, buf ByteBuf) : Position in class org.traccar.protocol.HuabaoProtocolDecoder",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/traccar/protocol/HuabaoProtocolDecoder.java",
+		"startLine": 411,
+		"endLine": 631,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "private decodeLocation(deviceSession DeviceSession, buf ByteBuf) : Position"
+}, {
+		"filePath": "src/main/java/org/traccar/protocol/HuabaoProtocolDecoder.java",
+		"startLine": 535,
+		"endLine": 537,
+		"startColumn": 25,
+		"endColumn": 89,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/traccar/protocol/HuabaoProtocolDecoder.java",
+		"startLine": 411,
+		"endLine": 416,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "private decodeCustomDouble(buf ByteBuf) : double"
+}, {
+		"filePath": "src/main/java/org/traccar/protocol/HuabaoProtocolDecoder.java",
+		"startLine": 413,
+		"endLine": 413,
+		"startColumn": 9,
+		"endColumn": 41,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/traccar/protocol/HuabaoProtocolDecoder.java",
+		"startLine": 418,
+		"endLine": 634,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "private decodeLocation(deviceSession DeviceSession, buf ByteBuf) : Position"
+}, {
+		"filePath": "src/main/java/org/traccar/protocol/HuabaoProtocolDecoder.java",
+		"startLine": 539,
+		"endLine": 539,
+		"startColumn": 74,
+		"endColumn": 97,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "decodeCustomDouble(buf)"
+}, {
+		"filePath": "src/main/java/org/traccar/protocol/HuabaoProtocolDecoder.java",
+		"startLine": 540,
+		"endLine": 540,
+		"startColumn": 64,
+		"endColumn": 87,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "decodeCustomDouble(buf)"
+}, {
+		"filePath": "src/main/java/org/traccar/protocol/HuabaoProtocolDecoder.java",
+		"startLine": 412,
+		"endLine": 412,
+		"startColumn": 9,
+		"endColumn": 33,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/traccar/protocol/HuabaoProtocolDecoder.java",
+		"startLine": 414,
+		"endLine": 414,
+		"startColumn": 9,
+		"endColumn": 52,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/traccar/protocol/HuabaoProtocolDecoder.java",
+		"startLine": 415,
+		"endLine": 415,
+		"startColumn": 9,
+		"endColumn": 51,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}]
+}
+]
+},
+{
+	"repository": "https://github.com/traccar/traccar.git",
+	"sha1": "c59ba066b1437e98af10a413b9e0c29f0e443b26",
+	"url": "https://github.com/traccar/traccar/commit/c59ba066b1437e98af10a413b9e0c29f0e443b26",
+	"refactorings": []
+},
+{
+	"repository": "https://github.com/traccar/traccar.git",
+	"sha1": "0508411fc388d8a7495b43378cfa6265a24c02d2",
+	"url": "https://github.com/traccar/traccar/commit/0508411fc388d8a7495b43378cfa6265a24c02d2",
+	"refactorings": []
+},
+{
+	"repository": "https://github.com/traccar/traccar.git",
+	"sha1": "87d54329d8d6ba14f37e15967079bcfc7299228c",
+	"url": "https://github.com/traccar/traccar/commit/87d54329d8d6ba14f37e15967079bcfc7299228c",
+	"refactorings": []
+},
+{
+	"repository": "https://github.com/traccar/traccar.git",
+	"sha1": "d5ac6aa371b5dfd9a6613e693a6afc711fb740df",
+	"url": "https://github.com/traccar/traccar/commit/d5ac6aa371b5dfd9a6613e693a6afc711fb740df",
+	"refactorings": []
+},
+{
+	"repository": "https://github.com/traccar/traccar.git",
+	"sha1": "49646eccd5ec57013c78ea0a0776c206f812cb0b",
+	"url": "https://github.com/traccar/traccar/commit/49646eccd5ec57013c78ea0a0776c206f812cb0b",
+	"refactorings": [{
+	"type": "Extract Method",
+	"description": "Extract Method private encodeOutputCommand(deviceId long, index int, value int) : ByteBuf extracted from protected encodeCommand(command Command) : Object in class org.traccar.protocol.MeiligaoProtocolEncoder",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/traccar/protocol/MeiligaoProtocolEncoder.java",
+		"startLine": 60,
+		"endLine": 98,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "protected encodeCommand(command Command) : Object"
+}, {
+		"filePath": "src/main/java/org/traccar/protocol/MeiligaoProtocolEncoder.java",
+		"startLine": 63,
+		"endLine": 64,
+		"startColumn": 9,
+		"endColumn": 116,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/traccar/protocol/MeiligaoProtocolEncoder.java",
+		"startLine": 66,
+		"endLine": 68,
+		"startColumn": 9,
+		"endColumn": 64,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/traccar/protocol/MeiligaoProtocolEncoder.java",
+		"startLine": 79,
+		"endLine": 79,
+		"startColumn": 17,
+		"endColumn": 41,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/traccar/protocol/MeiligaoProtocolEncoder.java",
+		"startLine": 62,
+		"endLine": 88,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "private encodeOutputCommand(deviceId long, index int, value int) : ByteBuf"
+}, {
+		"filePath": "src/main/java/org/traccar/protocol/MeiligaoProtocolEncoder.java",
+		"startLine": 74,
+		"endLine": 75,
+		"startColumn": 13,
+		"endColumn": 107,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/traccar/protocol/MeiligaoProtocolEncoder.java",
+		"startLine": 65,
+		"endLine": 65,
+		"startColumn": 9,
+		"endColumn": 24,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/traccar/protocol/MeiligaoProtocolEncoder.java",
+		"startLine": 84,
+		"endLine": 84,
+		"startColumn": 13,
+		"endColumn": 55,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/traccar/protocol/MeiligaoProtocolEncoder.java",
+		"startLine": 90,
+		"endLine": 123,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "protected encodeCommand(command Command) : Object"
+}, {
+		"filePath": "src/main/java/org/traccar/protocol/MeiligaoProtocolEncoder.java",
+		"startLine": 104,
+		"endLine": 104,
+		"startColumn": 24,
+		"endColumn": 80,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "encodeOutputCommand(command.getDeviceId(),index,value)"
+}, {
+		"filePath": "src/main/java/org/traccar/protocol/MeiligaoProtocolEncoder.java",
+		"startLine": 106,
+		"endLine": 106,
+		"startColumn": 24,
+		"endColumn": 72,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "encodeOutputCommand(command.getDeviceId(),1,1)"
+}, {
+		"filePath": "src/main/java/org/traccar/protocol/MeiligaoProtocolEncoder.java",
+		"startLine": 108,
+		"endLine": 108,
+		"startColumn": 24,
+		"endColumn": 72,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "encodeOutputCommand(command.getDeviceId(),1,0)"
+}, {
+		"filePath": "src/main/java/org/traccar/protocol/MeiligaoProtocolEncoder.java",
+		"startLine": 64,
+		"endLine": 64,
+		"startColumn": 9,
+		"endColumn": 25,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/traccar/protocol/MeiligaoProtocolEncoder.java",
+		"startLine": 67,
+		"endLine": 67,
+		"startColumn": 9,
+		"endColumn": 87,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/traccar/protocol/MeiligaoProtocolEncoder.java",
+		"startLine": 70,
+		"endLine": 70,
+		"startColumn": 13,
+		"endColumn": 29,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/traccar/protocol/MeiligaoProtocolEncoder.java",
+		"startLine": 71,
+		"endLine": 71,
+		"startColumn": 13,
+		"endColumn": 71,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/traccar/protocol/MeiligaoProtocolEncoder.java",
+		"startLine": 73,
+		"endLine": 73,
+		"startColumn": 13,
+		"endColumn": 29,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/traccar/protocol/MeiligaoProtocolEncoder.java",
+		"startLine": 81,
+		"endLine": 81,
+		"startColumn": 9,
+		"endColumn": 45,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/traccar/protocol/MeiligaoProtocolEncoder.java",
+		"startLine": 87,
+		"endLine": 87,
+		"startColumn": 9,
+		"endColumn": 61,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/traccar/protocol/MeiligaoProtocolEncoder.java",
+		"startLine": 76,
+		"endLine": 78,
+		"startColumn": 13,
+		"endColumn": 68,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/traccar/protocol/MeiligaoProtocolEncoder.java",
+		"startLine": 69,
+		"endLine": 72,
+		"startColumn": 97,
+		"endColumn": 10,
+		"codeElementType": "BLOCK",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/traccar/protocol/MeiligaoProtocolEncoder.java",
+		"startLine": 72,
+		"endLine": 79,
+		"startColumn": 16,
+		"endColumn": 10,
+		"codeElementType": "BLOCK",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/traccar/protocol/MeiligaoProtocolEncoder.java",
+		"startLine": 69,
+		"endLine": 79,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "IF_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/traccar/protocol/MeiligaoProtocolEncoder.java",
+		"startLine": 83,
+		"endLine": 85,
+		"startColumn": 48,
+		"endColumn": 10,
+		"codeElementType": "BLOCK",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/traccar/protocol/MeiligaoProtocolEncoder.java",
+		"startLine": 83,
+		"endLine": 85,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "FOR_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}]
+}
+]
+},
+{
+	"repository": "https://github.com/traccar/traccar.git",
+	"sha1": "9280355123ee13f7f7d8bf7076a39dcab57ab1cd",
+	"url": "https://github.com/traccar/traccar/commit/9280355123ee13f7f7d8bf7076a39dcab57ab1cd",
+	"refactorings": []
+},
+{
+	"repository": "https://github.com/traccar/traccar.git",
+	"sha1": "9c03a0505f46a92f645dc927dba2da6458facfb1",
+	"url": "https://github.com/traccar/traccar/commit/9c03a0505f46a92f645dc927dba2da6458facfb1",
+	"refactorings": [{
+	"type": "Invert Condition",
+	"description": "Invert Condition if(channel != null) to if(channel == null) in method private decodeBinaryC(channel Channel, remoteAddress SocketAddress, buf ByteBuf) : List<Position> from class org.traccar.protocol.MeitrackProtocolDecoder",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/traccar/protocol/MeitrackProtocolDecoder.java",
+		"startLine": 366,
+		"endLine": 377,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "IF_STATEMENT",
+		"description": "original conditional",
+		"codeElement": "if(channel != null)"
+}, {
+		"filePath": "src/main/java/org/traccar/protocol/MeitrackProtocolDecoder.java",
+		"startLine": 309,
+		"endLine": 380,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private decodeBinaryC(channel Channel, remoteAddress SocketAddress, buf ByteBuf) : List<Position>"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/traccar/protocol/MeitrackProtocolDecoder.java",
+		"startLine": 366,
+		"endLine": 373,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "IF_STATEMENT",
+		"description": "inverted conditional",
+		"codeElement": "if(channel == null)"
+}, {
+		"filePath": "src/main/java/org/traccar/protocol/MeitrackProtocolDecoder.java",
+		"startLine": 309,
+		"endLine": 376,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with inverted conditional",
+		"codeElement": "private decodeBinaryC(channel Channel, remoteAddress SocketAddress, buf ByteBuf) : List<Position>"
+}]
+}
+]
+},
+{
+	"repository": "https://github.com/traccar/traccar.git",
+	"sha1": "fdd52edc7811ae973c93ae825cc1bd1d9e9fe33f",
+	"url": "https://github.com/traccar/traccar/commit/fdd52edc7811ae973c93ae825cc1bd1d9e9fe33f",
+	"refactorings": [{
+	"type": "Invert Condition",
+	"description": "Invert Condition if(channel == null) to if(channel != null) in method private decodeBinaryC(channel Channel, remoteAddress SocketAddress, buf ByteBuf) : List<Position> from class org.traccar.protocol.MeitrackProtocolDecoder",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/traccar/protocol/MeitrackProtocolDecoder.java",
+		"startLine": 366,
+		"endLine": 373,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "IF_STATEMENT",
+		"description": "original conditional",
+		"codeElement": "if(channel == null)"
+}, {
+		"filePath": "src/main/java/org/traccar/protocol/MeitrackProtocolDecoder.java",
+		"startLine": 309,
+		"endLine": 376,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private decodeBinaryC(channel Channel, remoteAddress SocketAddress, buf ByteBuf) : List<Position>"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/traccar/protocol/MeitrackProtocolDecoder.java",
+		"startLine": 366,
+		"endLine": 373,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "IF_STATEMENT",
+		"description": "inverted conditional",
+		"codeElement": "if(channel != null)"
+}, {
+		"filePath": "src/main/java/org/traccar/protocol/MeitrackProtocolDecoder.java",
+		"startLine": 309,
+		"endLine": 376,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with inverted conditional",
+		"codeElement": "private decodeBinaryC(channel Channel, remoteAddress SocketAddress, buf ByteBuf) : List<Position>"
+}]
+}
+]
+},
+{
+	"repository": "https://github.com/traccar/traccar.git",
+	"sha1": "e742f252da0b32ac7166c6d9ab25a8d1375411d2",
+	"url": "https://github.com/traccar/traccar/commit/e742f252da0b32ac7166c6d9ab25a8d1375411d2",
+	"refactorings": [{
+	"type": "Rename Parameter",
+	"description": "Rename Parameter socketAddress : SocketAddress to remoteAddress : SocketAddress in method private requestPhotoPacket(channel Channel, remoteAddress SocketAddress, imei String, file String, index int) : void from class org.traccar.protocol.MeitrackProtocolDecoder",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/traccar/protocol/MeitrackProtocolDecoder.java",
+		"startLine": 541,
+		"endLine": 541,
+		"startColumn": 54,
+		"endColumn": 81,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "socketAddress : SocketAddress"
+}, {
+		"filePath": "src/main/java/org/traccar/protocol/MeitrackProtocolDecoder.java",
+		"startLine": 547,
+		"endLine": 547,
+		"startColumn": 13,
+		"endColumn": 80,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/traccar/protocol/MeitrackProtocolDecoder.java",
+		"startLine": 541,
+		"endLine": 541,
+		"startColumn": 54,
+		"endColumn": 81,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "remoteAddress : SocketAddress"
+}, {
+		"filePath": "src/main/java/org/traccar/protocol/MeitrackProtocolDecoder.java",
+		"startLine": 547,
+		"endLine": 547,
+		"startColumn": 13,
+		"endColumn": 80,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+}
+]
+},
+{
+	"repository": "https://github.com/traccar/traccar.git",
+	"sha1": "21a916159a24db0cbec850b90381f9ff392f3c0e",
+	"url": "https://github.com/traccar/traccar/commit/21a916159a24db0cbec850b90381f9ff392f3c0e",
+	"refactorings": []
+},
+{
+	"repository": "https://github.com/traccar/traccar.git",
+	"sha1": "d0df0c2e33034efee4a3a0705c92b09dbed5e291",
+	"url": "https://github.com/traccar/traccar/commit/d0df0c2e33034efee4a3a0705c92b09dbed5e291",
+	"refactorings": [{
+	"type": "Extract Variable",
+	"description": "Extract Variable links : var in method public getDeviceObjects(deviceId long, clazz Class<T>) : List<T> from class org.traccar.session.cache.CacheManager",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/traccar/session/cache/CacheManager.java",
+		"startLine": 105,
+		"endLine": 111,
+		"startColumn": 13,
+		"endColumn": 51,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement with the initializer of the extracted variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/traccar/session/cache/CacheManager.java",
+		"startLine": 109,
+		"endLine": 109,
+		"startColumn": 17,
+		"endColumn": 50,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted variable declaration",
+		"codeElement": "links : var"
+}, {
+		"filePath": "src/main/java/org/traccar/session/cache/CacheManager.java",
+		"startLine": 111,
+		"endLine": 117,
+		"startColumn": 17,
+		"endColumn": 55,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement with the name of the extracted variable",
+		"codeElement": null
+}]
+}
+]
+},
+{
+	"repository": "https://github.com/traccar/traccar.git",
+	"sha1": "d9d990b492896d7e42a503c002de7715f6d12a30",
+	"url": "https://github.com/traccar/traccar/commit/d9d990b492896d7e42a503c002de7715f6d12a30",
+	"refactorings": []
+},
+{
+	"repository": "https://github.com/traccar/traccar.git",
+	"sha1": "4ec9db613475066de3f46c24d4ee78fefcbb17df",
+	"url": "https://github.com/traccar/traccar/commit/4ec9db613475066de3f46c24d4ee78fefcbb17df",
+	"refactorings": []
+},
+{
+	"repository": "https://github.com/traccar/traccar.git",
+	"sha1": "ff793b2e2872f8ba076e748fab41d944f92b64d4",
+	"url": "https://github.com/traccar/traccar/commit/ff793b2e2872f8ba076e748fab41d944f92b64d4",
+	"refactorings": [{
+	"type": "Extract Method",
+	"description": "Extract Method private forwardEvent(event Event, position Position) : void extracted from private updateEvent(event Event, position Position) : void in class org.traccar.database.NotificationManager",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/traccar/database/NotificationManager.java",
+		"startLine": 70,
+		"endLine": 118,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "private updateEvent(event Event, position Position) : void"
+}, {
+		"filePath": "src/main/java/org/traccar/database/NotificationManager.java",
+		"startLine": 115,
+		"endLine": 117,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "IF_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/traccar/database/NotificationManager.java",
+		"startLine": 115,
+		"endLine": 117,
+		"startColumn": 37,
+		"endColumn": 10,
+		"codeElementType": "BLOCK",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/traccar/database/NotificationManager.java",
+		"startLine": 121,
+		"endLine": 134,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "private forwardEvent(event Event, position Position) : void"
+}, {
+		"filePath": "src/main/java/org/traccar/database/NotificationManager.java",
+		"startLine": 122,
+		"endLine": 133,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "IF_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/traccar/database/NotificationManager.java",
+		"startLine": 122,
+		"endLine": 133,
+		"startColumn": 37,
+		"endColumn": 10,
+		"codeElementType": "BLOCK",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/traccar/database/NotificationManager.java",
+		"startLine": 73,
+		"endLine": 119,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "private updateEvent(event Event, position Position) : void"
+}, {
+		"filePath": "src/main/java/org/traccar/database/NotificationManager.java",
+		"startLine": 118,
+		"endLine": 118,
+		"startColumn": 9,
+		"endColumn": 38,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "forwardEvent(event,position)"
+}, {
+		"filePath": "src/main/java/org/traccar/database/NotificationManager.java",
+		"startLine": 123,
+		"endLine": 123,
+		"startColumn": 13,
+		"endColumn": 51,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/traccar/database/NotificationManager.java",
+		"startLine": 124,
+		"endLine": 124,
+		"startColumn": 13,
+		"endColumn": 39,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/traccar/database/NotificationManager.java",
+		"startLine": 125,
+		"endLine": 125,
+		"startColumn": 13,
+		"endColumn": 45,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/traccar/database/NotificationManager.java",
+		"startLine": 127,
+		"endLine": 127,
+		"startColumn": 17,
+		"endColumn": 102,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/traccar/database/NotificationManager.java",
+		"startLine": 130,
+		"endLine": 130,
+		"startColumn": 17,
+		"endColumn": 111,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/traccar/database/NotificationManager.java",
+		"startLine": 132,
+		"endLine": 132,
+		"startColumn": 13,
+		"endColumn": 47,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/traccar/database/NotificationManager.java",
+		"startLine": 126,
+		"endLine": 128,
+		"startColumn": 45,
+		"endColumn": 14,
+		"codeElementType": "BLOCK",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/traccar/database/NotificationManager.java",
+		"startLine": 126,
+		"endLine": 128,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "IF_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/traccar/database/NotificationManager.java",
+		"startLine": 129,
+		"endLine": 131,
+		"startColumn": 48,
+		"endColumn": 14,
+		"codeElementType": "BLOCK",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/traccar/database/NotificationManager.java",
+		"startLine": 129,
+		"endLine": 131,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "IF_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}]
+},
+{
+	"type": "Remove Parameter",
+	"description": "Remove Parameter cacheManager : CacheManager in method public EventForwarder(config Config, client Client, cacheManager CacheManager) from class org.traccar.notification.EventForwarder",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/traccar/notification/EventForwarder.java",
+		"startLine": 46,
+		"endLine": 46,
+		"startColumn": 57,
+		"endColumn": 82,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "removed parameter",
+		"codeElement": "cacheManager : CacheManager"
+}, {
+		"filePath": "src/main/java/org/traccar/notification/EventForwarder.java",
+		"startLine": 46,
+		"endLine": 51,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public EventForwarder(config Config, client Client, cacheManager CacheManager)"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/traccar/forward/EventForwarderJson.java",
+		"startLine": 37,
+		"endLine": 42,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed parameter",
+		"codeElement": "public EventForwarderJson(config Config, client Client)"
+}]
+},
+{
+	"type": "Add Method Annotation",
+	"description": "Add Method Annotation @Inject in method public EventForwarderJson(config Config, client Client) from class org.traccar.forward.EventForwarderJson",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/traccar/notification/EventForwarder.java",
+		"startLine": 46,
+		"endLine": 51,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public EventForwarder(config Config, client Client, cacheManager CacheManager)"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/traccar/forward/EventForwarderJson.java",
+		"startLine": 37,
+		"endLine": 37,
+		"startColumn": 5,
+		"endColumn": 12,
+		"codeElementType": "ANNOTATION",
+		"description": "added annotation",
+		"codeElement": "@Inject"
+}, {
+		"filePath": "src/main/java/org/traccar/forward/EventForwarderJson.java",
+		"startLine": 37,
+		"endLine": 42,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added annotation",
+		"codeElement": "public EventForwarderJson(config Config, client Client)"
+}]
+},
+{
+	"type": "Push Down Method",
+	"description": "Push Down Method public EventForwarder(config Config, client Client, cacheManager CacheManager) from class org.traccar.notification.EventForwarder to public EventForwarderJson(config Config, client Client) from class org.traccar.forward.EventForwarderJson",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/traccar/notification/EventForwarder.java",
+		"startLine": 46,
+		"endLine": 51,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public EventForwarder(config Config, client Client, cacheManager CacheManager)"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/traccar/forward/EventForwarderJson.java",
+		"startLine": 37,
+		"endLine": 42,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "pushed down method declaration",
+		"codeElement": "public EventForwarderJson(config Config, client Client)"
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type requestBuilder : Invocation.Builder to requestBuilder : var in method public forward(eventData EventData) : void from class org.traccar.forward.EventForwarderJson",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/traccar/notification/EventForwarder.java",
+		"startLine": 61,
+		"endLine": 61,
+		"startColumn": 28,
+		"endColumn": 73,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "requestBuilder : Invocation.Builder"
+}, {
+		"filePath": "src/main/java/org/traccar/notification/EventForwarder.java",
+		"startLine": 66,
+		"endLine": 66,
+		"startColumn": 17,
+		"endColumn": 75,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/traccar/notification/EventForwarder.java",
+		"startLine": 71,
+		"endLine": 81,
+		"startColumn": 9,
+		"endColumn": 12,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/traccar/forward/EventForwarderJson.java",
+		"startLine": 45,
+		"endLine": 45,
+		"startColumn": 13,
+		"endColumn": 58,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "requestBuilder : var"
+}, {
+		"filePath": "src/main/java/org/traccar/forward/EventForwarderJson.java",
+		"startLine": 50,
+		"endLine": 50,
+		"startColumn": 17,
+		"endColumn": 75,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/traccar/forward/EventForwarderJson.java",
+		"startLine": 54,
+		"endLine": 63,
+		"startColumn": 9,
+		"endColumn": 12,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Add Parameter",
+	"description": "Add Parameter eventData : EventData in method public forward(eventData EventData) : void from class org.traccar.forward.EventForwarderJson",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/traccar/notification/EventForwarder.java",
+		"startLine": 59,
+		"endLine": 82,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public forwardEvent(event Event, position Position) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/traccar/forward/EventForwarderJson.java",
+		"startLine": 44,
+		"endLine": 44,
+		"startColumn": 25,
+		"endColumn": 44,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "added parameter",
+		"codeElement": "eventData : EventData"
+}, {
+		"filePath": "src/main/java/org/traccar/forward/EventForwarderJson.java",
+		"startLine": 44,
+		"endLine": 64,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added parameter",
+		"codeElement": "public forward(eventData EventData) : void"
+}]
+},
+{
+	"type": "Remove Parameter",
+	"description": "Remove Parameter event : Event in method public forwardEvent(event Event, position Position) : void from class org.traccar.notification.EventForwarder",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/traccar/notification/EventForwarder.java",
+		"startLine": 59,
+		"endLine": 59,
+		"startColumn": 36,
+		"endColumn": 47,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "removed parameter",
+		"codeElement": "event : Event"
+}, {
+		"filePath": "src/main/java/org/traccar/notification/EventForwarder.java",
+		"startLine": 59,
+		"endLine": 82,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public forwardEvent(event Event, position Position) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/traccar/forward/EventForwarderJson.java",
+		"startLine": 44,
+		"endLine": 64,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed parameter",
+		"codeElement": "public forward(eventData EventData) : void"
+}]
+},
+{
+	"type": "Remove Parameter",
+	"description": "Remove Parameter position : Position in method public forwardEvent(event Event, position Position) : void from class org.traccar.notification.EventForwarder",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/traccar/notification/EventForwarder.java",
+		"startLine": 59,
+		"endLine": 59,
+		"startColumn": 49,
+		"endColumn": 66,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "removed parameter",
+		"codeElement": "position : Position"
+}, {
+		"filePath": "src/main/java/org/traccar/notification/EventForwarder.java",
+		"startLine": 59,
+		"endLine": 82,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public forwardEvent(event Event, position Position) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/traccar/forward/EventForwarderJson.java",
+		"startLine": 44,
+		"endLine": 64,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed parameter",
+		"codeElement": "public forward(eventData EventData) : void"
+}]
+},
+{
+	"type": "Remove Method Modifier",
+	"description": "Remove Method Modifier final in method public forwardEvent(event Event, position Position) : void from class org.traccar.notification.EventForwarder",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/traccar/notification/EventForwarder.java",
+		"startLine": 59,
+		"endLine": 82,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public forwardEvent(event Event, position Position) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/traccar/forward/EventForwarderJson.java",
+		"startLine": 44,
+		"endLine": 64,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed modifier",
+		"codeElement": "public forward(eventData EventData) : void"
+}]
+},
+{
+	"type": "Push Down Method",
+	"description": "Push Down Method public forwardEvent(event Event, position Position) : void from class org.traccar.notification.EventForwarder to public forward(eventData EventData) : void from class org.traccar.forward.EventForwarderJson",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/traccar/notification/EventForwarder.java",
+		"startLine": 59,
+		"endLine": 82,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public forwardEvent(event Event, position Position) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/traccar/forward/EventForwarderJson.java",
+		"startLine": 44,
+		"endLine": 64,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "pushed down method declaration",
+		"codeElement": "public forward(eventData EventData) : void"
+}]
+}
+]
+},
+{
+	"repository": "https://github.com/traccar/traccar.git",
+	"sha1": "5877cb1b3f1fa7331c4310b9754a3ec442586497",
+	"url": "https://github.com/traccar/traccar/commit/5877cb1b3f1fa7331c4310b9754a3ec442586497",
+	"refactorings": [{
+	"type": "Move Class",
+	"description": "Move Class org.traccar.WebDataHandler.AsyncRequestAndCallback moved to org.traccar.PositionForwardingHandler.AsyncRequestAndCallback",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/traccar/WebDataHandler.java",
+		"startLine": 191,
+		"endLine": 289,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "org.traccar.WebDataHandler.AsyncRequestAndCallback"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/traccar/PositionForwardingHandler.java",
+		"startLine": 73,
+		"endLine": 128,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "moved type declaration",
+		"codeElement": "org.traccar.PositionForwardingHandler.AsyncRequestAndCallback"
+}]
+},
+{
+	"type": "Move And Rename Class",
+	"description": "Move And Rename Class org.traccar.WebDataHandlerTest moved and renamed to org.traccar.forward.PositionForwarderUrlTest",
+	"leftSideLocations": [{
+		"filePath": "src/test/java/org/traccar/WebDataHandlerTest.java",
+		"startLine": 16,
+		"endLine": 42,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "org.traccar.WebDataHandlerTest"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/test/java/org/traccar/forward/PositionForwarderUrlTest.java",
+		"startLine": 14,
+		"endLine": 42,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "moved and renamed type declaration",
+		"codeElement": "org.traccar.forward.PositionForwarderUrlTest"
+}]
+},
+{
+	"type": "Remove Method Annotation",
+	"description": "Remove Method Annotation @Inject in method public EventForwarderJson(config Config, client Client) from class org.traccar.forward.EventForwarderJson",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/traccar/forward/EventForwarderJson.java",
+		"startLine": 37,
+		"endLine": 37,
+		"startColumn": 5,
+		"endColumn": 12,
+		"codeElementType": "ANNOTATION",
+		"description": "removed annotation",
+		"codeElement": "@Inject"
+}, {
+		"filePath": "src/main/java/org/traccar/forward/EventForwarderJson.java",
+		"startLine": 37,
+		"endLine": 42,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public EventForwarderJson(config Config, client Client)"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/traccar/forward/EventForwarderJson.java",
+		"startLine": 33,
+		"endLine": 37,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed annotation",
+		"codeElement": "public EventForwarderJson(config Config, client Client)"
+}]
+},
+{
+	"type": "Add Parameter",
+	"description": "Add Parameter resultHandler : ResultHandler in method public forward(eventData EventData, resultHandler ResultHandler) : void from class org.traccar.forward.EventForwarderJson",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/traccar/forward/EventForwarderJson.java",
+		"startLine": 44,
+		"endLine": 64,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public forward(eventData EventData) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/traccar/forward/EventForwarderJson.java",
+		"startLine": 40,
+		"endLine": 40,
+		"startColumn": 46,
+		"endColumn": 73,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "added parameter",
+		"codeElement": "resultHandler : ResultHandler"
+}, {
+		"filePath": "src/main/java/org/traccar/forward/EventForwarderJson.java",
+		"startLine": 39,
+		"endLine": 66,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added parameter",
+		"codeElement": "public forward(eventData EventData, resultHandler ResultHandler) : void"
+}]
+},
+{
+	"type": "Add Method Annotation",
+	"description": "Add Method Annotation @Override in method public forward(eventData EventData, resultHandler ResultHandler) : void from class org.traccar.forward.EventForwarderJson",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/traccar/forward/EventForwarderJson.java",
+		"startLine": 44,
+		"endLine": 64,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public forward(eventData EventData) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/traccar/forward/EventForwarderJson.java",
+		"startLine": 39,
+		"endLine": 39,
+		"startColumn": 5,
+		"endColumn": 14,
+		"codeElementType": "ANNOTATION",
+		"description": "added annotation",
+		"codeElement": "@Override"
+}, {
+		"filePath": "src/main/java/org/traccar/forward/EventForwarderJson.java",
+		"startLine": 39,
+		"endLine": 66,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added annotation",
+		"codeElement": "public forward(eventData EventData, resultHandler ResultHandler) : void"
+}]
+},
+{
+	"type": "Rename Method",
+	"description": "Rename Method public failed(throwable Throwable) : void renamed to public onResult(success boolean, throwable Throwable) : void in class org.traccar.PositionForwardingHandler.AsyncRequestAndCallback",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/traccar/WebDataHandler.java",
+		"startLine": 269,
+		"endLine": 272,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public failed(throwable Throwable) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/traccar/PositionForwardingHandler.java",
+		"startLine": 105,
+		"endLine": 112,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "public onResult(success boolean, throwable Throwable) : void"
+}]
+},
+{
+	"type": "Add Parameter",
+	"description": "Add Parameter success : boolean in method public onResult(success boolean, throwable Throwable) : void from class org.traccar.PositionForwardingHandler.AsyncRequestAndCallback",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/traccar/WebDataHandler.java",
+		"startLine": 269,
+		"endLine": 272,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public failed(throwable Throwable) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/traccar/PositionForwardingHandler.java",
+		"startLine": 106,
+		"endLine": 106,
+		"startColumn": 30,
+		"endColumn": 45,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "added parameter",
+		"codeElement": "success : boolean"
+}, {
+		"filePath": "src/main/java/org/traccar/PositionForwardingHandler.java",
+		"startLine": 105,
+		"endLine": 112,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added parameter",
+		"codeElement": "public onResult(success boolean, throwable Throwable) : void"
+}]
+},
+{
+	"type": "Localize Parameter",
+	"description": "Localize Parameter position : Position to position : Position in method public formatRequest(positionData PositionData) : String from class org.traccar.forward.PositionForwarderUrl",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/traccar/WebDataHandler.java",
+		"startLine": 140,
+		"endLine": 140,
+		"startColumn": 33,
+		"endColumn": 50,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "position : Position"
+}, {
+		"filePath": "src/main/java/org/traccar/WebDataHandler.java",
+		"startLine": 167,
+		"endLine": 167,
+		"startColumn": 13,
+		"endColumn": 91,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/traccar/WebDataHandler.java",
+		"startLine": 173,
+		"endLine": 173,
+		"startColumn": 13,
+		"endColumn": 76,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/traccar/WebDataHandler.java",
+		"startLine": 144,
+		"endLine": 159,
+		"startColumn": 9,
+		"endColumn": 69,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/traccar/WebDataHandler.java",
+		"startLine": 162,
+		"endLine": 163,
+		"startColumn": 13,
+		"endColumn": 107,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/traccar/WebDataHandler.java",
+		"startLine": 161,
+		"endLine": 164,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/traccar/forward/PositionForwarderUrl.java",
+		"startLine": 91,
+		"endLine": 91,
+		"startColumn": 18,
+		"endColumn": 55,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "renamed variable declaration",
+		"codeElement": "position : Position"
+}, {
+		"filePath": "src/main/java/org/traccar/forward/PositionForwarderUrl.java",
+		"startLine": 117,
+		"endLine": 117,
+		"startColumn": 13,
+		"endColumn": 91,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/traccar/forward/PositionForwarderUrl.java",
+		"startLine": 123,
+		"endLine": 123,
+		"startColumn": 13,
+		"endColumn": 76,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/traccar/forward/PositionForwarderUrl.java",
+		"startLine": 94,
+		"endLine": 109,
+		"startColumn": 9,
+		"endColumn": 69,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/traccar/forward/PositionForwarderUrl.java",
+		"startLine": 112,
+		"endLine": 113,
+		"startColumn": 13,
+		"endColumn": 100,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/traccar/forward/PositionForwarderUrl.java",
+		"startLine": 111,
+		"endLine": 114,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Add Parameter",
+	"description": "Add Parameter positionData : PositionData in method public formatRequest(positionData PositionData) : String from class org.traccar.forward.PositionForwarderUrl",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/traccar/WebDataHandler.java",
+		"startLine": 140,
+		"endLine": 189,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public formatRequest(position Position) : String"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/traccar/forward/PositionForwarderUrl.java",
+		"startLine": 89,
+		"endLine": 89,
+		"startColumn": 13,
+		"endColumn": 38,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "added parameter",
+		"codeElement": "positionData : PositionData"
+}, {
+		"filePath": "src/main/java/org/traccar/forward/PositionForwarderUrl.java",
+		"startLine": 88,
+		"endLine": 127,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added parameter",
+		"codeElement": "public formatRequest(positionData PositionData) : String"
+}]
+},
+{
+	"type": "Add Parameter",
+	"description": "Add Parameter resultHandler : ResultHandler in method public forward(eventData EventData, resultHandler ResultHandler) : void from class org.traccar.forward.EventForwarder",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/traccar/forward/EventForwarder.java",
+		"startLine": 19,
+		"endLine": 19,
+		"startColumn": 5,
+		"endColumn": 39,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public forward(eventData EventData) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/traccar/forward/EventForwarder.java",
+		"startLine": 19,
+		"endLine": 19,
+		"startColumn": 39,
+		"endColumn": 66,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "added parameter",
+		"codeElement": "resultHandler : ResultHandler"
+}, {
+		"filePath": "src/main/java/org/traccar/forward/EventForwarder.java",
+		"startLine": 19,
+		"endLine": 19,
+		"startColumn": 5,
+		"endColumn": 68,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added parameter",
+		"codeElement": "public forward(eventData EventData, resultHandler ResultHandler) : void"
+}]
+},
+{
+	"type": "Remove Class Annotation",
+	"description": "Remove Class Annotation @Singleton in class org.traccar.WebDataHandler",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/traccar/WebDataHandler.java",
+		"startLine": 56,
+		"endLine": 56,
+		"startColumn": 0,
+		"endColumn": 11,
+		"codeElementType": "ANNOTATION",
+		"description": "removed annotation",
+		"codeElement": "@Singleton"
+}, {
+		"filePath": "src/main/java/org/traccar/WebDataHandler.java",
+		"startLine": 56,
+		"endLine": 316,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original class declaration",
+		"codeElement": "org.traccar.WebDataHandler"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/traccar/forward/PositionForwarderUrl.java",
+		"startLine": 37,
+		"endLine": 166,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "class declaration with removed annotation",
+		"codeElement": "org.traccar.forward.PositionForwarderUrl"
+}]
+},
+{
+	"type": "Remove Class Annotation",
+	"description": "Remove Class Annotation @ChannelHandler.Sharable in class org.traccar.WebDataHandler",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/traccar/WebDataHandler.java",
+		"startLine": 57,
+		"endLine": 57,
+		"startColumn": 0,
+		"endColumn": 25,
+		"codeElementType": "ANNOTATION",
+		"description": "removed annotation",
+		"codeElement": "@ChannelHandler.Sharable"
+}, {
+		"filePath": "src/main/java/org/traccar/WebDataHandler.java",
+		"startLine": 56,
+		"endLine": 316,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original class declaration",
+		"codeElement": "org.traccar.WebDataHandler"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/traccar/forward/PositionForwarderUrl.java",
+		"startLine": 37,
+		"endLine": 166,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "class declaration with removed annotation",
+		"codeElement": "org.traccar.forward.PositionForwarderUrl"
+}]
+},
+{
+	"type": "Remove Parameter",
+	"description": "Remove Parameter cacheManager : CacheManager in method public WebDataHandler(config Config, cacheManager CacheManager, objectMapper ObjectMapper, client Client, timer Timer) from class org.traccar.WebDataHandler",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/traccar/WebDataHandler.java",
+		"startLine": 84,
+		"endLine": 84,
+		"startColumn": 28,
+		"endColumn": 53,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "removed parameter",
+		"codeElement": "cacheManager : CacheManager"
+}, {
+		"filePath": "src/main/java/org/traccar/WebDataHandler.java",
+		"startLine": 82,
+		"endLine": 101,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public WebDataHandler(config Config, cacheManager CacheManager, objectMapper ObjectMapper, client Client, timer Timer)"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/traccar/forward/PositionForwarderUrl.java",
+		"startLine": 45,
+		"endLine": 50,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed parameter",
+		"codeElement": "public PositionForwarderUrl(config Config, client Client, objectMapper ObjectMapper)"
+}]
+},
+{
+	"type": "Remove Parameter",
+	"description": "Remove Parameter timer : Timer in method public WebDataHandler(config Config, cacheManager CacheManager, objectMapper ObjectMapper, client Client, timer Timer) from class org.traccar.WebDataHandler",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/traccar/WebDataHandler.java",
+		"startLine": 84,
+		"endLine": 84,
+		"startColumn": 97,
+		"endColumn": 108,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "removed parameter",
+		"codeElement": "timer : Timer"
+}, {
+		"filePath": "src/main/java/org/traccar/WebDataHandler.java",
+		"startLine": 82,
+		"endLine": 101,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public WebDataHandler(config Config, cacheManager CacheManager, objectMapper ObjectMapper, client Client, timer Timer)"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/traccar/forward/PositionForwarderUrl.java",
+		"startLine": 45,
+		"endLine": 50,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed parameter",
+		"codeElement": "public PositionForwarderUrl(config Config, client Client, objectMapper ObjectMapper)"
+}]
+},
+{
+	"type": "Reorder Parameter",
+	"description": "Reorder Parameter [config : Config, cacheManager : CacheManager, objectMapper : ObjectMapper, client : Client, timer : Timer] to [config : Config, client : Client, objectMapper : ObjectMapper] in method public PositionForwarderUrl(config Config, client Client, objectMapper ObjectMapper) from class org.traccar.forward.PositionForwarderUrl",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/traccar/WebDataHandler.java",
+		"startLine": 84,
+		"endLine": 84,
+		"startColumn": 13,
+		"endColumn": 26,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original parameter declaration",
+		"codeElement": "config : Config"
+}, {
+		"filePath": "src/main/java/org/traccar/WebDataHandler.java",
+		"startLine": 84,
+		"endLine": 84,
+		"startColumn": 28,
+		"endColumn": 53,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original parameter declaration",
+		"codeElement": "cacheManager : CacheManager"
+}, {
+		"filePath": "src/main/java/org/traccar/WebDataHandler.java",
+		"startLine": 84,
+		"endLine": 84,
+		"startColumn": 55,
+		"endColumn": 80,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original parameter declaration",
+		"codeElement": "objectMapper : ObjectMapper"
+}, {
+		"filePath": "src/main/java/org/traccar/WebDataHandler.java",
+		"startLine": 84,
+		"endLine": 84,
+		"startColumn": 82,
+		"endColumn": 95,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original parameter declaration",
+		"codeElement": "client : Client"
+}, {
+		"filePath": "src/main/java/org/traccar/WebDataHandler.java",
+		"startLine": 84,
+		"endLine": 84,
+		"startColumn": 97,
+		"endColumn": 108,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original parameter declaration",
+		"codeElement": "timer : Timer"
+}, {
+		"filePath": "src/main/java/org/traccar/WebDataHandler.java",
+		"startLine": 82,
+		"endLine": 101,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public WebDataHandler(config Config, cacheManager CacheManager, objectMapper ObjectMapper, client Client, timer Timer)"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/traccar/forward/PositionForwarderUrl.java",
+		"startLine": 45,
+		"endLine": 45,
+		"startColumn": 33,
+		"endColumn": 46,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "reordered parameter declaration",
+		"codeElement": "config : Config"
+}, {
+		"filePath": "src/main/java/org/traccar/forward/PositionForwarderUrl.java",
+		"startLine": 45,
+		"endLine": 45,
+		"startColumn": 48,
+		"endColumn": 61,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "reordered parameter declaration",
+		"codeElement": "client : Client"
+}, {
+		"filePath": "src/main/java/org/traccar/forward/PositionForwarderUrl.java",
+		"startLine": 45,
+		"endLine": 45,
+		"startColumn": 63,
+		"endColumn": 88,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "reordered parameter declaration",
+		"codeElement": "objectMapper : ObjectMapper"
+}, {
+		"filePath": "src/main/java/org/traccar/forward/PositionForwarderUrl.java",
+		"startLine": 45,
+		"endLine": 50,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with reordered parameters",
+		"codeElement": "public PositionForwarderUrl(config Config, client Client, objectMapper ObjectMapper)"
+}]
+},
+{
+	"type": "Remove Method Annotation",
+	"description": "Remove Method Annotation @Inject in method public WebDataHandler(config Config, cacheManager CacheManager, objectMapper ObjectMapper, client Client, timer Timer) from class org.traccar.WebDataHandler",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/traccar/WebDataHandler.java",
+		"startLine": 82,
+		"endLine": 82,
+		"startColumn": 5,
+		"endColumn": 12,
+		"codeElementType": "ANNOTATION",
+		"description": "removed annotation",
+		"codeElement": "@Inject"
+}, {
+		"filePath": "src/main/java/org/traccar/WebDataHandler.java",
+		"startLine": 82,
+		"endLine": 101,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public WebDataHandler(config Config, cacheManager CacheManager, objectMapper ObjectMapper, client Client, timer Timer)"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/traccar/forward/PositionForwarderUrl.java",
+		"startLine": 45,
+		"endLine": 50,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed annotation",
+		"codeElement": "public PositionForwarderUrl(config Config, client Client, objectMapper ObjectMapper)"
+}]
+},
+{
+	"type": "Move And Rename Class",
+	"description": "Move And Rename Class org.traccar.WebDataHandler moved and renamed to org.traccar.forward.PositionForwarderUrl",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/traccar/WebDataHandler.java",
+		"startLine": 56,
+		"endLine": 316,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "org.traccar.WebDataHandler"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/traccar/forward/PositionForwarderUrl.java",
+		"startLine": 37,
+		"endLine": 166,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "moved and renamed type declaration",
+		"codeElement": "org.traccar.forward.PositionForwarderUrl"
+}]
+}
+]
+},
+{
+	"repository": "https://github.com/traccar/traccar.git",
+	"sha1": "826c661819d044c8f1cf950795ee0f33cc7675c6",
+	"url": "https://github.com/traccar/traccar/commit/826c661819d044c8f1cf950795ee0f33cc7675c6",
+	"refactorings": [{
+	"type": "Add Parameter",
+	"description": "Add Parameter objectMapper : ObjectMapper in method public provideEventForwarder(config Config, client Client, objectMapper ObjectMapper) : EventForwarder from class org.traccar.MainModule",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/traccar/MainModule.java",
+		"startLine": 315,
+		"endLine": 322,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public provideEventForwarder(config Config, client Client) : EventForwarder"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/traccar/MainModule.java",
+		"startLine": 319,
+		"endLine": 319,
+		"startColumn": 86,
+		"endColumn": 111,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "added parameter",
+		"codeElement": "objectMapper : ObjectMapper"
+}, {
+		"filePath": "src/main/java/org/traccar/MainModule.java",
+		"startLine": 317,
+		"endLine": 328,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added parameter",
+		"codeElement": "public provideEventForwarder(config Config, client Client, objectMapper ObjectMapper) : EventForwarder"
+}]
+}
+]
+},
+{
+	"repository": "https://github.com/traccar/traccar.git",
+	"sha1": "77c1e617587947c431b77773f53da5e222f4dd61",
+	"url": "https://github.com/traccar/traccar/commit/77c1e617587947c431b77773f53da5e222f4dd61",
+	"refactorings": []
+},
+{
+	"repository": "https://github.com/traccar/traccar.git",
+	"sha1": "4c973263a82d7c3515a8054a24e3396dfcab0e93",
+	"url": "https://github.com/traccar/traccar/commit/4c973263a82d7c3515a8054a24e3396dfcab0e93",
+	"refactorings": []
+},
+{
+	"repository": "https://github.com/traccar/traccar.git",
+	"sha1": "63cab28f909343476ffa39983da533e169f02838",
+	"url": "https://github.com/traccar/traccar/commit/63cab28f909343476ffa39983da533e169f02838",
+	"refactorings": []
+},
+{
+	"repository": "https://github.com/traccar/traccar.git",
+	"sha1": "39e12dfb5a9fe13d93c89a078f2dd0c03a55b404",
+	"url": "https://github.com/traccar/traccar/commit/39e12dfb5a9fe13d93c89a078f2dd0c03a55b404",
+	"refactorings": []
+},
+{
+	"repository": "https://github.com/traccar/traccar.git",
+	"sha1": "19d10da19db57b2119c295cb452a271c3de48f85",
+	"url": "https://github.com/traccar/traccar/commit/19d10da19db57b2119c295cb452a271c3de48f85",
+	"refactorings": [{
+	"type": "Remove Method Modifier",
+	"description": "Remove Method Modifier static in method private sendResponse(channel Channel, remoteAddress SocketAddress, rawId long, index int) : void from class org.traccar.protocol.AtrackProtocolDecoder",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/traccar/protocol/AtrackProtocolDecoder.java",
+		"startLine": 103,
+		"endLine": 111,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private sendResponse(channel Channel, remoteAddress SocketAddress, rawId long, index int) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/traccar/protocol/AtrackProtocolDecoder.java",
+		"startLine": 103,
+		"endLine": 111,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed modifier",
+		"codeElement": "private sendResponse(channel Channel, remoteAddress SocketAddress, rawId long, index int) : void"
+}]
+},
+{
+	"type": "Rename Variable",
+	"description": "Rename Variable startIndex : int to positionIndex : int in method private decodeText(channel Channel, remoteAddress SocketAddress, sentence String) : List<Position> from class org.traccar.protocol.AtrackProtocolDecoder",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/traccar/protocol/AtrackProtocolDecoder.java",
+		"startLine": 529,
+		"endLine": 529,
+		"startColumn": 13,
+		"endColumn": 28,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "startIndex : int"
+}, {
+		"filePath": "src/main/java/org/traccar/protocol/AtrackProtocolDecoder.java",
+		"startLine": 529,
+		"endLine": 529,
+		"startColumn": 9,
+		"endColumn": 29,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/traccar/protocol/AtrackProtocolDecoder.java",
+		"startLine": 531,
+		"endLine": 531,
+		"startColumn": 13,
+		"endColumn": 64,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/traccar/protocol/AtrackProtocolDecoder.java",
+		"startLine": 529,
+		"endLine": 529,
+		"startColumn": 13,
+		"endColumn": 31,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "renamed variable declaration",
+		"codeElement": "positionIndex : int"
+}, {
+		"filePath": "src/main/java/org/traccar/protocol/AtrackProtocolDecoder.java",
+		"startLine": 529,
+		"endLine": 529,
+		"startColumn": 9,
+		"endColumn": 32,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/traccar/protocol/AtrackProtocolDecoder.java",
+		"startLine": 531,
+		"endLine": 531,
+		"startColumn": 13,
+		"endColumn": 70,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+}
+]
+},
+{
+	"repository": "https://github.com/traccar/traccar.git",
+	"sha1": "146de22b51139edcc3132f403e86006ac1fc3419",
+	"url": "https://github.com/traccar/traccar/commit/146de22b51139edcc3132f403e86006ac1fc3419",
+	"refactorings": []
+},
+{
+	"repository": "https://github.com/traccar/traccar.git",
+	"sha1": "20ca33bf17c30bf2335d85365a224bc437e0347b",
+	"url": "https://github.com/traccar/traccar/commit/20ca33bf17c30bf2335d85365a224bc437e0347b",
+	"refactorings": [{
+	"type": "Add Parameter",
+	"description": "Add Parameter config : Config in method public DeviceLookupService(config Config, storage Storage, timer Timer) from class org.traccar.database.DeviceLookupService",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/traccar/database/DeviceLookupService.java",
+		"startLine": 72,
+		"endLine": 76,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public DeviceLookupService(storage Storage, timer Timer)"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/traccar/database/DeviceLookupService.java",
+		"startLine": 77,
+		"endLine": 77,
+		"startColumn": 32,
+		"endColumn": 45,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "added parameter",
+		"codeElement": "config : Config"
+}, {
+		"filePath": "src/main/java/org/traccar/database/DeviceLookupService.java",
+		"startLine": 76,
+		"endLine": 81,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added parameter",
+		"codeElement": "public DeviceLookupService(config Config, storage Storage, timer Timer)"
+}]
+}
+]
+},
+{
+	"repository": "https://github.com/traccar/traccar.git",
+	"sha1": "82cd47bf236808d4ef13b5c654ed5b52ed2746bb",
+	"url": "https://github.com/traccar/traccar/commit/82cd47bf236808d4ef13b5c654ed5b52ed2746bb",
+	"refactorings": []
+},
+{
+	"repository": "https://github.com/traccar/traccar.git",
+	"sha1": "1a08e7cc2612539e6e16bb17b76a8d6866bb24f7",
+	"url": "https://github.com/traccar/traccar/commit/1a08e7cc2612539e6e16bb17b76a8d6866bb24f7",
+	"refactorings": []
+},
+{
+	"repository": "https://github.com/traccar/traccar.git",
+	"sha1": "938872ff5e2fad867720ec9c971ea432ba623c2c",
+	"url": "https://github.com/traccar/traccar/commit/938872ff5e2fad867720ec9c971ea432ba623c2c",
+	"refactorings": []
+},
+{
+	"repository": "https://github.com/traccar/traccar.git",
+	"sha1": "6142cf557dc130828c12dbfb25ab18eda4bc0f7d",
+	"url": "https://github.com/traccar/traccar/commit/6142cf557dc130828c12dbfb25ab18eda4bc0f7d",
+	"refactorings": []
+},
+{
+	"repository": "https://github.com/traccar/traccar.git",
+	"sha1": "dbadcca56972dee45d2c39c94b088e194a240c09",
+	"url": "https://github.com/traccar/traccar/commit/dbadcca56972dee45d2c39c94b088e194a240c09",
+	"refactorings": []
+}]
+}

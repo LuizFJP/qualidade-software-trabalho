@@ -2,7 +2,6 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/elasticsearch" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/elasticsearch/distribution/bwc/bugfix/build/bwc/checkout-8.18" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/traccar" vcs="Git" />
   </component>
 </project>

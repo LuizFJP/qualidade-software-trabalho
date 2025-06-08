@@ -1,0 +1,267 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/traccar/traccar.git",
+	"sha1": "ee338c990e10c07d992544a9dd1929a098570a13",
+	"url": "https://github.com/traccar/traccar/commit/ee338c990e10c07d992544a9dd1929a098570a13",
+	"refactorings": []
+},
+{
+	"repository": "https://github.com/traccar/traccar.git",
+	"sha1": "f637f5d2e98888566665b847a0c4789ae9908298",
+	"url": "https://github.com/traccar/traccar/commit/f637f5d2e98888566665b847a0c4789ae9908298",
+	"refactorings": []
+},
+{
+	"repository": "https://github.com/traccar/traccar.git",
+	"sha1": "f71045c1e02e0d34daa455e706fcb68ae76887d3",
+	"url": "https://github.com/traccar/traccar/commit/f71045c1e02e0d34daa455e706fcb68ae76887d3",
+	"refactorings": []
+},
+{
+	"repository": "https://github.com/traccar/traccar.git",
+	"sha1": "89c865149c1889518151b29afe4c529946b87207",
+	"url": "https://github.com/traccar/traccar/commit/89c865149c1889518151b29afe4c529946b87207",
+	"refactorings": []
+},
+{
+	"repository": "https://github.com/traccar/traccar.git",
+	"sha1": "60dd5924a7437f1de39b7a20b5913265ba89b9ac",
+	"url": "https://github.com/traccar/traccar/commit/60dd5924a7437f1de39b7a20b5913265ba89b9ac",
+	"refactorings": []
+},
+{
+	"repository": "https://github.com/traccar/traccar.git",
+	"sha1": "2d585280110b39d23c89bebf12cebd8a0f877077",
+	"url": "https://github.com/traccar/traccar/commit/2d585280110b39d23c89bebf12cebd8a0f877077",
+	"refactorings": []
+},
+{
+	"repository": "https://github.com/traccar/traccar.git",
+	"sha1": "44514f93dd90d5eb277e9b49bf8d9434a6ef2216",
+	"url": "https://github.com/traccar/traccar/commit/44514f93dd90d5eb277e9b49bf8d9434a6ef2216",
+	"refactorings": []
+},
+{
+	"repository": "https://github.com/traccar/traccar.git",
+	"sha1": "6470d3a1ad577d1939a8cd36d3880f231fa26d2b",
+	"url": "https://github.com/traccar/traccar/commit/6470d3a1ad577d1939a8cd36d3880f231fa26d2b",
+	"refactorings": [{
+	"type": "Change Type Declaration Kind",
+	"description": "Change Type Declaration Kind class to record in type org.traccar.notification.NotificationMessage",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/traccar/notification/NotificationMessage.java",
+		"startLine": 22,
+		"endLine": 40,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original class declaration",
+		"codeElement": "org.traccar.notification.NotificationMessage"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/traccar/notification/NotificationMessage.java",
+		"startLine": 19,
+		"endLine": 23,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "RECORD_DECLARATION",
+		"description": "class declaration with changed type declaration kind",
+		"codeElement": "org.traccar.notification.NotificationMessage"
+}]
+},
+{
+	"type": "Remove Parameter Annotation",
+	"description": "Remove Parameter Annotation @JsonProperty(\"subject\") in parameter subject : String in method public NotificationMessage(subject String, body String) from class org.traccar.notification.NotificationMessage",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/traccar/notification/NotificationMessage.java",
+		"startLine": 28,
+		"endLine": 28,
+		"startColumn": 32,
+		"endColumn": 56,
+		"codeElementType": "ANNOTATION",
+		"description": "removed annotation",
+		"codeElement": "@JsonProperty(\"subject\")"
+}, {
+		"filePath": "src/main/java/org/traccar/notification/NotificationMessage.java",
+		"startLine": 28,
+		"endLine": 28,
+		"startColumn": 32,
+		"endColumn": 71,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "subject : String"
+}, {
+		"filePath": "src/main/java/org/traccar/notification/NotificationMessage.java",
+		"startLine": 27,
+		"endLine": 31,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public NotificationMessage(subject String, body String)"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/traccar/notification/NotificationMessage.java",
+		"startLine": 20,
+		"endLine": 20,
+		"startColumn": 32,
+		"endColumn": 46,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "variable declaration with removed annotation",
+		"codeElement": "subject : String"
+}, {
+		"filePath": "src/main/java/org/traccar/notification/NotificationMessage.java",
+		"startLine": 20,
+		"endLine": 22,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed variable annotation",
+		"codeElement": "public NotificationMessage(subject String, body String)"
+}]
+},
+{
+	"type": "Remove Parameter Annotation",
+	"description": "Remove Parameter Annotation @JsonProperty(\"body\") in parameter body : String in method public NotificationMessage(subject String, body String) from class org.traccar.notification.NotificationMessage",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/traccar/notification/NotificationMessage.java",
+		"startLine": 28,
+		"endLine": 28,
+		"startColumn": 73,
+		"endColumn": 94,
+		"codeElementType": "ANNOTATION",
+		"description": "removed annotation",
+		"codeElement": "@JsonProperty(\"body\")"
+}, {
+		"filePath": "src/main/java/org/traccar/notification/NotificationMessage.java",
+		"startLine": 28,
+		"endLine": 28,
+		"startColumn": 73,
+		"endColumn": 106,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "body : String"
+}, {
+		"filePath": "src/main/java/org/traccar/notification/NotificationMessage.java",
+		"startLine": 27,
+		"endLine": 31,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public NotificationMessage(subject String, body String)"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/traccar/notification/NotificationMessage.java",
+		"startLine": 20,
+		"endLine": 20,
+		"startColumn": 48,
+		"endColumn": 59,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "variable declaration with removed annotation",
+		"codeElement": "body : String"
+}, {
+		"filePath": "src/main/java/org/traccar/notification/NotificationMessage.java",
+		"startLine": 20,
+		"endLine": 22,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed variable annotation",
+		"codeElement": "public NotificationMessage(subject String, body String)"
+}]
+},
+{
+	"type": "Remove Method Annotation",
+	"description": "Remove Method Annotation @JsonCreator(mode = JsonCreator.Mode.PROPERTIES) in method public NotificationMessage(subject String, body String) from class org.traccar.notification.NotificationMessage",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/traccar/notification/NotificationMessage.java",
+		"startLine": 27,
+		"endLine": 27,
+		"startColumn": 5,
+		"endColumn": 53,
+		"codeElementType": "ANNOTATION",
+		"description": "removed annotation",
+		"codeElement": "@JsonCreator(mode = JsonCreator.Mode.PROPERTIES)"
+}, {
+		"filePath": "src/main/java/org/traccar/notification/NotificationMessage.java",
+		"startLine": 27,
+		"endLine": 31,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public NotificationMessage(subject String, body String)"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/traccar/notification/NotificationMessage.java",
+		"startLine": 20,
+		"endLine": 22,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed annotation",
+		"codeElement": "public NotificationMessage(subject String, body String)"
+}]
+},
+{
+	"type": "Add Parameter",
+	"description": "Add Parameter priority : boolean in method public formatMessage(velocityContext VelocityContext, name String, templatePath String, priority boolean) : NotificationMessage from class org.traccar.notification.TextTemplateFormatter",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/traccar/notification/TextTemplateFormatter.java",
+		"startLine": 81,
+		"endLine": 85,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public formatMessage(velocityContext VelocityContext, name String, templatePath String) : NotificationMessage"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/traccar/notification/TextTemplateFormatter.java",
+		"startLine": 82,
+		"endLine": 82,
+		"startColumn": 80,
+		"endColumn": 96,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "added parameter",
+		"codeElement": "priority : boolean"
+}, {
+		"filePath": "src/main/java/org/traccar/notification/TextTemplateFormatter.java",
+		"startLine": 81,
+		"endLine": 86,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added parameter",
+		"codeElement": "public formatMessage(velocityContext VelocityContext, name String, templatePath String, priority boolean) : NotificationMessage"
+}]
+}
+]
+},
+{
+	"repository": "https://github.com/traccar/traccar.git",
+	"sha1": "d029952ba056b9e4843ac24dcabf2c08cf1939bd",
+	"url": "https://github.com/traccar/traccar/commit/d029952ba056b9e4843ac24dcabf2c08cf1939bd",
+	"refactorings": []
+},
+{
+	"repository": "https://github.com/traccar/traccar.git",
+	"sha1": "36832eda825ecdbda7e1af59034c4bd8762b78a9",
+	"url": "https://github.com/traccar/traccar/commit/36832eda825ecdbda7e1af59034c4bd8762b78a9",
+	"refactorings": []
+},
+{
+	"repository": "https://github.com/traccar/traccar.git",
+	"sha1": "225b666bbc8e6a4d4b035af6bb04fecb2a59c85d",
+	"url": "https://github.com/traccar/traccar/commit/225b666bbc8e6a4d4b035af6bb04fecb2a59c85d",
+	"refactorings": []
+},
+{
+	"repository": "https://github.com/traccar/traccar.git",
+	"sha1": "99d4c864606047b6a05c9c13737f5966781c2a9d",
+	"url": "https://github.com/traccar/traccar/commit/99d4c864606047b6a05c9c13737f5966781c2a9d",
+	"refactorings": []
+}]
+}
