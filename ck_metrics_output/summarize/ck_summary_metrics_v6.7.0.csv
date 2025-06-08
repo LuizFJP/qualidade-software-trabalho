@@ -1,0 +1,2 @@
+release,loc_mean,loc_median,loc_var,wmc_mean,wmc_median,wmc_var,dit_mean,dit_median,dit_var,noc_mean,noc_median,noc_var,cbo_mean,cbo_median,cbo_var,lcom_mean,lcom_median,lcom_var,rfc_mean,rfc_median,rfc_var
+v6.7.0,57.7,27.0,10139.7213,12.8567,5.0,829.5949,1.9608,2.0,0.3572,0.1567,0.0,1.5858,6.7031,5.0,25.3201,9.9443,0.0,3906.7845,16.1371,8.0,372.7596
