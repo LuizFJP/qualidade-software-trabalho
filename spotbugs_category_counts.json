@@ -1,0 +1,182 @@
+{
+  "spotbugs_5.10": {
+    "STYLE": 22,
+    "MALICIOUS_CODE": 874,
+    "BAD_PRACTICE": 59,
+    "MT_CORRECTNESS": 5,
+    "PERFORMANCE": 19,
+    "I18N": 10,
+    "CORRECTNESS": 93
+  },
+  "spotbugs_5.11": {
+    "STYLE": 21,
+    "MALICIOUS_CODE": 891,
+    "BAD_PRACTICE": 59,
+    "MT_CORRECTNESS": 5,
+    "PERFORMANCE": 19,
+    "I18N": 11,
+    "CORRECTNESS": 93
+  },
+  "spotbugs_5.12": {
+    "STYLE": 21,
+    "MALICIOUS_CODE": 891,
+    "BAD_PRACTICE": 60,
+    "MT_CORRECTNESS": 5,
+    "PERFORMANCE": 19,
+    "I18N": 11,
+    "CORRECTNESS": 93
+  },
+  "spotbugs_5.3": {
+    "STYLE": 20,
+    "MALICIOUS_CODE": 894,
+    "BAD_PRACTICE": 49,
+    "MT_CORRECTNESS": 5,
+    "CORRECTNESS": 93,
+    "I18N": 5,
+    "PERFORMANCE": 16
+  },
+  "spotbugs_5.4": {
+    "STYLE": 20,
+    "MALICIOUS_CODE": 894,
+    "BAD_PRACTICE": 49,
+    "MT_CORRECTNESS": 5,
+    "CORRECTNESS": 93,
+    "I18N": 5,
+    "PERFORMANCE": 16
+  },
+  "spotbugs_5.5": {
+    "STYLE": 20,
+    "MALICIOUS_CODE": 910,
+    "BAD_PRACTICE": 50,
+    "MT_CORRECTNESS": 5,
+    "CORRECTNESS": 93,
+    "I18N": 5,
+    "PERFORMANCE": 16
+  },
+  "spotbugs_5.6": {
+    "STYLE": 20,
+    "MALICIOUS_CODE": 919,
+    "BAD_PRACTICE": 51,
+    "MT_CORRECTNESS": 5,
+    "I18N": 7,
+    "CORRECTNESS": 93,
+    "PERFORMANCE": 16
+  },
+  "spotbugs_5.7": {
+    "STYLE": 21,
+    "MALICIOUS_CODE": 840,
+    "BAD_PRACTICE": 57,
+    "MT_CORRECTNESS": 5,
+    "I18N": 7,
+    "CORRECTNESS": 93,
+    "PERFORMANCE": 16
+  },
+  "spotbugs_5.8": {
+    "STYLE": 23,
+    "MALICIOUS_CODE": 847,
+    "BAD_PRACTICE": 57,
+    "MT_CORRECTNESS": 5,
+    "I18N": 9,
+    "CORRECTNESS": 93,
+    "PERFORMANCE": 16
+  },
+  "spotbugs_5.9": {
+    "STYLE": 22,
+    "MALICIOUS_CODE": 875,
+    "BAD_PRACTICE": 59,
+    "MT_CORRECTNESS": 5,
+    "PERFORMANCE": 17,
+    "I18N": 10,
+    "CORRECTNESS": 93
+  },
+  "spotbugs_6.0": {
+    "MALICIOUS_CODE": 903,
+    "STYLE": 10,
+    "BAD_PRACTICE": 61,
+    "MT_CORRECTNESS": 5,
+    "PERFORMANCE": 19,
+    "I18N": 11,
+    "CORRECTNESS": 93
+  },
+  "spotbugs_6.1": {
+    "MALICIOUS_CODE": 903,
+    "STYLE": 10,
+    "BAD_PRACTICE": 61,
+    "MT_CORRECTNESS": 5,
+    "PERFORMANCE": 19,
+    "I18N": 11,
+    "CORRECTNESS": 93
+  },
+  "spotbugs_6.2": {
+    "MALICIOUS_CODE": 903,
+    "STYLE": 9,
+    "BAD_PRACTICE": 64,
+    "MT_CORRECTNESS": 5,
+    "PERFORMANCE": 19,
+    "I18N": 11,
+    "CORRECTNESS": 93
+  },
+  "spotbugs_6.3": {
+    "MALICIOUS_CODE": 904,
+    "STYLE": 64,
+    "BAD_PRACTICE": 73,
+    "MT_CORRECTNESS": 5,
+    "PERFORMANCE": 19,
+    "I18N": 11,
+    "CORRECTNESS": 93
+  },
+  "spotbugs_6.4": {
+    "MALICIOUS_CODE": 905,
+    "STYLE": 64,
+    "BAD_PRACTICE": 73,
+    "MT_CORRECTNESS": 5,
+    "PERFORMANCE": 19,
+    "I18N": 11,
+    "CORRECTNESS": 93
+  },
+  "spotbugs_6.5": {
+    "MALICIOUS_CODE": 907,
+    "STYLE": 64,
+    "BAD_PRACTICE": 74,
+    "MT_CORRECTNESS": 5,
+    "PERFORMANCE": 19,
+    "I18N": 12,
+    "CORRECTNESS": 93
+  },
+  "spotbugs_6.6": {
+    "MALICIOUS_CODE": 908,
+    "STYLE": 65,
+    "BAD_PRACTICE": 74,
+    "MT_CORRECTNESS": 5,
+    "PERFORMANCE": 19,
+    "I18N": 10,
+    "CORRECTNESS": 93
+  },
+  "spotbugs_6.7.0": {
+    "MALICIOUS_CODE": 917,
+    "STYLE": 65,
+    "BAD_PRACTICE": 75,
+    "MT_CORRECTNESS": 5,
+    "PERFORMANCE": 19,
+    "I18N": 10,
+    "CORRECTNESS": 93
+  },
+  "spotbugs_6.7.1": {
+    "MALICIOUS_CODE": 917,
+    "STYLE": 65,
+    "BAD_PRACTICE": 75,
+    "MT_CORRECTNESS": 5,
+    "PERFORMANCE": 19,
+    "I18N": 10,
+    "CORRECTNESS": 93
+  },
+  "spotbugs_6.7.2": {
+    "MALICIOUS_CODE": 917,
+    "STYLE": 65,
+    "BAD_PRACTICE": 75,
+    "MT_CORRECTNESS": 5,
+    "PERFORMANCE": 19,
+    "I18N": 10,
+    "CORRECTNESS": 93
+  }
+}
