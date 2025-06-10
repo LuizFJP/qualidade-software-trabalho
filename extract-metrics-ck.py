@@ -43,6 +43,7 @@ def main():
 
         stats = {'release': release}
         for m in metrics:
+            print(m)
             stats[f'{m}_mean']   = round(df[m].mean(), 4)
             stats[f'{m}_median'] = round(df[m].median(), 4)
             stats[f'{m}_var']    = round(df[m].var(ddof=0), 4)
@@ -107,7 +108,27 @@ def main():
     plt.savefig(combined_fn)
     plt.close()
     print(f'Gerado: {combined_fn}')
+ # 3) Tabela em PNG com apenas as colunas de mean
+    mean_cols = [f'{m}_mean' for m in metrics]
+    table_df = summary_all[mean_cols]
 
+    # Ajusta figura para caber a tabela
+    fig, ax = plt.subplots(figsize=(len(mean_cols)*1.5 + 2, len(table_df)*0.4 + 2))
+    ax.axis('off')
+    tbl = ax.table(
+        cellText=table_df.values,
+        colLabels=[c.replace('_mean','').upper() + ' MEAN' for c in mean_cols],
+        rowLabels=table_df.index,
+        cellLoc='center',
+        loc='center'
+    )
+    tbl.auto_set_font_size(False)
+    tbl.set_fontsize(10)
+    tbl.scale(1, 1.5)
+    plt.tight_layout()
+    table_fn = 'ck_metrics_mean_summary_table.png'
+    fig.savefig(table_fn, dpi=150)
+    plt.close(fig)
+    print(f'Gerado tabela de médias: {table_fn}')
 if __name__ == '__main__':
     main()
-

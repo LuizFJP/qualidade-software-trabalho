@@ -45,6 +45,27 @@
             </Attribute>
           </value>
         </entry>
+        <entry key="/ck_metrics_output/v6.1/ck_metrics.csvclass.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/ck_metrics_output/v6.2/ck_metrics.csvclass.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/ck_metrics_output/v6.3/ck_metrics.csvclass.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
         <entry key="/ck_metrics_output/v6.7.2/ck_metrics.csvclass.csv">
           <value>
             <Attribute>
@@ -52,161 +73,280 @@
             </Attribute>
           </value>
         </entry>
-        <entry key="/ck_metrics_summary.csv">
+        <entry key="/normalized_refactorings_5.10.csv">
           <value>
             <Attribute>
               <option name="separator" value="," />
             </Attribute>
           </value>
         </entry>
-        <entry key="/ck_metrics_summary_stats.csv">
+        <entry key="/normalized_refactorings_5.11.csv">
           <value>
             <Attribute>
               <option name="separator" value="," />
             </Attribute>
           </value>
         </entry>
-        <entry key="/ck_summary_metrics_all_releases.csv">
+        <entry key="/normalized_refactorings_5.12.csv">
           <value>
             <Attribute>
               <option name="separator" value="," />
             </Attribute>
           </value>
         </entry>
-        <entry key="/ck_summary_metrics_v5.10.csv">
+        <entry key="/normalized_refactorings_5.3.csv">
           <value>
             <Attribute>
               <option name="separator" value="," />
             </Attribute>
           </value>
         </entry>
-        <entry key="/ck_summary_metrics_v5.11.csv">
+        <entry key="/normalized_refactorings_5.4.csv">
           <value>
             <Attribute>
               <option name="separator" value="," />
             </Attribute>
           </value>
         </entry>
-        <entry key="/ck_summary_metrics_v5.12.csv">
+        <entry key="/normalized_refactorings_5.5.csv">
           <value>
             <Attribute>
               <option name="separator" value="," />
             </Attribute>
           </value>
         </entry>
-        <entry key="/ck_summary_metrics_v5.3.csv">
+        <entry key="/normalized_refactorings_5.6.csv">
           <value>
             <Attribute>
               <option name="separator" value="," />
             </Attribute>
           </value>
         </entry>
-        <entry key="/ck_summary_metrics_v5.4.csv">
+        <entry key="/normalized_refactorings_5.7.csv">
           <value>
             <Attribute>
               <option name="separator" value="," />
             </Attribute>
           </value>
         </entry>
-        <entry key="/ck_summary_metrics_v5.5.csv">
+        <entry key="/normalized_refactorings_5.8.csv">
           <value>
             <Attribute>
               <option name="separator" value="," />
             </Attribute>
           </value>
         </entry>
-        <entry key="/ck_summary_metrics_v5.6.csv">
+        <entry key="/normalized_refactorings_5.9.csv">
           <value>
             <Attribute>
               <option name="separator" value="," />
             </Attribute>
           </value>
         </entry>
-        <entry key="/ck_summary_metrics_v5.7.csv">
+        <entry key="/normalized_refactorings_6.0.csv">
           <value>
             <Attribute>
               <option name="separator" value="," />
             </Attribute>
           </value>
         </entry>
-        <entry key="/ck_summary_metrics_v5.8.csv">
+        <entry key="/normalized_refactorings_6.1.csv">
           <value>
             <Attribute>
               <option name="separator" value="," />
             </Attribute>
           </value>
         </entry>
-        <entry key="/ck_summary_metrics_v5.9.csv">
+        <entry key="/normalized_refactorings_6.2.csv">
           <value>
             <Attribute>
               <option name="separator" value="," />
             </Attribute>
           </value>
         </entry>
-        <entry key="/ck_summary_metrics_v6.0.csv">
+        <entry key="/normalized_refactorings_6.3.csv">
           <value>
             <Attribute>
               <option name="separator" value="," />
             </Attribute>
           </value>
         </entry>
-        <entry key="/ck_summary_metrics_v6.1.csv">
+        <entry key="/normalized_refactorings_6.4.csv">
           <value>
             <Attribute>
               <option name="separator" value="," />
             </Attribute>
           </value>
         </entry>
-        <entry key="/ck_summary_metrics_v6.2.csv">
+        <entry key="/normalized_refactorings_6.5.csv">
           <value>
             <Attribute>
               <option name="separator" value="," />
             </Attribute>
           </value>
         </entry>
-        <entry key="/ck_summary_metrics_v6.3.csv">
+        <entry key="/normalized_refactorings_6.6.csv">
           <value>
             <Attribute>
               <option name="separator" value="," />
             </Attribute>
           </value>
         </entry>
-        <entry key="/ck_summary_metrics_v6.4.csv">
+        <entry key="/normalized_refactorings_6.7.0.csv">
           <value>
             <Attribute>
               <option name="separator" value="," />
             </Attribute>
           </value>
         </entry>
-        <entry key="/ck_summary_metrics_v6.5.csv">
+        <entry key="/normalized_refactorings_6.7.1.csv">
           <value>
             <Attribute>
               <option name="separator" value="," />
             </Attribute>
           </value>
         </entry>
-        <entry key="/ck_summary_metrics_v6.6.csv">
+        <entry key="/normalized_refactorings_6.7.2.csv">
           <value>
             <Attribute>
               <option name="separator" value="," />
             </Attribute>
           </value>
         </entry>
-        <entry key="/ck_summary_metrics_v6.7.0.csv">
+        <entry key="/normalized_spotbugs_5.10.csv">
           <value>
             <Attribute>
               <option name="separator" value="," />
             </Attribute>
           </value>
         </entry>
-        <entry key="/ck_summary_metrics_v6.7.1.csv">
+        <entry key="/normalized_spotbugs_5.11.csv">
           <value>
             <Attribute>
               <option name="separator" value="," />
             </Attribute>
           </value>
         </entry>
-        <entry key="/ck_summary_metrics_v6.7.2.csv">
+        <entry key="/normalized_spotbugs_5.12.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/normalized_spotbugs_5.3.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/normalized_spotbugs_5.4.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/normalized_spotbugs_5.5.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/normalized_spotbugs_5.6.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/normalized_spotbugs_5.7.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/normalized_spotbugs_5.8.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/normalized_spotbugs_5.9.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/normalized_spotbugs_6.0.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/normalized_spotbugs_6.1.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/normalized_spotbugs_6.2.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/normalized_spotbugs_6.3.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/normalized_spotbugs_6.4.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/normalized_spotbugs_6.5.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/normalized_spotbugs_6.6.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/normalized_spotbugs_6.7.0.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/normalized_spotbugs_6.7.1.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/normalized_spotbugs_6.7.2.csv">
           <value>
             <Attribute>
               <option name="separator" value="," />
