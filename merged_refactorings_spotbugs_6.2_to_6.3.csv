@@ -1,0 +1,11 @@
+class,qtd_refactorings,bugs_6.2,bugs_6.3
+org.traccar.schedule.TaskReports,3,1,1
+org.traccar.api.security.PermissionsService,2,3,3
+org.traccar.schedule.TaskHealthCheck,2,2,2
+org.traccar.model.Calendar,2,2,3
+org.traccar.protocol.TeltonikaProtocolDecoder,1,1,2
+org.traccar.handler.network.StandardLoggingHandler,1,1,1
+org.traccar.database.StatisticsManager,1,3,3
+org.traccar.schedule.TaskDeleteTemporary,1,1,1
+org.traccar.schedule.TaskDeviceInactivityCheck,1,1,1
+org.traccar.schedule.TaskExpirations,1,2,2

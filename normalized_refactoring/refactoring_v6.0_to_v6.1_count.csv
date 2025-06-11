@@ -1,0 +1,7 @@
+class,qtd_refactorings
+org.traccar.geocoder.PlusCodesGeocoder,1
+org.traccar.geocoder.TestGeocoder,1
+org.traccar.helper.LogAction,1
+org.traccar.handler.GeocoderHandler,1
+org.traccar.web.DefaultOverrideServlet,1
+org.traccar.web.ModernDefaultServlet,1

@@ -1,0 +1,10 @@
+class,qtd_refactorings,bugs_5.9,bugs_5.10
+org.traccar.database.OpenIdProvider,8,1,1
+org.traccar.protocol.NavtelecomProtocolDecoder,3,1,1
+org.traccar.database.CommandsManager,3,2,2
+org.traccar.api.security.LoginService,3,2,2
+org.traccar.handler.ComputedAttributesHandler,2,1,1
+org.traccar.handler.DistanceHandler,2,1,1
+org.traccar.reports.common.ReportUtils,2,4,4
+org.traccar.protocol.Gt06ProtocolDecoder,1,1,1
+org.traccar.web.OverrideFilter,1,2,2

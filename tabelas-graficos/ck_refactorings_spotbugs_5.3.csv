@@ -1,0 +1,35 @@
+class,refactoring_count,refactorings,bug_count,bug_types
+org.traccar.handler.events.MaintenanceEventHandler,2,Add Class Annotation,1,EI_EXPOSE_REP2
+org.traccar.handler.FilterHandler,2,Add Class Annotation,2,EI_EXPOSE_REP2
+org.traccar.database.CommandsManager,5,Add Parameter;Merge Conditional;Remove Parameter,2,EI_EXPOSE_REP2
+org.traccar.handler.DistanceHandler,2,Add Class Annotation,1,EI_EXPOSE_REP2
+org.traccar.handler.ComputedAttributesHandler,2,Add Class Annotation,1,EI_EXPOSE_REP2
+org.traccar.handler.EngineHoursHandler,2,Add Class Annotation,1,EI_EXPOSE_REP2
+org.traccar.handler.events.MotionEventHandler,24,Add Class Annotation;Change Attribute Type;Change Parameter Type;Change Variable Type;Inline Method;Inline Variable;Rename Attribute;Rename Parameter;Rename Variable,2,EI_EXPOSE_REP2
+org.traccar.handler.events.IgnitionEventHandler,2,Add Class Annotation,1,EI_EXPOSE_REP2
+org.traccar.api.security.LoginService,2,Add Class Annotation,1,EI_EXPOSE_REP2
+org.traccar.handler.RemoteAddressHandler,2,Add Class Annotation,1,RV_RETURN_VALUE_IGNORED_NO_SIDE_EFFECT
+org.traccar.protocol.SuntechProtocolDecoder,2,Extract Variable,1,DLS_DEAD_LOCAL_STORE
+org.traccar.handler.TimeHandler,2,Add Class Annotation,1,RV_RETURN_VALUE_IGNORED_NO_SIDE_EFFECT
+org.traccar.WebDataHandler,2,Add Class Annotation,2,EI_EXPOSE_REP2
+org.traccar.handler.events.GeofenceEventHandler,2,Add Class Annotation,4,EI_EXPOSE_REP2
+org.traccar.notification.TextTemplateFormatter,2,Add Class Annotation,1,EI_EXPOSE_REP2
+org.traccar.api.signature.CryptoManager,2,Add Class Annotation,1,EI_EXPOSE_REP2
+org.traccar.handler.events.BehaviorEventHandler,2,Add Class Annotation,1,EI_EXPOSE_REP2
+org.traccar.MainEventHandler,5,Add Class Annotation;Remove Parameter,3,EI_EXPOSE_REP2
+org.traccar.session.ConnectionManager,1,Remove Parameter,3,EI_EXPOSE_REP2
+org.traccar.handler.events.AlertEventHandler,2,Add Class Annotation,1,EI_EXPOSE_REP2
+org.traccar.handler.events.FuelEventHandler,2,Add Class Annotation,1,EI_EXPOSE_REP2
+org.traccar.handler.SpeedLimitHandler,2,Add Class Annotation,1,RV_RETURN_VALUE_IGNORED_NO_SIDE_EFFECT
+org.traccar.handler.events.DriverEventHandler,2,Add Class Annotation,1,EI_EXPOSE_REP2
+org.traccar.helper.Checksum,7,Change Method Access Modifier;Change Parameter Type;Move And Rename Method;Rename Method,1,BIT_SIGNED_CHECK_HIGH_BIT
+org.traccar.web.WebServer,1,Remove Method Annotation,1,EI_EXPOSE_REP2
+org.traccar.handler.CopyAttributesHandler,2,Add Class Annotation,1,EI_EXPOSE_REP2
+org.traccar.handler.DefaultDataHandler,2,Add Class Annotation,1,EI_EXPOSE_REP2
+org.traccar.api.signature.TokenManager,2,Add Class Annotation,1,EI_EXPOSE_REP2
+org.traccar.notificators.NotificatorWeb,3,Add Class Annotation;Remove Parameter,1,EI_EXPOSE_REP2
+org.traccar.reports.common.ReportUtils,19,Add Class Annotation;Change Variable Type;Extract Variable;Merge Conditional;Rename Variable,4,EI_EXPOSE_REP2
+org.traccar.handler.events.OverspeedEventHandler,33,Add Class Annotation;Add Parameter;Change Attribute Type;Change Variable Type;Extract Class;Inline Method;Inline Variable;Remove Parameter;Rename Attribute;Rename Variable,2,EI_EXPOSE_REP2
+org.traccar.notification.NotificationFormatter,2,Add Class Annotation,1,EI_EXPOSE_REP2
+org.traccar.notification.EventForwarder,2,Replace Generic With Diamond,1,EI_EXPOSE_REP2
+org.traccar.database.NotificationManager,2,Add Class Annotation,3,EI_EXPOSE_REP2

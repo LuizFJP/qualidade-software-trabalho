@@ -1,0 +1,4 @@
+class,qtd_refactorings
+org.traccar.protocol.SuntechProtocolDecoder,6
+org.traccar.database.OpenIdProvider,6
+org.traccar.MainModule,2

@@ -1,0 +1,6 @@
+class,qtd_refactorings
+org.traccar.session.cache.CacheManager,7
+org.traccar.reports.SummaryReportProvider,1
+org.traccar.protocol.HuabaoProtocolDecoder,1
+org.traccar.session.ConnectionManager,1
+org.traccar.ProcessingHandler,1

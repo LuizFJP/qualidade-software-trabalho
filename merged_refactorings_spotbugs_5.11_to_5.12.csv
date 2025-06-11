@@ -1,0 +1,4 @@
+class,qtd_refactorings,bugs_5.11,bugs_5.12
+org.traccar.session.cache.CacheManager,1,5,5
+org.traccar.notification.NotificationFormatter,1,1,1
+org.traccar.schedule.TaskHealthCheck,1,2,2

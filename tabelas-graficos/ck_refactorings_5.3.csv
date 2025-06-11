@@ -1,0 +1,55 @@
+class,refactoring_count,refactorings
+org.traccar.handler.events.MaintenanceEventHandler,2,Add Class Annotation
+org.traccar.handler.FilterHandler,2,Add Class Annotation
+org.traccar.database.CommandsManager,5,Add Parameter;Merge Conditional;Remove Parameter
+org.traccar.handler.DistanceHandler,2,Add Class Annotation
+org.traccar.handler.ComputedAttributesHandler,2,Add Class Annotation
+org.traccar.handler.EngineHoursHandler,2,Add Class Annotation
+org.traccar.handler.events.MotionEventHandler,24,Add Class Annotation;Change Attribute Type;Change Parameter Type;Change Variable Type;Inline Method;Inline Variable;Rename Attribute;Rename Parameter;Rename Variable
+org.traccar.MainModule,14,Add Method Annotation
+org.traccar.handler.events.IgnitionEventHandler,2,Add Class Annotation
+org.traccar.notificators.NotificatorTelegram,2,Add Class Annotation
+org.traccar.handler.events.MediaEventHandler,2,Add Class Annotation
+org.traccar.database.MediaManager,2,Add Class Annotation
+org.traccar.notificators.NotificatorTraccar,2,Add Class Annotation
+org.traccar.api.security.LoginService,2,Add Class Annotation
+org.traccar.handler.RemoteAddressHandler,2,Add Class Annotation
+org.traccar.protocol.SuntechProtocolDecoder,2,Extract Variable
+org.traccar.notificators.NotificatorPushover,2,Add Class Annotation
+org.traccar.handler.events.CommandResultEventHandler,2,Add Class Annotation
+org.traccar.handler.TimeHandler,2,Add Class Annotation
+org.traccar.WebDataHandler,2,Add Class Annotation
+org.traccar.protocol.Xexun2ProtocolDecoder,2,Move Attribute
+org.traccar.session.DeviceState,6,Change Attribute Type;Change Return Type
+org.traccar.handler.MotionHandler,2,Add Class Annotation
+org.traccar.handler.events.GeofenceEventHandler,2,Add Class Annotation
+org.traccar.notification.TextTemplateFormatter,2,Add Class Annotation
+org.traccar.notificators.NotificatorMail,2,Add Class Annotation
+org.traccar.api.signature.CryptoManager,2,Add Class Annotation
+org.traccar.handler.events.BehaviorEventHandler,2,Add Class Annotation
+org.traccar.MainEventHandler,5,Add Class Annotation;Remove Parameter
+org.traccar.session.ConnectionManager,1,Remove Parameter
+org.traccar.handler.events.AlertEventHandler,2,Add Class Annotation
+org.traccar.handler.events.FuelEventHandler,2,Add Class Annotation
+org.traccar.helper.BufferUtil,1,Inline Variable
+org.traccar.handler.SpeedLimitHandler,2,Add Class Annotation
+org.traccar.notificators.NotificatorSms,2,Add Class Annotation
+org.traccar.handler.events.DriverEventHandler,2,Add Class Annotation
+org.traccar.helper.Checksum,7,Change Method Access Modifier;Change Parameter Type;Move And Rename Method;Rename Method
+org.traccar.web.WebServer,1,Remove Method Annotation
+org.traccar.protocol.TeltonikaProtocolDecoder,2,Add Parameter
+org.traccar.handler.CopyAttributesHandler,2,Add Class Annotation
+org.traccar.handler.DefaultDataHandler,2,Add Class Annotation
+org.traccar.handler.HemisphereHandler,2,Add Class Annotation
+org.traccar.protocol.PiligrimProtocolDecoder,44,Rename Variable
+org.traccar.protocol.FifotrackProtocolDecoder,14,Extract Method;Extract Variable;Rename Parameter
+org.traccar.api.CorsResponseFilter,2,Add Class Annotation
+org.traccar.api.signature.TokenManager,2,Add Class Annotation
+org.traccar.notificators.NotificatorWeb,3,Add Class Annotation;Remove Parameter
+org.traccar.reports.common.ReportUtils,19,Add Class Annotation;Change Variable Type;Extract Variable;Merge Conditional;Rename Variable
+org.traccar.handler.events.OverspeedEventHandler,33,Add Class Annotation;Add Parameter;Change Attribute Type;Change Variable Type;Extract Class;Inline Method;Inline Variable;Remove Parameter;Rename Attribute;Rename Variable
+org.traccar.notification.NotificationFormatter,2,Add Class Annotation
+org.traccar.reports.common.TripsConfig,2,Add Class Annotation
+org.traccar.notification.EventForwarder,2,Replace Generic With Diamond
+org.traccar.database.NotificationManager,2,Add Class Annotation
+org.traccar.model.Command,1,Extract Superclass

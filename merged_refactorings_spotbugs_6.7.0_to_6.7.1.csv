@@ -1,0 +1,3 @@
+class,qtd_refactorings,bugs_6.7.0,bugs_6.7.1
+org.traccar.protocol.SuntechProtocolDecoder,6,3,3
+org.traccar.database.OpenIdProvider,6,2,2

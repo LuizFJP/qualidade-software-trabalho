@@ -1,0 +1,2 @@
+class,qtd_refactorings,bugs_6.0,bugs_6.1
+org.traccar.handler.GeocoderHandler,1,2,2

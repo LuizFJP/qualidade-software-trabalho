@@ -1,0 +1,8 @@
+class,qtd_refactorings,bugs_5.5,bugs_5.6
+org.traccar.api.security.PermissionsService,2,3,3
+org.traccar.model.Position,2,8,8
+org.traccar.protocol.GlobalstarProtocolDecoder,2,2,2
+org.traccar.model.Calendar,2,2,2
+org.traccar.api.AsyncSocketServlet,1,6,6
+org.traccar.reports.common.ReportUtils,1,4,4
+org.traccar.handler.ComputedAttributesHandler,1,1,1

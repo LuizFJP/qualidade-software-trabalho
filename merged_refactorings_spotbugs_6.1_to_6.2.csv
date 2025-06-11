@@ -1,0 +1,12 @@
+class,qtd_refactorings,bugs_6.1,bugs_6.2
+org.traccar.EventLoopGroupFactory,4,2,2
+org.traccar.protocol.TrvProtocolDecoder,2,1,1
+org.traccar.protocol.SuntechProtocolDecoder,2,1,1
+org.traccar.model.Calendar,1,2,2
+org.traccar.config.Config,1,1,1
+org.traccar.handler.FilterHandler,1,2,2
+org.traccar.api.AsyncSocketServlet,1,6,7
+org.traccar.protocol.GlobalstarProtocolDecoder,1,2,2
+org.traccar.protocol.Gt06ProtocolDecoder,1,1,1
+org.traccar.reports.SummaryReportProvider,1,2,2
+org.traccar.handler.ComputedAttributesHandler,1,1,1

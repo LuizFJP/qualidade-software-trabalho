@@ -1,0 +1,10 @@
+class,qtd_refactorings,bugs_5.6,bugs_5.7
+org.traccar.notificators.NotificatorFirebase,4,2,4
+org.traccar.mail.SmtpMailManager,4,1,1
+org.traccar.handler.ComputedAttributesHandler,3,1,1
+org.traccar.reports.common.ReportUtils,3,4,4
+org.traccar.api.security.LoginService,3,1,2
+org.traccar.database.NotificationManager,1,3,3
+org.traccar.notificators.NotificatorWeb,1,1,1
+org.traccar.ExtendedObjectDecoder,1,3,3
+org.traccar.handler.FilterHandler,1,2,3

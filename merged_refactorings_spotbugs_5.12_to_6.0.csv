@@ -1,0 +1,7 @@
+class,qtd_refactorings,bugs_5.12,bugs_6.0
+org.traccar.forward.EventForwarderMqtt,5,4,1
+org.traccar.session.ConnectionManager,4,3,3
+org.traccar.notificators.NotificatorTraccar,3,2,2
+org.traccar.notificators.NotificatorFirebase,2,4,4
+org.traccar.BaseProtocolEncoder,1,2,2
+org.traccar.notification.TextTemplateFormatter,1,1,1

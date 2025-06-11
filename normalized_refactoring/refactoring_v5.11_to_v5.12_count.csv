@@ -1,0 +1,9 @@
+class,qtd_refactorings
+org.traccar.protocol.Tlt2hProtocolDecoder,2
+org.traccar.protocol.StartekProtocolDecoder,2
+org.traccar.session.cache.CacheManager,1
+org.traccar.notification.NotificationFormatter,1
+org.traccar.api.resource.DeviceResource,1
+org.traccar.Main,1
+org.traccar.schedule.ScheduleManager,1
+org.traccar.schedule.TaskHealthCheck,1

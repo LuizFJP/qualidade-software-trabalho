@@ -1,0 +1,10 @@
+class,qtd_refactorings,bugs_5.7,bugs_5.8
+org.traccar.reports.common.ReportUtils,33,4,4
+org.traccar.reports.SummaryReportProvider,10,2,2
+org.traccar.handler.events.GeofenceEventHandler,6,4,1
+org.traccar.model.Position,4,8,9
+org.traccar.model.Device,4,9,8
+org.traccar.model.Calendar,3,2,2
+org.traccar.schedule.TaskReports,3,1,1
+org.traccar.model.ExtendedModel,3,1,1
+org.traccar.handler.events.MotionEventHandler,2,2,2

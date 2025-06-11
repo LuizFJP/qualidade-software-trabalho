@@ -1,0 +1,13 @@
+class,qtd_refactorings,bugs_6.5,bugs_6.6
+org.traccar.protocol.Gt06ProtocolDecoder,24,3,3
+org.traccar.protocol.EasyTrackProtocolDecoder,17,2,2
+org.traccar.forward.PositionForwarderWialon,14,2,2
+org.traccar.protocol.HuabaoProtocolDecoder,6,1,1
+org.traccar.protocol.SuntechProtocolDecoder,5,3,3
+org.traccar.handler.events.FuelEventHandler,4,1,1
+org.traccar.protocol.Gl200TextProtocolDecoder,3,3,3
+org.traccar.handler.ComputedAttributesHandler,2,1,1
+org.traccar.protocol.NavtelecomProtocolDecoder,2,1,1
+org.traccar.forward.PositionForwarderJson,2,1,2
+org.traccar.reports.EventsReportProvider,2,2,2
+org.traccar.schedule.TaskReports,1,1,1

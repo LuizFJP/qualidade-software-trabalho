@@ -1,0 +1,3 @@
+class,qtd_refactorings
+org.traccar.notification.NotificationMessage,4
+org.traccar.notification.TextTemplateFormatter,1

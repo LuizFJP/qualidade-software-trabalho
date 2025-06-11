@@ -1,0 +1,9 @@
+class,qtd_refactorings,bugs_5.8,bugs_5.9
+org.traccar.broadcast.MulticastBroadcastService,13,2,2
+org.traccar.protocol.Gt06ProtocolDecoder,13,1,1
+org.traccar.protocol.NavtelecomProtocolDecoder,5,1,1
+org.traccar.handler.FilterHandler,3,3,3
+org.traccar.api.security.PermissionsService,2,3,3
+org.traccar.protocol.TrvProtocolDecoder,2,1,1
+org.traccar.reports.RouteReportProvider,1,2,2
+org.traccar.schedule.TaskDeviceInactivityCheck,1,1,1
