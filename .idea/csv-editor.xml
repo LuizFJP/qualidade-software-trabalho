@@ -213,6 +213,13 @@
             </Attribute>
           </value>
         </entry>
+        <entry key="/normalized_refactoring/refactoring_v5.6_to_v5.7_count.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
         <entry key="/normalized_spotbugs_output/normalized_spotbugs_5.3.csv">
           <value>
             <Attribute>

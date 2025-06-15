@@ -10,7 +10,7 @@ def version_key(v):
     return tuple(parts)
 
 def main():
-    root_dir = 'ck_metrics_output'
+    root_dir = '../ck_metrics_output'
     metrics = ['loc', 'wmc', 'dit', 'noc', 'cbo', 'lcom', 'rfc']
     stats_keys = {
         'mean': ('Mean', 'o'),

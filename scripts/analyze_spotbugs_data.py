@@ -63,14 +63,14 @@ def generate_table(full_path):
     tbl.scale(1, 1.5)
 
     # Salvar como imagem PNG
-    output_path = './tabelas-graficos/spotbugs_dataframe.png'
+    output_path = '../tabelas-graficos/spotbugs_dataframe.png'
     plt.savefig(output_path, bbox_inches='tight')
 
 def analyze_correctness(full_path):
     with open(full_path, 'r', encoding='utf-8') as f:
         data_graph = json.load(f)
 
-    xml_dir = 'spotbugs'
+    xml_dir = '../spotbugs'
     for fname in sorted(os.listdir(xml_dir)):
         if not fname.endswith('.xml'):
             continue
@@ -102,11 +102,11 @@ def analyze_correctness(full_path):
     plt.tight_layout()
 
     # 4) Save and display
-    output_path = './tabelas-graficos/correctness_types_distribution.png'
+    output_path = '../tabelas-graficos/correctness_types_distribution.png'
     plt.savefig(output_path, bbox_inches='tight')
 
 if __name__ == '__main__':
-    stats = count_bug_categories('spotbugs')
+    stats = count_bug_categories('../spotbugs')
     # imprime de forma legível
     import pprint
     pprint.pprint(stats, width=100, sort_dicts=False)

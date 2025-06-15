@@ -85,12 +85,12 @@ def create_graph(file):
 
 
 if __name__ == '__main__':
-    stats = count_refactorings('refactoring-miner')
+    stats = count_refactorings('../refactoring-miner')
 
     import pprint
     pprint.pprint(stats, sort_dicts=False, width=120)
 
-    file = 'refactoring_counts.json'
+    file = '../refactoring_counts.json'
     with open(file, 'w', encoding='utf-8') as out:
         json.dump(stats, out, indent=2, ensure_ascii=False)
 

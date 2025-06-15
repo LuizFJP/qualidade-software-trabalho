@@ -85,9 +85,9 @@ def main():
     args = parser.parse_args()
 
     v = args.version
-    sb_dir = 'spotbugs'
+    sb_dir = '../spotbugs'
     sb_path = os.path.join(sb_dir, f'spotbugs_{v}.xml')
-    rf_dir = 'refactoring-miner'
+    rf_dir = '../refactoring-miner'
 
     if not os.path.exists(sb_path):
         raise FileNotFoundError(f"SpotBugs XML não encontrado: {sb_path}")

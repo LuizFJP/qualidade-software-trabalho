@@ -9,8 +9,8 @@ import json
 import os
 from collections import Counter
 
-INPUT_DIR = 'refactoring-miner'
-OUTPUT_DIR = '.'  # current directory
+INPUT_DIR = '../refactoring-miner'
+OUTPUT_DIR = '..'  # current directory
 
 
 def extract_class_from_filepath(fp: str) -> str:
