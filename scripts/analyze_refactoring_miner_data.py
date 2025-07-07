@@ -49,18 +49,14 @@ def create_graph(file):
     with open(file, 'r', encoding='utf-8') as f:
         data = json.load(f)
 
-    # 2. Convert to DataFrame
     df = pd.DataFrame.from_dict(data, orient='index').fillna(0).astype(int)
     df.index.name = 'version_interval'
     df.index = df.index.str.replace(r'^refactoring_', '', regex=True)
 
-    # 3. Compute total refactorings per interval
     df['total_refactorings'] = df.sum(axis=1)
 
-    # 4. Compute total occurrences per refactoring type across all intervals
     type_totals = df.drop(columns='total_refactorings').sum().sort_values(ascending=False)
 
-    # 5. Plot trends: total refactorings per interval
     plt.figure(figsize=(10, 5))
     plt.plot(df.index, df['total_refactorings'], marker='o')
     plt.xticks(rotation=45, ha='right')
@@ -71,7 +67,6 @@ def create_graph(file):
     plt.savefig('total_refactorings_trend.png')
     plt.close()
 
-    # 6. Plot top 10 refactoring types
     top10 = type_totals.head(10)
     plt.figure(figsize=(10, 5))
     plt.bar(top10.index, top10.values)

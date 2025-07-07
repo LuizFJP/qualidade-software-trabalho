@@ -1,4 +1,3 @@
-#!/usr/bin/env python3
 """
 Batch normalization: count refactoring instances per class in Refactoring Miner JSON outputs.
 
@@ -10,11 +9,10 @@ import os
 from collections import Counter
 
 INPUT_DIR = '../refactoring-miner'
-OUTPUT_DIR = '..'  # current directory
+OUTPUT_DIR = '..'
 
 
 def extract_class_from_filepath(fp: str) -> str:
-    """Extracts full class name (with .java) from a Refactoring Miner filePath."""
     prefix = 'src/main/java/'
     rel = fp[len(prefix):] if fp.startswith(prefix) else fp
     if rel.endswith('.java'):
@@ -24,13 +22,11 @@ def extract_class_from_filepath(fp: str) -> str:
 
 
 def process_json(path: str) -> Counter:
-    """Loads a Refactoring Miner JSON and returns a Counter of refactoring instances per class."""
     counts = Counter()
     with open(path, encoding='utf-8') as f:
         data = json.load(f)
     for commit in data.get('commits', []):
         for rf in commit.get('refactorings', []):
-            # determine unique classes affected by this refactoring instance
             classes = set()
             for loc in rf.get('leftSideLocations', []):
                 cls = extract_class_from_filepath(loc.get('filePath', ''))
@@ -38,7 +34,6 @@ def process_json(path: str) -> Counter:
             for loc in rf.get('rightSideLocations', []):
                 cls = extract_class_from_filepath(loc.get('filePath', ''))
                 classes.add(cls)
-            # count one per class for this refactoring instance
             for cls in classes:
                 counts[cls] += 1
     return counts

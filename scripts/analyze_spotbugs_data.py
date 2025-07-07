@@ -1,4 +1,3 @@
-#!/usr/bin/env python3
 import os
 import xml.etree.ElementTree as ET
 from collections import Counter
@@ -21,14 +20,12 @@ def count_bug_categories(dir_path):
         if not fname.endswith('.xml'):
             continue
 
-        key = os.path.splitext(fname)[0]  # ex: "spotbugs_5.3"
+        key = os.path.splitext(fname)[0]
         full_path = os.path.join(dir_path, fname)
 
-        # parse XML
         tree = ET.parse(full_path)
         root = tree.getroot()
 
-        # conta categorias
         counter = Counter()
         for bug in root.findall('.//BugInstance'):
             cat = bug.get('category', 'Unknown')
@@ -45,7 +42,6 @@ def generate_table(full_path):
     df = pd.DataFrame.from_dict(data, orient='index')
     df.index.name = 'version'
 
-    # 3) Normalizar ordem semântica de versões
     # aqui simples sort lexicográfico funciona, mas você pode parsear com packaging.version
     df.index = df.index.str.replace(r'^spotbugs_', '', regex=True)
     df = df.sort_index()
@@ -62,7 +58,6 @@ def generate_table(full_path):
     tbl.set_fontsize(10)
     tbl.scale(1, 1.5)
 
-    # Salvar como imagem PNG
     output_path = '../tabelas-graficos/spotbugs_dataframe.png'
     plt.savefig(output_path, bbox_inches='tight')
 
@@ -84,13 +79,11 @@ def analyze_correctness(full_path):
                 counts[bug_type] = counts.get(bug_type, 0) + 1
         data_graph[version] = counts
 
-    # 2) Build DataFrame
     df = pd.DataFrame.from_dict(data_graph, orient='index').fillna(0).astype(int)
     df.index.name = 'version'
     df.index = df.index.str.replace(r'^spotbugs_', '', regex=True)
     df = df.sort_index()
 
-    # 3) Plot as a stacked bar chart to highlight distribution of types
     ax = df.plot(
         kind='bar',
         stacked=True,
@@ -101,18 +94,15 @@ def analyze_correctness(full_path):
     ax.set_title('Distribuição dos tipos de bugs para a categoria MALICIOUS_CODE ao longo das versões')
     plt.tight_layout()
 
-    # 4) Save and display
     output_path = '../tabelas-graficos/correctness_types_distribution.png'
     plt.savefig(output_path, bbox_inches='tight')
 
 if __name__ == '__main__':
     stats = count_bug_categories('../spotbugs')
-    # imprime de forma legível
     import pprint
     pprint.pprint(stats, width=100, sort_dicts=False)
 
     output_analyze = 'spotbugs_category_counts.json'
-    # opcional: salvar em JSON
     with open(output_analyze, 'w', encoding='utf-8') as f:
         json.dump(stats, f, indent=2, ensure_ascii=False)
 

@@ -19,13 +19,11 @@ def main():
     }
     records = []
 
-    # Ordena pastas de release semanticamente
     releases = sorted(
         [d for d in os.listdir(root_dir) if os.path.isdir(os.path.join(root_dir, d))],
         key=version_key
     )
 
-    # Processa cada release e coleta estatísticas
     for release in releases:
         path = os.path.join(root_dir, release)
         csvs = glob.glob(os.path.join(path, '*.csv'))
@@ -35,7 +33,6 @@ def main():
         df = pd.read_csv(csvs[0])
         df.columns = df.columns.str.lower()
 
-        # Filtra apenas classes concretas
         if 'type' in df.columns:
             df = df[df['type'].str.lower() == 'class']
         if df.empty:
@@ -49,24 +46,20 @@ def main():
             stats[f'{m}_var']    = round(df[m].var(ddof=0), 4)
         records.append(stats)
 
-        # Exporta CSV por release
         df_stats = pd.DataFrame([stats]).set_index('release')
         df_stats = df_stats.round(4)
         output_path = f'ck_summary_metrics_{release}.csv'
         df_stats.to_csv(output_path)
         print(f'Exportado por versão: {output_path}')
 
-    # Constrói DataFrame de resumo combinado e aplica arredondamento
     summary_all = pd.DataFrame(records).set_index('release')
     summary_all = summary_all.sort_index(key=lambda idx: [version_key(v) for v in idx])
     summary_all = summary_all.round(4)
 
-    # Exporta CSV combinado
     combined_csv = 'ck_summary_metrics_all_releases.csv'
     summary_all.to_csv(combined_csv)
     print(f'CSV combinado exportado: {combined_csv}')
 
-    # 1) PNGs individuais por métrica e estatística
     for m in metrics:
         for key, (label, marker) in stats_keys.items():
             plt.figure(figsize=(8,4))
@@ -87,7 +80,6 @@ def main():
             plt.close()
             print(f'Gerado: {fn}')
 
-    # 2) Gráfico combinado com todas as métricas e estatísticas
     plt.figure(figsize=(12,6))
     for m in metrics:
         for key, (label, marker) in stats_keys.items():
@@ -108,11 +100,9 @@ def main():
     plt.savefig(combined_fn)
     plt.close()
     print(f'Gerado: {combined_fn}')
- # 3) Tabela em PNG com apenas as colunas de mean
     mean_cols = [f'{m}_mean' for m in metrics]
     table_df = summary_all[mean_cols]
 
-    # Ajusta figura para caber a tabela
     fig, ax = plt.subplots(figsize=(len(mean_cols)*1.5 + 2, len(table_df)*0.4 + 2))
     ax.axis('off')
     tbl = ax.table(

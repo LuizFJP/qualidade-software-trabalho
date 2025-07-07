@@ -1,4 +1,3 @@
-#!/usr/bin/env python3
 """
 Normaliza resultados de SpotBugs (XML) e Refactoring Miner (JSON) em CSVs, relacionáveis pelo nome de classe.
 Uso:
